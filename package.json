@@ -1,0 +1,15 @@
+{
+  "name": "communicare",
+  "version": "1.0.0",
+  "description": "Helper for importing communicare phrases from google sheets",
+  "main": "googleSheets.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mariann Tapfer",
+  "license": "ISC",
+  "dependencies": {
+    "googleapis": "^67.1.1",
+    "request": "^2.88.2"
+  }
+}
