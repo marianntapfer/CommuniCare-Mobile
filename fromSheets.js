@@ -6,8 +6,6 @@ const {google} = require('googleapis');
 function Connect(FetchDataCB) {
 
     process.chdir(__dirname);
-    console.log("connect from: ", process.chdir);
-
     // If modifying these scopes, delete token.json.
     const SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
     // The file token.json stores the user's access and refresh tokens, and is
@@ -25,7 +23,6 @@ function Connect(FetchDataCB) {
 
     function authorize(credentials, FetchDataCB) {
         const {client_secret, client_id, redirect_uris} = credentials.installed;
-        console.log("Test: ", client_secret, client_id)
         const oAuth2Client = new google.auth.OAuth2(
             client_id, client_secret, redirect_uris[0]);
 
