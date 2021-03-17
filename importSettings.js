@@ -19,46 +19,43 @@ function ProcessDataCB(source, CBfunction){
     //Delete the header row
     listOfData.shift();
 
-
     // get all category names
     let categorys = [];
     source.values.forEach((item) => {
       categorys.push(item[0].toLowerCase().trim());
     });
     categorys = [... new Set(categorys)];
+    categorys.shift();
 
+    listOfData.shift();
     let Phrases = {}
-    categorys.forEach(item => {
-        Phrases[item] = []
-    })
-
     listOfData.forEach((data, dataIndex) => {
-        const category = data[0].toLowerCase().trim();
-        let obj = {}
-        data.shift();
-        data.forEach((element, index) => {
-            const key = headers[index]
-            obj[headers[index]]=element.toLowerCase().trim();
-        });
 
-        Phrases[category].push(obj)
-    })
+        if (data[0].toLowerCase().trim() === "settings") {
+            data.shift();
+            // console.log(data);
+            let obj = {"drawable": data[9],
+                        "viewRedirect": "",
+                        "textToSpeech": true };
+            let key = data[1].toLowerCase().trim().replace(/ /g, "_");
+            Phrases[key]=obj;
+        };
+
+    });
 
 
     let objectToWrite = JSON.stringify(Phrases, null, 4);
-    CBfunction(objectToWrite)
+    CBfunction(objectToWrite);
 }
 
 
 function WritePhrasesJSON (sheetsData){
     ProcessDataCB(sheetsData, function WriteLangs(sheetsData){
-        // console.log(sheetsData);
-        fs.writeFileSync('data/translations.json', sheetsData);
+        fs.writeFileSync('data/settings.json', sheetsData);
     });
 }
 
-//Fetcher.Fetch(spreadsheetId, range, ProcessDataCB)
-Fetcher.Fetch('1Rgu-WPPCIjC2k0ss6HqmqV6Wbj_PqViKjSX8G_RqdYg', 'Sheet1', WritePhrasesJSON)
+Fetcher.Fetch('1Rgu-WPPCIjC2k0ss6HqmqV6Wbj_PqViKjSX8G_RqdYg', 'Sheet1', WritePhrasesJSON);
 
 
 

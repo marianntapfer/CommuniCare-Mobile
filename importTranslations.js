@@ -15,65 +15,36 @@ function ProcessDataCB(source, CBfunction){
         headers[index] = element.toLowerCase().trim();
     });
     headers.shift();
-    console.log("All headers", headers);
-    //Delete the header row
     listOfData.shift();
 
-
-    // get all category names
-    let categorys = [];
-    source.values.forEach((item) => {
-      categorys.push(item[0].toLowerCase().trim());
-    });
-    categorys = [... new Set(categorys)];
-
-    let Phrases = {}
-    categorys.forEach(item => {
-        Phrases[item] = []
-    })
+    let Phrases = {};
 
     listOfData.forEach((data, dataIndex) => {
-        const category = data[0].toLowerCase().trim();
-        let obj = {}
+        let obj = {};
         data.shift();
         data.forEach((element, index) => {
-            const key = headers[index]
+            const key = headers[index];
             obj[headers[index]]=element.toLowerCase().trim();
         });
 
-        Phrases[category].push(obj)
+        let key = data[1].toLowerCase().trim().replace(/ /g, "_");
+
+        Phrases[key] = obj;
     })
 
 
-    let objectToWrite = JSON.stringify(Phrases, null, 4);
-    CBfunction(objectToWrite)
-}
-
+    let objectToWrite = JSON.stringify({"translations": Phrases}, null, 4);
+    CBfunction(objectToWrite);
+};
 
 function WritePhrasesJSON (sheetsData){
     ProcessDataCB(sheetsData, function WriteLangs(sheetsData){
-        // console.log(sheetsData);
         fs.writeFileSync('data/translations.json', sheetsData);
+        console.log('generating data/translations.json');
     });
 }
 
-//Fetcher.Fetch(spreadsheetId, range, ProcessDataCB)
-Fetcher.Fetch('1Rgu-WPPCIjC2k0ss6HqmqV6Wbj_PqViKjSX8G_RqdYg', 'Sheet1', WritePhrasesJSON)
-
-// {
-//           "key":"pain"
-//           "translations":{
-//             "estonian": "valu tüüp",
-//             "english": "pain",
-//             "arabic": "الالم",
-//             "russian male": "тип боли",
-//             "russian female": "тип боли",
-//             "german": "schmerz",
-//             "finnish": "",
-//             "dutch": "pijn",
-//             "italian": "dolore"
-//           }
-//         }
+Fetcher.Fetch('1Rgu-WPPCIjC2k0ss6HqmqV6Wbj_PqViKjSX8G_RqdYg', 'Sheet1', WritePhrasesJSON);
 
 
 

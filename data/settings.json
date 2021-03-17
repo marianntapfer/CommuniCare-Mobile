@@ -1,0 +1,47 @@
+{
+    "back": {
+        "viewRedirect": "",
+        "textToSpeech": true
+    },
+    "yes": {
+        "viewRedirect": "",
+        "textToSpeech": true
+    },
+    "no": {
+        "viewRedirect": "",
+        "textToSpeech": true
+    },
+    "font_size": {
+        "viewRedirect": "",
+        "textToSpeech": true
+    },
+    "about_us": {
+        "viewRedirect": "",
+        "textToSpeech": true
+    },
+    "feedback": {
+        "drawable": "test",
+        "viewRedirect": "",
+        "textToSpeech": true
+    },
+    "language": {
+        "viewRedirect": "",
+        "textToSpeech": true
+    },
+    "clear_all": {
+        "viewRedirect": "",
+        "textToSpeech": true
+    },
+    "i_speak:_english": {
+        "viewRedirect": "",
+        "textToSpeech": true
+    },
+    "my_caregiver_speaks:_english": {
+        "viewRedirect": "",
+        "textToSpeech": true
+    },
+    "continue": {
+        "viewRedirect": "",
+        "textToSpeech": true
+    }
+}
