@@ -2,3 +2,6 @@
 credentials.json
 node_modules/*
 token.json
+data/phrases.json
+data/sheetsData.json
+.DS_Store

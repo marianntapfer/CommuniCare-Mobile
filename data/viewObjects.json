@@ -1,0 +1,1090 @@
+{
+    "elements": [
+        {
+            "label": "toilet",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 0
+        },
+        {
+            "label": "i_want_to_go_to_the_toilet.",
+            "drawable": "WC/TAHAN-WC-SSE.png",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 1
+        },
+        {
+            "label": "i_want_to_pee",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 2
+        },
+        {
+            "label": "i_want_to_poop",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 3
+        },
+        {
+            "label": "catheter_is_irritating",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 4
+        },
+        {
+            "label": "when_can_i_go_pee_on_my_own?",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 5
+        },
+        {
+            "label": "take_the_catheter_away",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 6
+        },
+        {
+            "label": "is_pee_coming?",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 7
+        },
+        {
+            "label": "i_want_to_go_to_the_potty_chair",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 8
+        },
+        {
+            "label": "i_want_a_bedpan",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 9
+        },
+        {
+            "label": "i_don't_want_a_bedpan.",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 10
+        },
+        {
+            "label": "pain",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 11
+        },
+        {
+            "label": "sharp_pain",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 12
+        },
+        {
+            "label": "numb_pain",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 13
+        },
+        {
+            "label": "burning_pain",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 14
+        },
+        {
+            "label": "tingle",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 15
+        },
+        {
+            "label": "stings",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 16
+        },
+        {
+            "label": "prickling_like_ants_running",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 17
+        },
+        {
+            "label": "chest_pain",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 18
+        },
+        {
+            "label": "it_is_painful_to_breathe",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 19
+        },
+        {
+            "label": "it_is_painful_to_cough",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 20
+        },
+        {
+            "label": "gas_pain",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 21
+        },
+        {
+            "label": "position_and_movement",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 22
+        },
+        {
+            "label": "raise_the_head",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 23
+        },
+        {
+            "label": "lower_the_bed_head",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 24
+        },
+        {
+            "label": "turn_me_on_my_side",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 25
+        },
+        {
+            "label": "i_want_to_get_up",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 26
+        },
+        {
+            "label": "my_back_is_tired",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 27
+        },
+        {
+            "label": "my_position_is_uncomfortable",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 28
+        },
+        {
+            "label": "i_want_to_do_exercise",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 29
+        },
+        {
+            "label": "i_want_to_sit_on_the_chair",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 30
+        },
+        {
+            "label": "i_want_to_go_to_bed",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 31
+        },
+        {
+            "label": "i_want_to_walk",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 32
+        },
+        {
+            "label": "family_and_work",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 33
+        },
+        {
+            "label": "does_my_family_know?",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 34
+        },
+        {
+            "label": "i_want_to_call_home",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 35
+        },
+        {
+            "label": "i_want_to_call_for_my_work",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 36
+        },
+        {
+            "label": "when_can_i_go_home?",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 37
+        },
+        {
+            "label": "i_want_to_go_home",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 38
+        },
+        {
+            "label": "my_pets_are_alone_at_home",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 39
+        },
+        {
+            "label": "i_want_to_see_my_family",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 40
+        },
+        {
+            "label": "call_my_family_here",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 41
+        },
+        {
+            "label": "has_someone_called?",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 42
+        },
+        {
+            "label": "therapy",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 43
+        },
+        {
+            "label": "how_am_i_doing?",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 44
+        },
+        {
+            "label": "is_the_operation_done?",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 45
+        },
+        {
+            "label": "how_did_the_operation_go?",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 46
+        },
+        {
+            "label": "how_can_i_call_a_doctor_or_a_nurse?",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 47
+        },
+        {
+            "label": "when_does_the_surgeon_come?",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 48
+        },
+        {
+            "label": "i_want_physiotherapy",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 49
+        },
+        {
+            "label": "what_is_the_treatment_plan?",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 50
+        },
+        {
+            "label": "what_is_the_day_plan?",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 51
+        },
+        {
+            "label": "what_examination_is_this?",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 52
+        },
+        {
+            "label": "end_the_treatment,_i_want_to_die",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 53
+        },
+        {
+            "label": "what_kind_of_procedure_is_it?",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 54
+        },
+        {
+            "label": "concerns",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 55
+        },
+        {
+            "label": "where_am_i?",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 56
+        },
+        {
+            "label": "what_happened?",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 57
+        },
+        {
+            "label": "how_long_have_i_been_here?",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 58
+        },
+        {
+            "label": "will_i_die?",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 59
+        },
+        {
+            "label": "what_happens_with_my_pets?",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 60
+        },
+        {
+            "label": "i_am_afraid_to_die",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 61
+        },
+        {
+            "label": "i_don't_want_to_die_in_pain",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 62
+        },
+        {
+            "label": "i_don't_want_to_be_alone",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 63
+        },
+        {
+            "label": "i_don't_want_to_be_here",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 64
+        },
+        {
+            "label": "untie_my_arms",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 65
+        },
+        {
+            "label": "sleep",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 66
+        },
+        {
+            "label": "i_want_to_sleep",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 67
+        },
+        {
+            "label": "please_turn_the_lights_off",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 68
+        },
+        {
+            "label": "please_put_the_lights_on",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 69
+        },
+        {
+            "label": "please_be_quiet",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 70
+        },
+        {
+            "label": "i_can't_sleep_i_can_not_sleep",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 71
+        },
+        {
+            "label": "pain disturbs_the_sleep",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 72
+        },
+        {
+            "label": "please_give_me_sleeping_pills",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 73
+        },
+        {
+            "label": "at_home_i_take_sleeping_pills",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 74
+        },
+        {
+            "label": "what's_going_on_bubblesing_here?",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 75
+        },
+        {
+            "label": "i_have_something_under_my_body_that_annoys_me",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 76
+        },
+        {
+            "label": "washing_and_clothing",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 77
+        },
+        {
+            "label": "i_want_to_brush_my_teeth",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 78
+        },
+        {
+            "label": "i_want_irrigate_my_mouth_a_mouthwash",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 79
+        },
+        {
+            "label": "i_have_saliva_in_my_mouth,_plase_remove_it",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 80
+        },
+        {
+            "label": "wash_my_face",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 81
+        },
+        {
+            "label": "please_wash_me",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 82
+        },
+        {
+            "label": "do_not_wash_me",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 83
+        },
+        {
+            "label": "please brush_my_hair",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 84
+        },
+        {
+            "label": "where_are_my_things?",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 85
+        },
+        {
+            "label": "i_want_my_clothes_on",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 86
+        },
+        {
+            "label": "why_am_i_naked?",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 87
+        },
+        {
+            "label": "condition",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 88
+        },
+        {
+            "label": "i_feel_very_bad",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 89
+        },
+        {
+            "label": "i'm_nauseous",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 90
+        },
+        {
+            "label": "i_feel_dizzy",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 91
+        },
+        {
+            "label": "i_am_very_weak",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 92
+        },
+        {
+            "label": "i_am_cold",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 93
+        },
+        {
+            "label": "i_am_hot",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 94
+        },
+        {
+            "label": "i_don't_feel_my_arms",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 95
+        },
+        {
+            "label": "i_don't_feel_my_legs",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 96
+        },
+        {
+            "label": "breathing",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 97
+        },
+        {
+            "label": "there_is_not_enough_air",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 98
+        },
+        {
+            "label": "i_can't_breathe",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 99
+        },
+        {
+            "label": "clear_the_breathing_tube",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 100
+        },
+        {
+            "label": "i_am_suffocating_there_is_no_air",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 101
+        },
+        {
+            "label": "take_the_tube_away",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 102
+        },
+        {
+            "label": "when_will_the_tube_be_taken_away?",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 103
+        },
+        {
+            "label": "when_can_i_speak?",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 104
+        },
+        {
+            "label": "will_i_ever_speak_again?",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 105
+        },
+        {
+            "label": "i_don't_have_strength_to_breathe",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 106
+        },
+        {
+            "label": "let_the_machine_help_me_to_breathe",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 107
+        },
+        {
+            "label": "entertainment",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 108
+        },
+        {
+            "label": "i_want_to_watch_tv",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 109
+        },
+        {
+            "label": "i_want_to_listen_to_the_music",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 110
+        },
+        {
+            "label": "please_put_the_tv_on",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 111
+        },
+        {
+            "label": "please_close_the_tv",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 112
+        },
+        {
+            "label": "do_you_have_newspapers",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 113
+        },
+        {
+            "label": "please_give_me_the_remote",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 114
+        },
+        {
+            "label": "i_want_to_watch_movie",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 115
+        },
+        {
+            "label": "please_put_it_a_little_bit_quiet",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 116
+        },
+        {
+            "label": "please_put_it_louder",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 117
+        },
+        {
+            "label": "please_talk_to_me",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 118
+        },
+        {
+            "label": "emotions",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 119
+        },
+        {
+            "label": "i_am_happy",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 120
+        },
+        {
+            "label": "i_am_sad",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 121
+        },
+        {
+            "label": "i_am_angry",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 122
+        },
+        {
+            "label": "i_am_afraid",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 123
+        },
+        {
+            "label": "i_am_confused",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 124
+        },
+        {
+            "label": "i_am_surprised",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 125
+        },
+        {
+            "label": "i_love_you",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 126
+        },
+        {
+            "label": "you_are_dear_to_me",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 127
+        },
+        {
+            "label": "i_want_to_hug_you",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 128
+        },
+        {
+            "label": "i_don't_want_to_see_anyone.",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 129
+        },
+        {
+            "label": "diet",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 130
+        },
+        {
+            "label": "drink",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 131
+        },
+        {
+            "label": "hot_drink",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 132
+        },
+        {
+            "label": "warm_drink",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 133
+        },
+        {
+            "label": "cold_drink",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 134
+        },
+        {
+            "label": "chamomile_tea",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 135
+        },
+        {
+            "label": "coffee",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 136
+        },
+        {
+            "label": "coffee_with_milk",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 137
+        },
+        {
+            "label": "kakao_cocoa",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 138
+        },
+        {
+            "label": "tea",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 139
+        },
+        {
+            "label": "yogurt",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 140
+        },
+        {
+            "label": "water",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 141
+        },
+        {
+            "label": "juice",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 142
+        },
+        {
+            "label": "kefir",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 143
+        },
+        {
+            "label": "food",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 144
+        },
+        {
+            "label": "cake",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 145
+        },
+        {
+            "label": "dessert",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 146
+        },
+        {
+            "label": "meal",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 147
+        },
+        {
+            "label": "icecream",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 148
+        },
+        {
+            "label": "-",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 149
+        },
+        {
+            "label": "porridge",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 150
+        },
+        {
+            "label": "soup",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 151
+        },
+        {
+            "label": "salad",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 152
+        },
+        {
+            "label": "fruit",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 153
+        },
+        {
+            "label": "boiled_eggs",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": true,
+            "id": 154
+        }
+    ]
+}

@@ -60,5 +60,20 @@ function WritePhrasesJSON (sheetsData){
 //Fetcher.Fetch(spreadsheetId, range, ProcessDataCB)
 Fetcher.Fetch('1Rgu-WPPCIjC2k0ss6HqmqV6Wbj_PqViKjSX8G_RqdYg', 'Sheet1', WritePhrasesJSON)
 
+// {
+//           "key":"pain"
+//           "translations":{
+//             "estonian": "valu tüüp",
+//             "english": "pain",
+//             "arabic": "الالم",
+//             "russian male": "тип боли",
+//             "russian female": "тип боли",
+//             "german": "schmerz",
+//             "finnish": "",
+//             "dutch": "pijn",
+//             "italian": "dolore"
+//           }
+//         }
+
 
 

@@ -9,7 +9,8 @@
             "german": "danke",
             "finnish": "",
             "dutch": "bedankt",
-            "italian": "grazie"
+            "italian": "grazie",
+            "id": 0
         },
         {
             "estonian": "tagasi",
@@ -20,7 +21,8 @@
             "german": "zurück",
             "finnish": "",
             "dutch": "terug",
-            "italian": "indietro"
+            "italian": "indietro",
+            "id": 1
         },
         {
             "estonian": "jah",
@@ -31,7 +33,8 @@
             "german": "ja",
             "finnish": "",
             "dutch": "ja",
-            "italian": "sì"
+            "italian": "sì",
+            "id": 2
         },
         {
             "estonian": "ei",
@@ -42,70 +45,80 @@
             "german": "nein",
             "finnish": "",
             "dutch": "nee",
-            "italian": "no"
+            "italian": "no",
+            "id": 3
         },
         {
             "estonian": "kirja suurus",
             "english": "font size",
             "arabic": "حجم الخط",
             "russian male": "размер шрифта",
-            "russian female": "размер шрифта"
+            "russian female": "размер шрифта",
+            "id": 4
         },
         {
             "estonian": "meist",
             "english": "about us",
             "arabic": "حولنا",
             "russian male": "о нас",
-            "russian female": "о нас"
+            "russian female": "о нас",
+            "id": 5
         },
         {
             "estonian": "saatke meile tagasisidet",
             "english": "feedback",
             "arabic": "مراجعة",
             "russian male": "отправьте нам отзыв",
-            "russian female": "отправьте нам отзыв"
+            "russian female": "отправьте нам отзыв",
+            "id": 6
         },
         {
             "estonian": "valige keel",
             "english": "language",
             "arabic": "اللغة",
             "russian male": "выберите язык",
-            "russian female": "выберите язык"
+            "russian female": "выберите язык",
+            "id": 7
         },
         {
             "estonian": "kustuta kõik",
             "english": "clear all",
             "arabic": "مسح",
             "russian male": "очистить всё",
-            "russian female": "очистить всё"
+            "russian female": "очистить всё",
+            "id": 8
         },
         {
             "estonian": "mina räägin: eesti keeles",
             "english": "i speak: english",
             "arabic": "انا اتكلم",
             "russian male": "я говорю: по русски",
-            "russian female": "я говорю: по русски"
+            "russian female": "я говорю: по русски",
+            "id": 9
         },
         {
             "estonian": "minu hooldaja räägib: eesti keeles",
             "english": "my caregiver speaks: english",
             "arabic": "الراعي يتكلم",
             "russian male": "мой опекун говорит: по русски",
-            "russian female": "мой опекун говорит: по русски"
+            "russian female": "мой опекун говорит: по русски",
+            "id": 10
         },
         {
             "estonian": "edasi",
             "english": "continue",
             "arabic": "متابعة",
             "russian male": "дальше",
-            "russian female": "дальше"
+            "russian female": "дальше",
+            "id": 11
         },
         {
             "estonian": "tagasi",
             "english": "back",
             "arabic": "عودة",
             "russian male": "обратно",
-            "russian female": "обратно"
+            "russian female": "обратно",
+            "id": 12
         }
     ],
     "wc": [
@@ -118,7 +131,8 @@
             "german": "wc",
             "finnish": "",
             "dutch": "wc",
-            "italian": "bagno"
+            "italian": "bagno",
+            "id": 13
         },
         {
             "estonian": "tahan wc-sse",
@@ -129,7 +143,8 @@
             "german": "ich muss auf die toilette",
             "finnish": "",
             "dutch": "ik moet naar het toilet",
-            "italian": "vorrei andare al bagno."
+            "italian": "vorrei andare al bagno.",
+            "id": 14
         },
         {
             "estonian": "tahan pissile",
@@ -140,7 +155,8 @@
             "german": "ich muss urinieren",
             "finnish": "",
             "dutch": "ik moet plassen",
-            "italian": "vorrei fare la pipì"
+            "italian": "vorrei fare la pipì",
+            "id": 15
         },
         {
             "estonian": "tahan kakale",
@@ -151,7 +167,8 @@
             "german": "ich muss stuhlen",
             "finnish": "",
             "dutch": "ik moet poepen",
-            "italian": "vorrei fare la cacca"
+            "italian": "vorrei fare la cacca",
+            "id": 16
         },
         {
             "estonian": "kateeter ärritab",
@@ -162,7 +179,8 @@
             "german": "der katheter stört",
             "finnish": "",
             "dutch": "ik heb last van de katheter",
-            "italian": "il catetere è irritante"
+            "italian": "il catetere è irritante",
+            "id": 17
         },
         {
             "estonian": "millal saan ise pissida?",
@@ -173,7 +191,8 @@
             "german": "wann darf ich alleine urinieren gehen",
             "finnish": "",
             "dutch": "wanneer mag ik zelf plassen?",
-            "italian": "quando posso fare la pipì da solo?"
+            "italian": "quando posso fare la pipì da solo?",
+            "id": 18
         },
         {
             "estonian": "võtke kateeter ära",
@@ -184,7 +203,8 @@
             "german": "nehmen sie bitte den katheter weg",
             "finnish": "",
             "dutch": "kunt u de katheter weghalen?",
-            "italian": "porta via il catetere"
+            "italian": "porta via il catetere",
+            "id": 19
         },
         {
             "estonian": "kas pissi ikka tuleb?",
@@ -195,7 +215,8 @@
             "german": "kommt urin raus?",
             "finnish": "",
             "dutch": "komt er plas uit?",
-            "italian": "la pipì sta arrivando?"
+            "italian": "la pipì sta arrivando?",
+            "id": 20
         },
         {
             "estonian": "tahan potitoolile",
@@ -206,7 +227,8 @@
             "german": "ich muss auf das töpfchen",
             "finnish": "",
             "dutch": "ik moet naar de plaspot",
-            "italian": "vorrei andare alla sedia da comodo"
+            "italian": "vorrei andare alla sedia da comodo",
+            "id": 21
         },
         {
             "estonian": "tahan siibrit",
@@ -217,7 +239,8 @@
             "german": "ich bräuchte eine bettpfanne",
             "finnish": "",
             "dutch": "ik heb een bedpan nodig",
-            "italian": "vorrei il vaso da notte"
+            "italian": "vorrei il vaso da notte",
+            "id": 22
         },
         {
             "estonian": "ei taha siibrit",
@@ -228,7 +251,8 @@
             "german": "ich brauche keine bettpfanne",
             "finnish": "",
             "dutch": "ik heb geen bedpan nodig",
-            "italian": "non voglio il vaso da notte"
+            "italian": "non voglio il vaso da notte",
+            "id": 23
         }
     ],
     "pain": [
@@ -241,7 +265,8 @@
             "german": "schmerz",
             "finnish": "",
             "dutch": "pijn",
-            "italian": "dolore"
+            "italian": "dolore",
+            "id": 24
         },
         {
             "estonian": "terav valu",
@@ -252,7 +277,8 @@
             "german": "starker schmerz",
             "finnish": "",
             "dutch": "stekende pijn",
-            "italian": "dolore intenso"
+            "italian": "dolore intenso",
+            "id": 25
         },
         {
             "estonian": "tuim valu",
@@ -263,7 +289,8 @@
             "german": "tauber schmerz",
             "finnish": "",
             "dutch": "doffe pijn",
-            "italian": "dolore leggero"
+            "italian": "dolore leggero",
+            "id": 26
         },
         {
             "estonian": "põletav valu",
@@ -274,7 +301,8 @@
             "german": "brennender schmerz",
             "finnish": "",
             "dutch": "brandende pijn",
-            "italian": "dolore bruciante"
+            "italian": "dolore bruciante",
+            "id": 27
         },
         {
             "estonian": "pakitseb",
@@ -285,7 +313,8 @@
             "german": "kribbeln",
             "finnish": "",
             "dutch": "kriebelt",
-            "italian": "formicolio"
+            "italian": "formicolio",
+            "id": 28
         },
         {
             "estonian": "kipitab",
@@ -296,7 +325,8 @@
             "german": "stiche",
             "finnish": "",
             "dutch": "steekt",
-            "italian": "stings"
+            "italian": "stings",
+            "id": 29
         },
         {
             "estonian": "\"sipelgad jooksevad\"",
@@ -307,7 +337,8 @@
             "german": "es fühlt sich taub an",
             "finnish": "",
             "dutch": "ik kan me niet bewegen/ ****",
-            "italian": "non riesco a spostarmi/mi sento intirizzito"
+            "italian": "non riesco a spostarmi/mi sento intirizzito",
+            "id": 30
         },
         {
             "estonian": "rinnus pigistab",
@@ -318,7 +349,8 @@
             "german": "brustschmerzen",
             "finnish": "",
             "dutch": "pijn op de borst",
-            "italian": "dolore al petto"
+            "italian": "dolore al petto",
+            "id": 31
         },
         {
             "estonian": "hingata on valus",
@@ -329,7 +361,8 @@
             "german": "es tut weh, zu atmen",
             "finnish": "",
             "dutch": "ademen doet zeer",
-            "italian": "è doloroso respirare"
+            "italian": "è doloroso respirare",
+            "id": 32
         },
         {
             "estonian": "köhida on valus",
@@ -340,7 +373,8 @@
             "german": "est tut weh, zu husten",
             "finnish": "",
             "dutch": "hoesten doet zeer",
-            "italian": "è doloroso tossire"
+            "italian": "è doloroso tossire",
+            "id": 33
         },
         {
             "estonian": "gaasivalu",
@@ -351,7 +385,8 @@
             "german": "blähungschmerzen",
             "finnish": "",
             "dutch": "gas pijn",
-            "italian": "po'd'aria nello stomaco"
+            "italian": "po'd'aria nello stomaco",
+            "id": 34
         }
     ],
     "position and movement": [
@@ -364,7 +399,8 @@
             "german": "position / bewegung",
             "finnish": "",
             "dutch": "houding / beweging",
-            "italian": "posizione / movimento"
+            "italian": "posizione / movimento",
+            "id": 35
         },
         {
             "estonian": "tõsta peatsit",
@@ -375,7 +411,8 @@
             "german": "heben sie den kopf hoch",
             "finnish": "",
             "dutch": "kunt u het hoofdeinde omhoog doen?",
-            "italian": "alza la testa"
+            "italian": "alza la testa",
+            "id": 36
         },
         {
             "estonian": "langeta peatsit",
@@ -386,7 +423,8 @@
             "german": "den kopfteil des bettes senken",
             "finnish": "",
             "dutch": "kunt u het hoofdeinde omlaag doen?",
-            "italian": "abbassi la testata del letto"
+            "italian": "abbassi la testata del letto",
+            "id": 37
         },
         {
             "estonian": "keera küljele",
@@ -397,7 +435,8 @@
             "german": "drehen sie mich auf die seite",
             "finnish": "",
             "dutch": "kunt u mij op mijn zij leggen?",
-            "italian": "mi gira su un lato"
+            "italian": "mi gira su un lato",
+            "id": 38
         },
         {
             "estonian": "tahan voodist tõusta",
@@ -408,7 +447,8 @@
             "german": "ich möchte aufstehen",
             "finnish": "",
             "dutch": "ik wil opstaan",
-            "italian": "vorrei alzarmi"
+            "italian": "vorrei alzarmi",
+            "id": 39
         },
         {
             "estonian": "mu selg on väsinud",
@@ -419,7 +459,8 @@
             "german": "mein rücken tut weh",
             "finnish": "",
             "dutch": "mijn rug doet zeer",
-            "italian": "mi fa male la schiena"
+            "italian": "mi fa male la schiena",
+            "id": 40
         },
         {
             "estonian": "mu asend on ebamugav",
@@ -430,7 +471,8 @@
             "german": "meine position ist unangenehm",
             "finnish": "",
             "dutch": "mijn houding is onaangenaam",
-            "italian": "la mia posizione è scomoda"
+            "italian": "la mia posizione è scomoda",
+            "id": 41
         },
         {
             "estonian": "tahan võimelda",
@@ -441,7 +483,8 @@
             "german": "ich möchte übungen machen",
             "finnish": "",
             "dutch": "ik wil graag oefeningen doen",
-            "italian": "vorrei fare esercizio"
+            "italian": "vorrei fare esercizio",
+            "id": 42
         },
         {
             "estonian": "tahan toolile",
@@ -452,7 +495,8 @@
             "german": "ich möchte mich auf den stuhl setzen",
             "finnish": "",
             "dutch": "ik wil op de stoel zitten",
-            "italian": "vorrei sedermi sulla sedia"
+            "italian": "vorrei sedermi sulla sedia",
+            "id": 43
         },
         {
             "estonian": "tahan voodisse",
@@ -463,7 +507,8 @@
             "german": "ich möchte schlafen",
             "finnish": "",
             "dutch": "ik wil naar bed",
-            "italian": "vorreiandare a letto"
+            "italian": "vorreiandare a letto",
+            "id": 44
         }
     ],
     "family and work": [
@@ -476,7 +521,8 @@
             "german": "ich möchte laufen",
             "finnish": "",
             "dutch": "ik wil graag lopen",
-            "italian": "vorrei camminare"
+            "italian": "vorrei camminare",
+            "id": 45
         },
         {
             "estonian": "pere / töö",
@@ -487,7 +533,8 @@
             "german": "familie und arbeit",
             "finnish": "",
             "dutch": "familie/werk",
-            "italian": "famiglia / lavoro"
+            "italian": "famiglia / lavoro",
+            "id": 46
         },
         {
             "estonian": "kas mu pere teab",
@@ -498,7 +545,8 @@
             "german": "weiß meine familie bescheid?",
             "finnish": "",
             "dutch": "is mijn familie op de hoogte?",
-            "italian": "la mia famiglia lo sa"
+            "italian": "la mia famiglia lo sa",
+            "id": 47
         },
         {
             "estonian": "tahan koju helistada",
@@ -509,7 +557,8 @@
             "german": "ich möchte zuhause anrufen",
             "finnish": "",
             "dutch": "ik wil naar huis bellen",
-            "italian": "vorrei chiamare a casa"
+            "italian": "vorrei chiamare a casa",
+            "id": 48
         },
         {
             "estonian": "tahan tööle helistadai",
@@ -520,7 +569,8 @@
             "german": "ich möchte auf meiner arbeit anrufen",
             "finnish": "",
             "dutch": "ik wil naar mijn werk bellen",
-            "italian": "vorrei fare una chiamata per il mio lavoro"
+            "italian": "vorrei fare una chiamata per il mio lavoro",
+            "id": 49
         },
         {
             "estonian": "millal saan koju?",
@@ -531,7 +581,8 @@
             "german": "wann darf ich nach hause gehen?",
             "finnish": "",
             "dutch": "wanneer kan ik naar huis?",
-            "italian": "quando posso tornare a casa?"
+            "italian": "quando posso tornare a casa?",
+            "id": 50
         },
         {
             "estonian": "ma tahan koju minna",
@@ -542,7 +593,8 @@
             "german": "ich möchte nach hause gehen",
             "finnish": "",
             "dutch": "ik wil graag naar huis",
-            "italian": "vorrei andare a casa"
+            "italian": "vorrei andare a casa",
+            "id": 51
         },
         {
             "estonian": "mu lemmikloomad on üksi kodus",
@@ -553,7 +605,8 @@
             "german": "meine haustiere sind alleine zuhause",
             "finnish": "",
             "dutch": "mijn huisdieren zijn alleen thuis",
-            "italian": "i miei animali sono soli a casa"
+            "italian": "i miei animali sono soli a casa",
+            "id": 52
         },
         {
             "estonian": "tahan näha oma peret",
@@ -564,7 +617,8 @@
             "german": "ich möchte meine familie sehen",
             "finnish": "",
             "dutch": "ik wil mijn familie zien",
-            "italian": "vorrei vedere la mia famiglia"
+            "italian": "vorrei vedere la mia famiglia",
+            "id": 53
         },
         {
             "estonian": "kutsuge mu pere siia",
@@ -575,7 +629,8 @@
             "german": "holen sie meine familie her",
             "finnish": "",
             "dutch": "kunt u mijn familie halen?",
-            "italian": "faccia venire la mia famiglia qui"
+            "italian": "faccia venire la mia famiglia qui",
+            "id": 54
         },
         {
             "estonian": "kas keegi on helistanud?",
@@ -586,7 +641,8 @@
             "german": "hat jemand für mich angerufen?",
             "finnish": "",
             "dutch": "heeft er iemand voor mij gebeld?",
-            "italian": "qualcuno ha chiamato?"
+            "italian": "qualcuno ha chiamato?",
+            "id": 55
         }
     ],
     "therapy": [
@@ -599,7 +655,8 @@
             "german": "therapie",
             "finnish": "",
             "dutch": "therapie",
-            "italian": "terapia"
+            "italian": "terapia",
+            "id": 56
         },
         {
             "estonian": "kuidas mul läheb?-",
@@ -610,7 +667,8 @@
             "german": "wie ist mein zustand?",
             "finnish": "",
             "dutch": "hoe is mijn toestand?",
-            "italian": "come sto?"
+            "italian": "come sto?",
+            "id": 57
         },
         {
             "estonian": "kas operatsioon on tehtud?-",
@@ -621,7 +679,8 @@
             "german": "ist die operation vorbei?",
             "finnish": "",
             "dutch": "is de operatie voorbij?",
-            "italian": "l'operazione è stata eseguita?"
+            "italian": "l'operazione è stata eseguita?",
+            "id": 58
         },
         {
             "estonian": "kuidas operatsioon läks?-",
@@ -632,7 +691,8 @@
             "german": "wie lief die operation?",
             "finnish": "",
             "dutch": "hoe is de operatie gegaan?",
-            "italian": "com'è andata l'operazione?"
+            "italian": "com'è andata l'operazione?",
+            "id": 59
         },
         {
             "estonian": "kuidas ma saan kutsuda õde /arsti?-",
@@ -643,7 +703,8 @@
             "german": "wie kann ich einen arzt / eine krankenschwester rufen?",
             "finnish": "",
             "dutch": "kan ik een dokter/verpleger bellen?",
-            "italian": "come posso chiamare un medico / infermiere?"
+            "italian": "come posso chiamare un medico / infermiere?",
+            "id": 60
         },
         {
             "estonian": "millal kirurg tuleb?",
@@ -654,7 +715,8 @@
             "german": "wann kommt der chirurg?",
             "finnish": "",
             "dutch": "wanneer komt de chirurg?",
-            "italian": "quando verrà il chirurgo?"
+            "italian": "quando verrà il chirurgo?",
+            "id": 61
         },
         {
             "estonian": "ma soovin füsioteraapiat",
@@ -665,7 +727,8 @@
             "german": "ich möchte physiotherapie machen",
             "finnish": "",
             "dutch": "ik wil graag fysiotherapie",
-            "italian": "vorrei la fisioterapia"
+            "italian": "vorrei la fisioterapia",
+            "id": 62
         },
         {
             "estonian": "milline on raviplaan?",
@@ -676,7 +739,8 @@
             "german": "wie ist der behandlungsplan?",
             "finnish": "",
             "dutch": "wat is het behandelplan?",
-            "italian": "qual è il piano terapeutico?"
+            "italian": "qual è il piano terapeutico?",
+            "id": 63
         },
         {
             "estonian": "milline on päevaplaan?",
@@ -687,7 +751,8 @@
             "german": "wie ist der tagesplan?",
             "finnish": "",
             "dutch": "wat is het dagplan?",
-            "italian": "qual è il piano giornaliero?"
+            "italian": "qual è il piano giornaliero?",
+            "id": 64
         },
         {
             "estonian": "mis uuring see on?",
@@ -698,7 +763,8 @@
             "german": "welche untersuchung ist das?",
             "finnish": "",
             "dutch": "welke studie is dit?****",
-            "italian": "che indagine è questa?"
+            "italian": "che indagine è questa?",
+            "id": 65
         },
         {
             "estonian": "lõpetage ravi, tahan surra",
@@ -709,7 +775,8 @@
             "german": "beenden sie die behandlung. ich will sterben!",
             "finnish": "",
             "dutch": "",
-            "italian": "termini la cura, vorrei morire"
+            "italian": "termini la cura, vorrei morire",
+            "id": 66
         }
     ],
     "concerns": [
@@ -722,7 +789,8 @@
             "german": "welche prozedur ist das?",
             "finnish": "",
             "dutch": "wat is dit voor procedure?",
-            "italian": "che tipo di procedura è?"
+            "italian": "che tipo di procedura è?",
+            "id": 67
         },
         {
             "estonian": "mured / kkk",
@@ -733,7 +801,8 @@
             "german": "sorgen",
             "finnish": "",
             "dutch": "zorgen",
-            "italian": "preoccupazioni"
+            "italian": "preoccupazioni",
+            "id": 68
         },
         {
             "estonian": "kus ma olen?",
@@ -744,7 +813,8 @@
             "german": "wo bin ich?",
             "finnish": "",
             "dutch": "waar ben ik?",
-            "italian": "dove sono?"
+            "italian": "dove sono?",
+            "id": 69
         },
         {
             "estonian": "mis juhtus?",
@@ -755,7 +825,8 @@
             "german": "was ist passiert?",
             "finnish": "",
             "dutch": "wat is er gebeurd?",
-            "italian": "che è successo?"
+            "italian": "che è successo?",
+            "id": 70
         },
         {
             "estonian": "kaua ma siin olen olnud?",
@@ -766,7 +837,8 @@
             "german": "seit wann bin ich hier?",
             "finnish": "",
             "dutch": "hoe lang ben ik hier al?",
-            "italian": "da quanto tempo sono qui?"
+            "italian": "da quanto tempo sono qui?",
+            "id": 71
         },
         {
             "estonian": "kas ma suren?",
@@ -777,7 +849,8 @@
             "german": "werde ich sterben?",
             "finnish": "",
             "dutch": "ga ik dood?",
-            "italian": "morirò?"
+            "italian": "morirò?",
+            "id": 72
         },
         {
             "estonian": "mis mu loomadest saab?",
@@ -788,7 +861,8 @@
             "german": "was wird meinen haustieren passieren?",
             "finnish": "",
             "dutch": "wat gebeurt er met mijn huisdieren?",
-            "italian": "che succede ai miei animali?"
+            "italian": "che succede ai miei animali?",
+            "id": 73
         },
         {
             "estonian": "ma kardan surra",
@@ -799,7 +873,8 @@
             "german": "ich habe angst zu sterben",
             "finnish": "",
             "dutch": "ik ben bang om dood te gaan",
-            "italian": "ho paura di morire"
+            "italian": "ho paura di morire",
+            "id": 74
         },
         {
             "estonian": "ma ei taha valudega surra",
@@ -810,7 +885,8 @@
             "german": "ich will nicht unter schmerzen sterben",
             "finnish": "",
             "dutch": "ik wil geen pijn voelen als ik doodga",
-            "italian": "non voglio morire dal dolore"
+            "italian": "non voglio morire dal dolore",
+            "id": 75
         },
         {
             "estonian": "ma ei taha üksinda olla",
@@ -821,7 +897,8 @@
             "german": "ich will nicht alleine sein",
             "finnish": "",
             "dutch": "ik wil niet alleen zijn",
-            "italian": "non voglio essere solo"
+            "italian": "non voglio essere solo",
+            "id": 76
         },
         {
             "estonian": "ma ei taha siin olla",
@@ -832,7 +909,8 @@
             "german": "ich will nicht hier sein",
             "finnish": "",
             "dutch": "ik wil hier niet alleen zijn",
-            "italian": "non voglio essere qui da solo"
+            "italian": "non voglio essere qui da solo",
+            "id": 77
         },
         {
             "estonian": "laske mu käed lahti",
@@ -843,7 +921,8 @@
             "german": "öffnen sie bitte meine arme",
             "finnish": "",
             "dutch": "wilt u mijn armen openen?***",
-            "italian": "apro le braccia"
+            "italian": "apro le braccia",
+            "id": 78
         }
     ],
     "sleep": [
@@ -856,7 +935,8 @@
             "german": "schlaf",
             "finnish": "",
             "dutch": "slaap",
-            "italian": "dormire"
+            "italian": "dormire",
+            "id": 79
         },
         {
             "estonian": "soovin magada",
@@ -867,7 +947,8 @@
             "german": "ich möchte schlafen",
             "finnish": "",
             "dutch": "ik wil graag slapen",
-            "italian": "vorrei dormire"
+            "italian": "vorrei dormire",
+            "id": 80
         },
         {
             "estonian": "palun, pange tuli kustu",
@@ -878,7 +959,8 @@
             "german": "bitte schalten sie das licht aus",
             "finnish": "",
             "dutch": "wilt u het licht uitdoen?",
-            "italian": "si prega di spegnere le luci"
+            "italian": "si prega di spegnere le luci",
+            "id": 81
         },
         {
             "estonian": "palun, pange tuli põlema",
@@ -889,7 +971,8 @@
             "german": "bitte schalten sie das licht ein",
             "finnish": "",
             "dutch": "wilt u het licht aandoen?",
-            "italian": "si prega di accendere le luci"
+            "italian": "si prega di accendere le luci",
+            "id": 82
         },
         {
             "estonian": "palun olge tasem!",
@@ -900,7 +983,8 @@
             "german": "bitte seien sie still",
             "finnish": "",
             "dutch": "wilt u stil zijn?",
-            "italian": "per favore silenzio"
+            "italian": "per favore silenzio",
+            "id": 83
         },
         {
             "estonian": "ma ei saa magada!",
@@ -911,7 +995,8 @@
             "german": "ich kann nicht schlafen",
             "finnish": "",
             "dutch": "ik kan niet slapen",
-            "italian": "non riesco a dormire"
+            "italian": "non riesco a dormire",
+            "id": 84
         },
         {
             "estonian": "valu segab magada",
@@ -922,7 +1007,8 @@
             "german": "ich kann nicht schlafen vor schmerzen",
             "finnish": "",
             "dutch": "ik kan niet slapen door de pijn",
-            "italian": "il dolore disturba il sonno"
+            "italian": "il dolore disturba il sonno",
+            "id": 85
         },
         {
             "estonian": "palun unerohtu",
@@ -933,7 +1019,8 @@
             "german": "bitte geben sie mir schlaftabletten",
             "finnish": "",
             "dutch": "mag ik slaappillen?",
-            "italian": "per favore, mi dia dei sonniferi"
+            "italian": "per favore, mi dia dei sonniferi",
+            "id": 86
         },
         {
             "estonian": "kodus võtan ka unerohtu",
@@ -944,7 +1031,8 @@
             "german": "zuhause nehme ich schlaftabletten",
             "finnish": "",
             "dutch": "thuis neem ik slaappillen",
-            "italian": "a casa prendo dei sonniferi"
+            "italian": "a casa prendo dei sonniferi",
+            "id": 87
         },
         {
             "estonian": "mis siin muliseb?",
@@ -955,7 +1043,8 @@
             "german": "was ist hier los?",
             "finnish": "",
             "dutch": "wat gebeurt hier?",
-            "italian": "cosa sta succedendo qui?"
+            "italian": "cosa sta succedendo qui?",
+            "id": 88
         }
     ],
     "washing and clothing": [
@@ -968,7 +1057,8 @@
             "german": "es liegt etwas im bett, das mich stört",
             "finnish": "",
             "dutch": "er ligt iets in mijn bed waar ik last van heb ***",
-            "italian": "ho qualcosa sotto il mio corpo che mi da fastidio"
+            "italian": "ho qualcosa sotto il mio corpo che mi da fastidio",
+            "id": 89
         },
         {
             "estonian": "pesemine / riietumine",
@@ -979,7 +1069,8 @@
             "german": "waschen und kleidung",
             "finnish": "",
             "dutch": "wassen/kleding",
-            "italian": "lavaggio / abbigliamento"
+            "italian": "lavaggio / abbigliamento",
+            "id": 90
         },
         {
             "estonian": "tahan hambaid pesta",
@@ -990,7 +1081,8 @@
             "german": "ich möchte meine zähne putzen",
             "finnish": "",
             "dutch": "ik wil mijn tanden poetsen",
-            "italian": "vorrei lavarmi i denti"
+            "italian": "vorrei lavarmi i denti",
+            "id": 91
         },
         {
             "estonian": "tahan suud niisutada",
@@ -1001,7 +1093,8 @@
             "german": "ich möchte eine mundspüllösung",
             "finnish": "",
             "dutch": "ik wil graag gorgelen",
-            "italian": "vorrei risciaqcuare la bocca"
+            "italian": "vorrei risciaqcuare la bocca",
+            "id": 92
         },
         {
             "estonian": "suus on sülge, puhastage palun",
@@ -1012,7 +1105,8 @@
             "german": "ich habe speichel im mund, bitte entfernen sie ihn",
             "finnish": "",
             "dutch": "ik heb speeksel in mijn mond, kunt u dit weghalen?",
-            "italian": "ho la saliva in bocca, per favore me la rimuova"
+            "italian": "ho la saliva in bocca, per favore me la rimuova",
+            "id": 93
         },
         {
             "estonian": "peske mu nägu",
@@ -1023,7 +1117,8 @@
             "german": "bitte waschen sie mein gesicht",
             "finnish": "",
             "dutch": "kunt u mijn gezicht wassen?",
-            "italian": "lavare la mia faccia"
+            "italian": "lavare la mia faccia",
+            "id": 94
         },
         {
             "estonian": "palun, peske mind",
@@ -1034,7 +1129,8 @@
             "german": "bitte waschen sie mich",
             "finnish": "",
             "dutch": "wilt u mij wassen?",
-            "italian": "per favore mi lavi"
+            "italian": "per favore mi lavi",
+            "id": 95
         },
         {
             "estonian": "ärge peske mind",
@@ -1045,7 +1141,8 @@
             "german": "bitte waschen sie mich nicht",
             "finnish": "",
             "dutch": "ik wil niet gewassen worden",
-            "italian": "non mi lavare"
+            "italian": "non mi lavare",
+            "id": 96
         },
         {
             "estonian": "palun, kammige mu juukseid",
@@ -1056,7 +1153,8 @@
             "german": "bitte kämmen sie mir die haare",
             "finnish": "",
             "dutch": "kunt u mijn haren kammen?",
-            "italian": "per favore, mi pettina i capelli"
+            "italian": "per favore, mi pettina i capelli",
+            "id": 97
         },
         {
             "estonian": "kus mu asjad on?",
@@ -1067,7 +1165,8 @@
             "german": "wo sind meine sachen?",
             "finnish": "",
             "dutch": "waar zijn mijn spullen?",
-            "italian": "dove sono le mie cose?"
+            "italian": "dove sono le mie cose?",
+            "id": 98
         },
         {
             "estonian": "tahan riideid selga",
@@ -1078,7 +1177,8 @@
             "german": "ich möchte mich anziehen",
             "finnish": "",
             "dutch": "ik wil me aankleden",
-            "italian": "vorrei vestirmi"
+            "italian": "vorrei vestirmi",
+            "id": 99
         },
         {
             "estonian": "miks ma paljas olen?",
@@ -1089,7 +1189,8 @@
             "german": "warum bin ich nackt?",
             "finnish": "",
             "dutch": "waarom ben ik naakt?",
-            "italian": "perché sono nudo?"
+            "italian": "perché sono nudo?",
+            "id": 100
         }
     ],
     "condition": [
@@ -1102,7 +1203,8 @@
             "german": "zustand",
             "finnish": "",
             "dutch": "toestand",
-            "italian": "condizione"
+            "italian": "condizione",
+            "id": 101
         },
         {
             "estonian": "mul on väga halb olla",
@@ -1113,7 +1215,8 @@
             "german": "ich fühle mich sehr schlecht",
             "finnish": "",
             "dutch": "ik voel me zeer slecht",
-            "italian": "mi sento molto male"
+            "italian": "mi sento molto male",
+            "id": 102
         },
         {
             "estonian": "ajab iiveldama",
@@ -1124,7 +1227,8 @@
             "german": "mir ist übel",
             "finnish": "",
             "dutch": "ik ben misselijk",
-            "italian": "ho la nausea"
+            "italian": "ho la nausea",
+            "id": 103
         },
         {
             "estonian": "pea käib ringi",
@@ -1135,7 +1239,8 @@
             "german": "mir ist schwindelig",
             "finnish": "",
             "dutch": "ik ben duizelig",
-            "italian": "mi gira la testa"
+            "italian": "mi gira la testa",
+            "id": 104
         },
         {
             "estonian": "nõrkus on suur",
@@ -1146,7 +1251,8 @@
             "german": "ich bin sehr schwach",
             "finnish": "",
             "dutch": "zeer zwak",
-            "italian": "molto debole"
+            "italian": "molto debole",
+            "id": 105
         },
         {
             "estonian": "mul on külm",
@@ -1157,7 +1263,8 @@
             "german": "mir ist kalt",
             "finnish": "",
             "dutch": "ik heb het koud",
-            "italian": "ho freddo"
+            "italian": "ho freddo",
+            "id": 106
         },
         {
             "estonian": "mul on palav",
@@ -1168,7 +1275,8 @@
             "german": "mir ist heiß",
             "finnish": "",
             "dutch": "ik heb het warm",
-            "italian": "sento caldo"
+            "italian": "sento caldo",
+            "id": 107
         },
         {
             "estonian": "ma ei tunne oma käsi",
@@ -1179,7 +1287,8 @@
             "german": "ich kann meine arme nicht fühlen",
             "finnish": "",
             "dutch": "ik kan mijn armen niet voelen",
-            "italian": "non sento le mie braccia"
+            "italian": "non sento le mie braccia",
+            "id": 108
         },
         {
             "estonian": "ma ei tunne oma jalgu",
@@ -1190,7 +1299,8 @@
             "german": "ich kann meine beine nicht fühlen",
             "finnish": "",
             "dutch": "ik kan mijn benen niet voelen",
-            "italian": "non sento le gambe"
+            "italian": "non sento le gambe",
+            "id": 109
         }
     ],
     "breathing": [
@@ -1203,7 +1313,8 @@
             "german": "atmung",
             "finnish": "",
             "dutch": "ademen",
-            "italian": "respirazione"
+            "italian": "respirazione",
+            "id": 110
         },
         {
             "estonian": "õhku ei jätku!",
@@ -1214,7 +1325,8 @@
             "german": "hier ist nicht genug frische luft",
             "finnish": "",
             "dutch": "er is niet genoeg frisse lucht",
-            "italian": "non c'è abbastanza aria"
+            "italian": "non c'è abbastanza aria",
+            "id": 111
         },
         {
             "estonian": "ma ei saa hingata!",
@@ -1225,7 +1337,8 @@
             "german": "ich kann nicht atmen",
             "finnish": "",
             "dutch": "ik kan niet ademen",
-            "italian": "non riesco a respirare"
+            "italian": "non riesco a respirare",
+            "id": 112
         },
         {
             "estonian": "puhastage hingamistoru!",
@@ -1236,7 +1349,8 @@
             "german": "machen sie den schlauch sauber",
             "finnish": "",
             "dutch": "kunt u de beademingsbuis vrijmaken?",
-            "italian": "pulisca il tubo di respirazione"
+            "italian": "pulisca il tubo di respirazione",
+            "id": 113
         },
         {
             "estonian": "ma lämbun õhku ei jätku!",
@@ -1247,7 +1361,8 @@
             "german": "ich ersticke",
             "finnish": "",
             "dutch": "ik stik",
-            "italian": "sto soffocando"
+            "italian": "sto soffocando",
+            "id": 114
         },
         {
             "estonian": "võtke see toru ära",
@@ -1258,7 +1373,8 @@
             "german": "bitte nehmen sie den schlauch weg",
             "finnish": "",
             "dutch": "wilt u de beademingsbuis weghalen?",
-            "italian": "porti via il tubo"
+            "italian": "porti via il tubo",
+            "id": 115
         },
         {
             "estonian": "millal toru ära võetakse",
@@ -1269,7 +1385,8 @@
             "german": "wann wird der schlauch entfernt?",
             "finnish": "",
             "dutch": "wanneer wordt de beademingsbuis weggehaald?",
-            "italian": "quando verrà tolto il tubo?"
+            "italian": "quando verrà tolto il tubo?",
+            "id": 116
         },
         {
             "estonian": "millal ma rääkida saan?",
@@ -1280,7 +1397,8 @@
             "german": "wann kann ich wieder sprechen?",
             "finnish": "",
             "dutch": "wanneer kan ik weer praten?",
-            "italian": "quando posso parlare?"
+            "italian": "quando posso parlare?",
+            "id": 117
         },
         {
             "estonian": "kas ma hakkan kunagi rääkima?",
@@ -1291,7 +1409,8 @@
             "german": "kann ich jemals wieder sprechen?",
             "finnish": "",
             "dutch": "kan ik ooit weer praten?",
-            "italian": "tornerò mai più a parlare?"
+            "italian": "tornerò mai più a parlare?",
+            "id": 118
         },
         {
             "estonian": "ma ei jõua hingata",
@@ -1302,7 +1421,8 @@
             "german": "ich kann nicht atmen",
             "finnish": "",
             "dutch": "ik kan niet ademen",
-            "italian": "non ho la forza per respirare"
+            "italian": "non ho la forza per respirare",
+            "id": 119
         },
         {
             "estonian": "las masin aitab hingata",
@@ -1313,7 +1433,8 @@
             "german": "lassen sie die maschine mir beim atmen helfen",
             "finnish": "",
             "dutch": "laat de machine mij helpen met ademen",
-            "italian": "lasci che la macchina mi aiuti a respirare"
+            "italian": "lasci che la macchina mi aiuti a respirare",
+            "id": 120
         }
     ],
     "entertainment": [
@@ -1326,7 +1447,8 @@
             "german": "unterhaltung",
             "finnish": "",
             "dutch": "entertainment",
-            "italian": "divertimento"
+            "italian": "divertimento",
+            "id": 121
         },
         {
             "estonian": "soovin tv vaadata",
@@ -1337,7 +1459,8 @@
             "german": "ich möchte fernsehen",
             "finnish": "",
             "dutch": "ik wil tv kijken",
-            "italian": "vorrei guardare la tv"
+            "italian": "vorrei guardare la tv",
+            "id": 122
         },
         {
             "estonian": "soovin muusikat kuulata",
@@ -1348,7 +1471,8 @@
             "german": "ich möchte musik hören",
             "finnish": "",
             "dutch": "ik wil muziek luisteren",
-            "italian": "vorrei ascoltare la musica"
+            "italian": "vorrei ascoltare la musica",
+            "id": 123
         },
         {
             "estonian": "palun pange teler käima",
@@ -1359,7 +1483,8 @@
             "german": "bitte schalten sie den fernseher ein",
             "finnish": "",
             "dutch": "kunt u de tv aanzetten?",
-            "italian": "per favore, accenda la tv"
+            "italian": "per favore, accenda la tv",
+            "id": 124
         },
         {
             "estonian": "palun lülitage teler välja",
@@ -1370,7 +1495,8 @@
             "german": "bitte schalten sie den fernseher aus",
             "finnish": "",
             "dutch": "kunt u de tv uitzetten?",
-            "italian": "per favore, spenga la tv"
+            "italian": "per favore, spenga la tv",
+            "id": 125
         },
         {
             "estonian": "kas teil ajalehti on?",
@@ -1381,7 +1507,8 @@
             "german": "haben sie zeitungen?",
             "finnish": "",
             "dutch": "heeft u de krant?",
-            "italian": "ha dei giornali?"
+            "italian": "ha dei giornali?",
+            "id": 126
         },
         {
             "estonian": "palun andke tv pult",
@@ -1392,7 +1519,8 @@
             "german": "bitte geben sie mir die fernbedienung",
             "finnish": "",
             "dutch": "kunt u mij de afstandsbediening geven?",
-            "italian": "per favore mi dia il telecomando"
+            "italian": "per favore mi dia il telecomando",
+            "id": 127
         },
         {
             "estonian": "soovin vaadata dvd",
@@ -1403,7 +1531,8 @@
             "german": "ich möchte einen film sehen",
             "finnish": "",
             "dutch": "ik wil een film kijken",
-            "italian": "vorrei guardare un film"
+            "italian": "vorrei guardare un film",
+            "id": 128
         },
         {
             "estonian": "palun pange vaiksemaks",
@@ -1414,7 +1543,8 @@
             "german": "bitte machen sie etwas leiser",
             "finnish": "",
             "dutch": "kunt u het geluid zachter zetten?",
-            "italian": "per favore, abbassi il volume"
+            "italian": "per favore, abbassi il volume",
+            "id": 129
         },
         {
             "estonian": "palun pange valjemaks",
@@ -1425,7 +1555,8 @@
             "german": "bitte machen sie etwas lauter",
             "finnish": "",
             "dutch": "kunt u het geluid harder zetten?",
-            "italian": "per favore, alzi il volume"
+            "italian": "per favore, alzi il volume",
+            "id": 130
         },
         {
             "estonian": "palun, rääkige minuga juttu",
@@ -1436,7 +1567,8 @@
             "german": "bitte sprechen sie mit mir",
             "finnish": "",
             "dutch": "wilt u tegen mij praten?",
-            "italian": "per favore mi parli"
+            "italian": "per favore mi parli",
+            "id": 131
         }
     ],
     "emotions": [
@@ -1449,7 +1581,8 @@
             "german": "emotionen",
             "finnish": "",
             "dutch": "emoties",
-            "italian": "emozioni"
+            "italian": "emozioni",
+            "id": 132
         },
         {
             "estonian": "olen rõõmus",
@@ -1460,7 +1593,8 @@
             "german": "ich bin glücklich",
             "finnish": "",
             "dutch": "ik ben blij",
-            "italian": "sono felice"
+            "italian": "sono felice",
+            "id": 133
         },
         {
             "estonian": "olen kurb",
@@ -1471,7 +1605,8 @@
             "german": "ich bin traurig",
             "finnish": "",
             "dutch": "ik ben verdrietig",
-            "italian": "sono triste"
+            "italian": "sono triste",
+            "id": 134
         },
         {
             "estonian": "olen vihane",
@@ -1482,7 +1617,8 @@
             "german": "ich bin sauer",
             "finnish": "",
             "dutch": "ik ben boos",
-            "italian": "sono arrabbiato"
+            "italian": "sono arrabbiato",
+            "id": 135
         },
         {
             "estonian": "ma kardan",
@@ -1493,7 +1629,8 @@
             "german": "ich habe angst",
             "finnish": "",
             "dutch": "ik ben bang",
-            "italian": "ho paura"
+            "italian": "ho paura",
+            "id": 136
         },
         {
             "estonian": "olen segaduses",
@@ -1504,7 +1641,8 @@
             "german": "ich bin verwirrt",
             "finnish": "",
             "dutch": "ik ben in de war",
-            "italian": "sono confuso"
+            "italian": "sono confuso",
+            "id": 137
         },
         {
             "estonian": "olen üllatunud",
@@ -1515,7 +1653,8 @@
             "german": "ich bin überrascht",
             "finnish": "",
             "dutch": "ik ben verrast",
-            "italian": "sono sorpreso"
+            "italian": "sono sorpreso",
+            "id": 138
         },
         {
             "estonian": "ma armastan sind",
@@ -1526,7 +1665,8 @@
             "german": "ich liebe dich!",
             "finnish": "",
             "dutch": "ik hou van jou",
-            "italian": "ti amo"
+            "italian": "ti amo",
+            "id": 139
         },
         {
             "estonian": "oled mulle kallis",
@@ -1537,7 +1677,8 @@
             "german": "ich habe dich lieb!",
             "finnish": "",
             "dutch": "je bent me dierbaar",
-            "italian": "tu mi sei caro"
+            "italian": "tu mi sei caro",
+            "id": 140
         },
         {
             "estonian": "tahan sind kallistada",
@@ -1548,7 +1689,8 @@
             "german": "ich will dich umarmen",
             "finnish": "",
             "dutch": "ik wil je een knuffel geven",
-            "italian": "vorrei abbracciarti"
+            "italian": "vorrei abbracciarti",
+            "id": 141
         },
         {
             "estonian": "ma ei taha kedagi näha",
@@ -1559,7 +1701,8 @@
             "german": "ich will dich nicht mehr sehen",
             "finnish": "",
             "dutch": "ik wil niemand zien",
-            "italian": "non voglio vedere nessuno."
+            "italian": "non voglio vedere nessuno.",
+            "id": 142
         }
     ],
     "drink": [
@@ -1572,7 +1715,8 @@
             "german": "",
             "finnish": "",
             "dutch": "",
-            "italian": "dieta"
+            "italian": "dieta",
+            "id": 143
         },
         {
             "estonian": "jook",
@@ -1583,7 +1727,8 @@
             "german": "getränke",
             "finnish": "",
             "dutch": "drinken",
-            "italian": "bevanda"
+            "italian": "bevanda",
+            "id": 144
         },
         {
             "estonian": "ma soovin kuuma",
@@ -1594,7 +1739,8 @@
             "german": "heiß",
             "finnish": "",
             "dutch": "heet",
-            "italian": "caldo"
+            "italian": "caldo",
+            "id": 145
         },
         {
             "estonian": "ma soovin sooja",
@@ -1605,7 +1751,8 @@
             "german": "warm",
             "finnish": "",
             "dutch": "warm",
-            "italian": "tiepido"
+            "italian": "tiepido",
+            "id": 146
         },
         {
             "estonian": "ma soovin külma",
@@ -1616,7 +1763,8 @@
             "german": "kalt",
             "finnish": "",
             "dutch": "koud",
-            "italian": "freddo"
+            "italian": "freddo",
+            "id": 147
         },
         {
             "estonian": "ma soovin kummeli teed",
@@ -1627,7 +1775,8 @@
             "german": "kamillentee",
             "finnish": "",
             "dutch": "kamille",
-            "italian": "camomilla"
+            "italian": "camomilla",
+            "id": 148
         },
         {
             "estonian": "ma soovin kohvi",
@@ -1638,7 +1787,8 @@
             "german": "kaffee",
             "finnish": "",
             "dutch": "koffie",
-            "italian": "caffè"
+            "italian": "caffè",
+            "id": 149
         },
         {
             "estonian": "ma soovin piimga kohvi",
@@ -1649,7 +1799,8 @@
             "german": "kaffee mit milch",
             "finnish": "",
             "dutch": "koffie met melk",
-            "italian": "latte macchiato"
+            "italian": "latte macchiato",
+            "id": 150
         },
         {
             "estonian": "ma soovin kakaod",
@@ -1660,7 +1811,8 @@
             "german": "kakao",
             "finnish": "",
             "dutch": "cacao",
-            "italian": "cacao"
+            "italian": "cacao",
+            "id": 151
         },
         {
             "estonian": "ma soovin teed",
@@ -1671,7 +1823,8 @@
             "german": "tee",
             "finnish": "",
             "dutch": "thee",
-            "italian": "tè"
+            "italian": "tè",
+            "id": 152
         },
         {
             "estonian": "ma soovin jogurtit",
@@ -1682,7 +1835,8 @@
             "german": "joghurt",
             "finnish": "",
             "dutch": "yoghurt",
-            "italian": "yogurt"
+            "italian": "yogurt",
+            "id": 153
         },
         {
             "estonian": "ma soovin vett",
@@ -1693,7 +1847,8 @@
             "german": "wasser",
             "finnish": "",
             "dutch": "water",
-            "italian": "acqua"
+            "italian": "acqua",
+            "id": 154
         },
         {
             "estonian": "ma soovin mahla",
@@ -1704,7 +1859,8 @@
             "german": "saft",
             "finnish": "",
             "dutch": "sap",
-            "italian": "succo"
+            "italian": "succo",
+            "id": 155
         },
         {
             "estonian": "ma soovin keefiri",
@@ -1715,7 +1871,8 @@
             "german": "kefir",
             "finnish": "",
             "dutch": "kefir",
-            "italian": "kefir"
+            "italian": "kefir",
+            "id": 156
         }
     ],
     "food": [
@@ -1728,7 +1885,8 @@
             "german": "essen",
             "finnish": "",
             "dutch": "eten",
-            "italian": "cibo"
+            "italian": "cibo",
+            "id": 157
         },
         {
             "estonian": "ma soovin kooki",
@@ -1739,7 +1897,8 @@
             "german": "kuchen",
             "finnish": "",
             "dutch": "cake",
-            "italian": "torta"
+            "italian": "torta",
+            "id": 158
         },
         {
             "estonian": "ma soovin magustoitu",
@@ -1750,7 +1909,8 @@
             "german": "nachtisch",
             "finnish": "",
             "dutch": "dessert",
-            "italian": "dolce"
+            "italian": "dolce",
+            "id": 159
         },
         {
             "estonian": "ma soovin praadi",
@@ -1761,7 +1921,8 @@
             "german": "mahlzeit",
             "finnish": "",
             "dutch": "maaltijd",
-            "italian": "pasto"
+            "italian": "pasto",
+            "id": 160
         },
         {
             "estonian": "ma soovin jäätist",
@@ -1772,7 +1933,8 @@
             "german": "eis",
             "finnish": "",
             "dutch": "ijs",
-            "italian": "gelato"
+            "italian": "gelato",
+            "id": 161
         },
         {
             "estonian": "ma soovin kohukest",
@@ -1783,7 +1945,8 @@
             "german": "-",
             "finnish": "",
             "dutch": "",
-            "italian": "-"
+            "italian": "-",
+            "id": 162
         },
         {
             "estonian": "ma soovin putru",
@@ -1794,7 +1957,8 @@
             "german": "haferbrei",
             "finnish": "",
             "dutch": "havermout (pap)",
-            "italian": "porridge"
+            "italian": "porridge",
+            "id": 163
         },
         {
             "estonian": "ma soovin suppi",
@@ -1805,7 +1969,8 @@
             "german": "suppe",
             "finnish": "",
             "dutch": "soep",
-            "italian": "minestra/zuppa"
+            "italian": "minestra/zuppa",
+            "id": 164
         },
         {
             "estonian": "ma soovin salatit",
@@ -1816,7 +1981,8 @@
             "german": "salat",
             "finnish": "",
             "dutch": "salade",
-            "italian": "insalata"
+            "italian": "insalata",
+            "id": 165
         },
         {
             "estonian": "ma soovin puuvilju",
@@ -1827,7 +1993,8 @@
             "german": "obst",
             "finnish": "",
             "dutch": "fruit",
-            "italian": "frutta"
+            "italian": "frutta",
+            "id": 166
         },
         {
             "estonian": "ma soovin keedetud muna",
@@ -1838,7 +2005,8 @@
             "german": "geckochte eier",
             "finnish": "",
             "dutch": "gekookte eieren",
-            "italian": "uova sode"
+            "italian": "uova sode",
+            "id": 167
         }
     ]
 }
