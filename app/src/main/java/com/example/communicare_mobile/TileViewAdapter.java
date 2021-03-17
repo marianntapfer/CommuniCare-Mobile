@@ -9,27 +9,39 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.communicare_mobile.model.TileModel;
+
+import java.util.List;
+
 public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHolder> {
     private static final String TAG = "TileViewAdapter";
 
-    private String[] localDataSet;
+    private List<TileModel> localDataSet;
+    private OnAdapterItemClickListener adapterItemClickListener;
 
     /**
      * Provide a reference to the type of views that you are using
      * (custom ViewHolder).
      */
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private final Button tileView;
 
         public ViewHolder(View v) {
             super(v);
             // Define click listener for the ViewHolder's View.
-            v.setOnClickListener(v1 -> Log.d(TAG, "Element " + getAdapterPosition() + " clicked."));
-            tileView = (Button) v.findViewById(R.id.tileView);
+            tileView = v.findViewById(R.id.tileView);
+            tileView.setOnClickListener(this);
         }
 
         public Button getTileView() {
             return tileView;
+        }
+
+        @Override
+        public void onClick(View v) {
+            Log.d(TAG, "Element " + getAdapterPosition() + " clicked.");
+            TileModel tile = localDataSet.get(getAdapterPosition());
+            adapterItemClickListener.onAdapterItemClickListener(tile);
         }
     }
 
@@ -39,8 +51,9 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
      * @param dataSet String[] containing the data to populate views to be used
      *                by RecyclerView.
      */
-    public TileViewAdapter(String[] dataSet) {
+    public TileViewAdapter(List<TileModel> dataSet, OnAdapterItemClickListener listener) {
         localDataSet = dataSet;
+        this.adapterItemClickListener = listener;
     }
 
     // Create new views (invoked by the layout manager)
@@ -54,6 +67,7 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
         // margin - activity_vertical_margin
         // rows - number of rows in diffrent display modes
         // h = (h - Math.round(margin * 2)) / rows;
+        // TODO: Implement dynamic tile generation based on item count
         h = (h - Math.round(15 * 2)) / 5;
 
         RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) itemView.getLayoutParams();
@@ -70,12 +84,13 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
 
         // Get element from your dataset at this position and replace the contents of the view
         // with that element
-        viewHolder.getTileView().setText(localDataSet[position]);
+        // TODO: implement translation query based on the label
+        viewHolder.getTileView().setText(localDataSet.get(position).getLabel());
     }
 
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
-        return localDataSet.length;
+        return localDataSet.size();
     }
 }

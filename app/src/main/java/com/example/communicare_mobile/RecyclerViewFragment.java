@@ -1,6 +1,7 @@
 package com.example.communicare_mobile;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,11 +12,17 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.communicare_mobile.model.TileModel;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
 /**
  * Demonstrates the use of {@link RecyclerView} with a {@link LinearLayoutManager} and a
  * {@link GridLayoutManager}.
  */
-public class RecyclerViewFragment extends Fragment {
+public class RecyclerViewFragment extends Fragment implements OnAdapterItemClickListener {
 
     private static final String TAG = "RecyclerViewFragment";
     private static final String KEY_LAYOUT_MANAGER = "layoutManager";
@@ -35,7 +42,7 @@ public class RecyclerViewFragment extends Fragment {
     protected RecyclerView mRecyclerView;
     protected TileViewAdapter mAdapter;
     protected RecyclerView.LayoutManager mLayoutManager;
-    protected String[] mDataset;
+    protected List<TileModel> mDataset;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -69,9 +76,10 @@ public class RecyclerViewFragment extends Fragment {
             mCurrentLayoutManagerType = (LayoutManagerType) savedInstanceState
                     .getSerializable(KEY_LAYOUT_MANAGER);
         }
+        // TODO: Init layout based on json mapping or tile count
         setRecyclerViewLayoutManager(mCurrentLayoutManagerType);
 
-        mAdapter = new TileViewAdapter(mDataset);
+        mAdapter = new TileViewAdapter(mDataset, this);
         // Set CustomAdapter as the adapter for RecyclerView.
         mRecyclerView.setAdapter(mAdapter);
         // END_INCLUDE(initializeRecyclerView)
@@ -96,10 +104,6 @@ public class RecyclerViewFragment extends Fragment {
                 mLayoutManager = new GridLayoutManager(getActivity(), SPAN_COUNT);
                 mCurrentLayoutManagerType = LayoutManagerType.GRID_LAYOUT_MANAGER;
                 break;
-            case LINEAR_LAYOUT_MANAGER:
-                mLayoutManager = new LinearLayoutManager(getActivity());
-                mCurrentLayoutManagerType = LayoutManagerType.LINEAR_LAYOUT_MANAGER;
-                break;
             default:
                 mLayoutManager = new LinearLayoutManager(getActivity());
                 mCurrentLayoutManagerType = LayoutManagerType.LINEAR_LAYOUT_MANAGER;
@@ -120,9 +124,22 @@ public class RecyclerViewFragment extends Fragment {
      * from a local content provider or remote server.
      */
     private void initDataset() {
-        mDataset = new String[DATASET_COUNT];
+        // TODO: Replace with data from json - home screen
+        mDataset = new ArrayList<>();
         for (int i = 0; i < DATASET_COUNT; i++) {
-            mDataset[i] = "Help #" + i;
+            TileModel tile = new TileModel();
+            tile.setId(i);
+            tile.setLabel(String.valueOf(UUID.randomUUID()));
+            tile.setViewCategory("home");
+            tile.setViewRedirect("pain");
+            tile.setTextToSpeech(true);
+            mDataset.add(tile);
         }
+    }
+
+    @Override
+    public void onAdapterItemClickListener(TileModel tile) {
+        // TODO: Implement textToSpeech logic here + adapter reload based on redirect
+        Log.d(TAG, "RecyclerView Element " + tile + " clicked.");
     }
 }
