@@ -16,6 +16,7 @@ function ProcessDataCB(source, CBfunction){
     });
     headers.shift();
     listOfData.shift();
+    console.log(headers)
 
     let Phrases = {};
 
@@ -24,7 +25,9 @@ function ProcessDataCB(source, CBfunction){
         data.shift();
         data.forEach((element, index) => {
             const key = headers[index];
-            obj[headers[index]]=element.toLowerCase().trim();
+            if (headers[index] !== "drawable" && headers[index] !== "redirectview" && headers[index] !== "texttospeech"){
+                obj[headers[index]]=element.toLowerCase().trim();
+            };
         });
 
         let key = data[1].toLowerCase().trim().replace(/ /g, "_");

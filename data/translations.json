@@ -8,7 +8,6 @@
             "russian female": "спасибо",
             "german": "danke",
             "finnish": "",
-            "dutch": "bedankt",
             "italian": "grazie"
         },
         "back": {
@@ -16,7 +15,10 @@
             "english": "back",
             "arabic": "عودة",
             "russian male": "обратно",
-            "russian female": "обратно"
+            "russian female": "обратно",
+            "german": "",
+            "finnish": "",
+            "italian": ""
         },
         "yes": {
             "estonian": "jah",
@@ -26,7 +28,6 @@
             "russian female": "да",
             "german": "ja",
             "finnish": "",
-            "dutch": "ja",
             "italian": "sì"
         },
         "no": {
@@ -37,7 +38,6 @@
             "russian female": "нет",
             "german": "nein",
             "finnish": "",
-            "dutch": "nee",
             "italian": "no"
         },
         "font_size": {
@@ -45,14 +45,20 @@
             "english": "font size",
             "arabic": "حجم الخط",
             "russian male": "размер шрифта",
-            "russian female": "размер шрифта"
+            "russian female": "размер шрифта",
+            "german": "",
+            "finnish": "",
+            "italian": ""
         },
         "about_us": {
             "estonian": "meist",
             "english": "about us",
             "arabic": "حولنا",
             "russian male": "о нас",
-            "russian female": "о нас"
+            "russian female": "о нас",
+            "german": "",
+            "finnish": "",
+            "italian": ""
         },
         "feedback": {
             "estonian": "saatke meile tagasisidet",
@@ -62,44 +68,57 @@
             "russian female": "отправьте нам отзыв",
             "german": "",
             "finnish": "",
-            "dutch": "",
-            "italian": "",
-            "drawable": "test"
+            "italian": ""
         },
         "language": {
             "estonian": "valige keel",
             "english": "language",
             "arabic": "اللغة",
             "russian male": "выберите язык",
-            "russian female": "выберите язык"
+            "russian female": "выберите язык",
+            "german": "",
+            "finnish": "",
+            "italian": ""
         },
         "clear_all": {
             "estonian": "kustuta kõik",
             "english": "clear all",
             "arabic": "مسح",
             "russian male": "очистить всё",
-            "russian female": "очистить всё"
+            "russian female": "очистить всё",
+            "german": "",
+            "finnish": "",
+            "italian": ""
         },
         "i_speak:_english": {
             "estonian": "mina räägin: eesti keeles",
             "english": "i speak: english",
             "arabic": "انا اتكلم",
             "russian male": "я говорю: по русски",
-            "russian female": "я говорю: по русски"
+            "russian female": "я говорю: по русски",
+            "german": "",
+            "finnish": "",
+            "italian": ""
         },
         "my_caregiver_speaks:_english": {
             "estonian": "minu hooldaja räägib: eesti keeles",
             "english": "my caregiver speaks: english",
             "arabic": "الراعي يتكلم",
             "russian male": "мой опекун говорит: по русски",
-            "russian female": "мой опекун говорит: по русски"
+            "russian female": "мой опекун говорит: по русски",
+            "german": "",
+            "finnish": "",
+            "italian": ""
         },
         "continue": {
             "estonian": "edasi",
             "english": "continue",
             "arabic": "متابعة",
             "russian male": "дальше",
-            "russian female": "дальше"
+            "russian female": "дальше",
+            "german": "",
+            "finnish": "",
+            "italian": ""
         },
         "toilet": {
             "estonian": "tualetti",
@@ -109,7 +128,6 @@
             "russian female": "туалет",
             "german": "wc",
             "finnish": "",
-            "dutch": "wc",
             "italian": "bagno"
         },
         "i_want_to_go_to_the_toilet.": {
@@ -120,9 +138,7 @@
             "russian female": "хочу в туалет",
             "german": "ich muss auf die toilette",
             "finnish": "",
-            "dutch": "ik moet naar het toilet",
-            "italian": "vorrei andare al bagno.",
-            "drawable": "wc/tahan-wc-sse.png"
+            "italian": "vorrei andare al bagno."
         },
         "i_want_to_pee": {
             "estonian": "tahan pissile",
@@ -132,7 +148,6 @@
             "russian female": "хочу пописать",
             "german": "ich muss urinieren",
             "finnish": "",
-            "dutch": "ik moet plassen",
             "italian": "vorrei fare la pipì"
         },
         "i_want_to_poop": {
@@ -143,7 +158,6 @@
             "russian female": "хочу какать",
             "german": "ich muss stuhlen",
             "finnish": "",
-            "dutch": "ik moet poepen",
             "italian": "vorrei fare la cacca"
         },
         "catheter_is_irritating": {
@@ -154,7 +168,6 @@
             "russian female": "катетер раздражает",
             "german": "der katheter stört",
             "finnish": "",
-            "dutch": "ik heb last van de katheter",
             "italian": "il catetere è irritante"
         },
         "when_can_i_go_pee_on_my_own?": {
@@ -165,7 +178,6 @@
             "russian female": "когда смогу сам писать?",
             "german": "wann darf ich alleine urinieren gehen",
             "finnish": "",
-            "dutch": "wanneer mag ik zelf plassen?",
             "italian": "quando posso fare la pipì da solo?"
         },
         "take_the_catheter_away": {
@@ -176,7 +188,6 @@
             "russian female": "вытащите катетер",
             "german": "nehmen sie bitte den katheter weg",
             "finnish": "",
-            "dutch": "kunt u de katheter weghalen?",
             "italian": "porta via il catetere"
         },
         "is_pee_coming?": {
@@ -187,7 +198,6 @@
             "russian female": "моча идёт?",
             "german": "kommt urin raus?",
             "finnish": "",
-            "dutch": "komt er plas uit?",
             "italian": "la pipì sta arrivando?"
         },
         "i_want_to_go_to_the_potty_chair": {
@@ -198,7 +208,6 @@
             "russian female": "хочу воспользоваться туалет-стулом",
             "german": "ich muss auf das töpfchen",
             "finnish": "",
-            "dutch": "ik moet naar de plaspot",
             "italian": "vorrei andare alla sedia da comodo"
         },
         "i_want_a_bedpan": {
@@ -209,7 +218,6 @@
             "russian female": "хочу на шибер",
             "german": "ich bräuchte eine bettpfanne",
             "finnish": "",
-            "dutch": "ik heb een bedpan nodig",
             "italian": "vorrei il vaso da notte"
         },
         "i_don't_want_a_bedpan.": {
@@ -220,7 +228,6 @@
             "russian female": "не хочу шибер",
             "german": "ich brauche keine bettpfanne",
             "finnish": "",
-            "dutch": "ik heb geen bedpan nodig",
             "italian": "non voglio il vaso da notte"
         },
         "pain": {
@@ -231,7 +238,6 @@
             "russian female": "тип боли",
             "german": "schmerz",
             "finnish": "",
-            "dutch": "pijn",
             "italian": "dolore"
         },
         "sharp_pain": {
@@ -242,7 +248,6 @@
             "russian female": "острая, режущая боль",
             "german": "starker schmerz",
             "finnish": "",
-            "dutch": "stekende pijn",
             "italian": "dolore intenso"
         },
         "numb_pain": {
@@ -253,7 +258,6 @@
             "russian female": "тупая боль",
             "german": "tauber schmerz",
             "finnish": "",
-            "dutch": "doffe pijn",
             "italian": "dolore leggero"
         },
         "burning_pain": {
@@ -264,7 +268,6 @@
             "russian female": "жгучая боль",
             "german": "brennender schmerz",
             "finnish": "",
-            "dutch": "brandende pijn",
             "italian": "dolore bruciante"
         },
         "tingle": {
@@ -275,7 +278,6 @@
             "russian female": "покалывает",
             "german": "kribbeln",
             "finnish": "",
-            "dutch": "kriebelt",
             "italian": "formicolio"
         },
         "stings": {
@@ -286,7 +288,6 @@
             "russian female": "щипит",
             "german": "stiche",
             "finnish": "",
-            "dutch": "steekt",
             "italian": "stings"
         },
         "prickling_like_ants_running": {
@@ -297,7 +298,6 @@
             "russian female": "мурашки",
             "german": "es fühlt sich taub an",
             "finnish": "",
-            "dutch": "ik kan me niet bewegen/ ****",
             "italian": "non riesco a spostarmi/mi sento intirizzito"
         },
         "chest_pain": {
@@ -308,7 +308,6 @@
             "russian female": "в грудй жмёт",
             "german": "brustschmerzen",
             "finnish": "",
-            "dutch": "pijn op de borst",
             "italian": "dolore al petto"
         },
         "it_is_painful_to_breathe": {
@@ -319,7 +318,6 @@
             "russian female": "больно дышать",
             "german": "es tut weh, zu atmen",
             "finnish": "",
-            "dutch": "ademen doet zeer",
             "italian": "è doloroso respirare"
         },
         "it_is_painful_to_cough": {
@@ -330,7 +328,6 @@
             "russian female": "больно кашлять",
             "german": "est tut weh, zu husten",
             "finnish": "",
-            "dutch": "hoesten doet zeer",
             "italian": "è doloroso tossire"
         },
         "gas_pain": {
@@ -341,7 +338,6 @@
             "russian female": "боль из-за газов",
             "german": "blähungschmerzen",
             "finnish": "",
-            "dutch": "gas pijn",
             "italian": "po'd'aria nello stomaco"
         },
         "position_and_movement": {
@@ -352,7 +348,6 @@
             "russian female": "положение  и движение",
             "german": "position / bewegung",
             "finnish": "",
-            "dutch": "houding / beweging",
             "italian": "posizione / movimento"
         },
         "raise_the_head": {
@@ -363,7 +358,6 @@
             "russian female": "поднимите изголовье",
             "german": "heben sie den kopf hoch",
             "finnish": "",
-            "dutch": "kunt u het hoofdeinde omhoog doen?",
             "italian": "alza la testa"
         },
         "lower_the_bed_head": {
@@ -374,7 +368,6 @@
             "russian female": "опустите изголовье",
             "german": "den kopfteil des bettes senken",
             "finnish": "",
-            "dutch": "kunt u het hoofdeinde omlaag doen?",
             "italian": "abbassi la testata del letto"
         },
         "turn_me_on_my_side": {
@@ -385,7 +378,6 @@
             "russian female": "поверните на бок",
             "german": "drehen sie mich auf die seite",
             "finnish": "",
-            "dutch": "kunt u mij op mijn zij leggen?",
             "italian": "mi gira su un lato"
         },
         "i_want_to_get_up": {
@@ -396,7 +388,6 @@
             "russian female": "хочу подняться с кровати",
             "german": "ich möchte aufstehen",
             "finnish": "",
-            "dutch": "ik wil opstaan",
             "italian": "vorrei alzarmi"
         },
         "my_back_is_tired": {
@@ -407,7 +398,6 @@
             "russian female": "у меня устала спина",
             "german": "mein rücken tut weh",
             "finnish": "",
-            "dutch": "mijn rug doet zeer",
             "italian": "mi fa male la schiena"
         },
         "my_position_is_uncomfortable": {
@@ -418,7 +408,6 @@
             "russian female": "мне так неудобно",
             "german": "meine position ist unangenehm",
             "finnish": "",
-            "dutch": "mijn houding is onaangenaam",
             "italian": "la mia posizione è scomoda"
         },
         "i_want_to_do_exercise": {
@@ -429,7 +418,6 @@
             "russian female": "хочу размяться",
             "german": "ich möchte übungen machen",
             "finnish": "",
-            "dutch": "ik wil graag oefeningen doen",
             "italian": "vorrei fare esercizio"
         },
         "i_want_to_sit_on_the_chair": {
@@ -440,7 +428,6 @@
             "russian female": "хочу посидет",
             "german": "ich möchte mich auf den stuhl setzen",
             "finnish": "",
-            "dutch": "ik wil op de stoel zitten",
             "italian": "vorrei sedermi sulla sedia"
         },
         "i_want_to_go_to_bed": {
@@ -451,7 +438,6 @@
             "russian female": "хочу лечь",
             "german": "ich möchte schlafen",
             "finnish": "",
-            "dutch": "ik wil naar bed",
             "italian": "vorreiandare a letto"
         },
         "i_want_to_walk": {
@@ -462,7 +448,6 @@
             "russian female": "хочу походить",
             "german": "ich möchte laufen",
             "finnish": "",
-            "dutch": "ik wil graag lopen",
             "italian": "vorrei camminare"
         },
         "family_and_work": {
@@ -473,7 +458,6 @@
             "russian female": "семья и работа",
             "german": "familie und arbeit",
             "finnish": "",
-            "dutch": "familie/werk",
             "italian": "famiglia / lavoro"
         },
         "does_my_family_know?": {
@@ -484,7 +468,6 @@
             "russian female": "моя семья знает?",
             "german": "weiß meine familie bescheid?",
             "finnish": "",
-            "dutch": "is mijn familie op de hoogte?",
             "italian": "la mia famiglia lo sa"
         },
         "i_want_to_call_home": {
@@ -495,7 +478,6 @@
             "russian female": "хочу позвонить домой",
             "german": "ich möchte zuhause anrufen",
             "finnish": "",
-            "dutch": "ik wil naar huis bellen",
             "italian": "vorrei chiamare a casa"
         },
         "i_want_to_call_for_my_work": {
@@ -506,7 +488,6 @@
             "russian female": "хочу позвонить на работу",
             "german": "ich möchte auf meiner arbeit anrufen",
             "finnish": "",
-            "dutch": "ik wil naar mijn werk bellen",
             "italian": "vorrei fare una chiamata per il mio lavoro"
         },
         "when_can_i_go_home?": {
@@ -517,7 +498,6 @@
             "russian female": "когда смогу пойти домой?",
             "german": "wann darf ich nach hause gehen?",
             "finnish": "",
-            "dutch": "wanneer kan ik naar huis?",
             "italian": "quando posso tornare a casa?"
         },
         "i_want_to_go_home": {
@@ -528,7 +508,6 @@
             "russian female": "я хочу пойти домой",
             "german": "ich möchte nach hause gehen",
             "finnish": "",
-            "dutch": "ik wil graag naar huis",
             "italian": "vorrei andare a casa"
         },
         "my_pets_are_alone_at_home": {
@@ -539,7 +518,6 @@
             "russian female": "мои домашние животные остались одни дома",
             "german": "meine haustiere sind alleine zuhause",
             "finnish": "",
-            "dutch": "mijn huisdieren zijn alleen thuis",
             "italian": "i miei animali sono soli a casa"
         },
         "i_want_to_see_my_family": {
@@ -550,7 +528,6 @@
             "russian female": "хочу увидеть свою семью",
             "german": "ich möchte meine familie sehen",
             "finnish": "",
-            "dutch": "ik wil mijn familie zien",
             "italian": "vorrei vedere la mia famiglia"
         },
         "call_my_family_here": {
@@ -561,7 +538,6 @@
             "russian female": "позовите мою семью сюда",
             "german": "holen sie meine familie her",
             "finnish": "",
-            "dutch": "kunt u mijn familie halen?",
             "italian": "faccia venire la mia famiglia qui"
         },
         "has_someone_called?": {
@@ -572,7 +548,6 @@
             "russian female": "кто-то звонил?",
             "german": "hat jemand für mich angerufen?",
             "finnish": "",
-            "dutch": "heeft er iemand voor mij gebeld?",
             "italian": "qualcuno ha chiamato?"
         },
         "therapy": {
@@ -583,7 +558,6 @@
             "russian female": "лечение",
             "german": "therapie",
             "finnish": "",
-            "dutch": "therapie",
             "italian": "terapia"
         },
         "how_am_i_doing?": {
@@ -594,7 +568,6 @@
             "russian female": "как моё состояние здоровья?",
             "german": "wie ist mein zustand?",
             "finnish": "",
-            "dutch": "hoe is mijn toestand?",
             "italian": "come sto?"
         },
         "is_the_operation_done?": {
@@ -605,7 +578,6 @@
             "russian female": "операция сделана?",
             "german": "ist die operation vorbei?",
             "finnish": "",
-            "dutch": "is de operatie voorbij?",
             "italian": "l'operazione è stata eseguita?"
         },
         "how_did_the_operation_go?": {
@@ -616,7 +588,6 @@
             "russian female": "как прошла операция?",
             "german": "wie lief die operation?",
             "finnish": "",
-            "dutch": "hoe is de operatie gegaan?",
             "italian": "com'è andata l'operazione?"
         },
         "how_can_i_call_a_doctor_or_a_nurse?": {
@@ -627,7 +598,6 @@
             "russian female": "как я смогу позвать сестру / врача?",
             "german": "wie kann ich einen arzt / eine krankenschwester rufen?",
             "finnish": "",
-            "dutch": "kan ik een dokter/verpleger bellen?",
             "italian": "come posso chiamare un medico / infermiere?"
         },
         "when_does_the_surgeon_come?": {
@@ -638,7 +608,6 @@
             "russian female": "когда придёт хирург?",
             "german": "wann kommt der chirurg?",
             "finnish": "",
-            "dutch": "wanneer komt de chirurg?",
             "italian": "quando verrà il chirurgo?"
         },
         "i_want_physiotherapy": {
@@ -649,7 +618,6 @@
             "russian female": "я желаю физиотерапию",
             "german": "ich möchte physiotherapie machen",
             "finnish": "",
-            "dutch": "ik wil graag fysiotherapie",
             "italian": "vorrei la fisioterapia"
         },
         "what_is_the_treatment_plan?": {
@@ -660,7 +628,6 @@
             "russian female": "какой план лечения?",
             "german": "wie ist der behandlungsplan?",
             "finnish": "",
-            "dutch": "wat is het behandelplan?",
             "italian": "qual è il piano terapeutico?"
         },
         "what_is_the_day_plan?": {
@@ -671,7 +638,6 @@
             "russian female": "какой план дня?",
             "german": "wie ist der tagesplan?",
             "finnish": "",
-            "dutch": "wat is het dagplan?",
             "italian": "qual è il piano giornaliero?"
         },
         "what_examination_is_this?": {
@@ -682,7 +648,6 @@
             "russian female": "что это за исследование?",
             "german": "welche untersuchung ist das?",
             "finnish": "",
-            "dutch": "welke studie is dit?****",
             "italian": "che indagine è questa?"
         },
         "end_the_treatment,_i_want_to_die": {
@@ -693,7 +658,6 @@
             "russian female": "прекратите лечение! хочу умереть",
             "german": "beenden sie die behandlung. ich will sterben!",
             "finnish": "",
-            "dutch": "",
             "italian": "termini la cura, vorrei morire"
         },
         "what_kind_of_procedure_is_it?": {
@@ -704,7 +668,6 @@
             "russian female": "что за процедура?",
             "german": "welche prozedur ist das?",
             "finnish": "",
-            "dutch": "wat is dit voor procedure?",
             "italian": "che tipo di procedura è?"
         },
         "concerns": {
@@ -715,7 +678,6 @@
             "russian female": "переживания",
             "german": "sorgen",
             "finnish": "",
-            "dutch": "zorgen",
             "italian": "preoccupazioni"
         },
         "where_am_i?": {
@@ -726,7 +688,6 @@
             "russian female": "где я нахожусь?",
             "german": "wo bin ich?",
             "finnish": "",
-            "dutch": "waar ben ik?",
             "italian": "dove sono?"
         },
         "what_happened?": {
@@ -737,7 +698,6 @@
             "russian female": "что случилось со мной?",
             "german": "was ist passiert?",
             "finnish": "",
-            "dutch": "wat is er gebeurd?",
             "italian": "che è successo?"
         },
         "how_long_have_i_been_here?": {
@@ -748,7 +708,6 @@
             "russian female": "как долго я уже здесь?",
             "german": "seit wann bin ich hier?",
             "finnish": "",
-            "dutch": "hoe lang ben ik hier al?",
             "italian": "da quanto tempo sono qui?"
         },
         "will_i_die?": {
@@ -759,7 +718,6 @@
             "russian female": "я умру?",
             "german": "werde ich sterben?",
             "finnish": "",
-            "dutch": "ga ik dood?",
             "italian": "morirò?"
         },
         "what_happens_with_my_pets?": {
@@ -770,7 +728,6 @@
             "russian female": "что станет с моими животными?",
             "german": "was wird meinen haustieren passieren?",
             "finnish": "",
-            "dutch": "wat gebeurt er met mijn huisdieren?",
             "italian": "che succede ai miei animali?"
         },
         "i_am_afraid_to_die": {
@@ -781,7 +738,6 @@
             "russian female": "я боюсь умирать",
             "german": "ich habe angst zu sterben",
             "finnish": "",
-            "dutch": "ik ben bang om dood te gaan",
             "italian": "ho paura di morire"
         },
         "i_don't_want_to_die_in_pain": {
@@ -792,7 +748,6 @@
             "russian female": "я не хочу умереть, чувствуя боль",
             "german": "ich will nicht unter schmerzen sterben",
             "finnish": "",
-            "dutch": "ik wil geen pijn voelen als ik doodga",
             "italian": "non voglio morire dal dolore"
         },
         "i_don't_want_to_be_alone": {
@@ -803,7 +758,6 @@
             "russian female": "я не хочу быть одна",
             "german": "ich will nicht alleine sein",
             "finnish": "",
-            "dutch": "ik wil niet alleen zijn",
             "italian": "non voglio essere solo"
         },
         "i_don't_want_to_be_here": {
@@ -814,7 +768,6 @@
             "russian female": "я не хочу здесь быть",
             "german": "ich will nicht hier sein",
             "finnish": "",
-            "dutch": "ik wil hier niet alleen zijn",
             "italian": "non voglio essere qui da solo"
         },
         "untie_my_arms": {
@@ -825,7 +778,6 @@
             "russian female": "развяжите мне руки!",
             "german": "öffnen sie bitte meine arme",
             "finnish": "",
-            "dutch": "wilt u mijn armen openen?***",
             "italian": "apro le braccia"
         },
         "sleep": {
@@ -836,7 +788,6 @@
             "russian female": "сон",
             "german": "schlaf",
             "finnish": "",
-            "dutch": "slaap",
             "italian": "dormire"
         },
         "i_want_to_sleep": {
@@ -847,7 +798,6 @@
             "russian female": "хочу спать",
             "german": "ich möchte schlafen",
             "finnish": "",
-            "dutch": "ik wil graag slapen",
             "italian": "vorrei dormire"
         },
         "please_turn_the_lights_off": {
@@ -858,7 +808,6 @@
             "russian female": "пожалуйста, выключите свет",
             "german": "bitte schalten sie das licht aus",
             "finnish": "",
-            "dutch": "wilt u het licht uitdoen?",
             "italian": "si prega di spegnere le luci"
         },
         "please_put_the_lights_on": {
@@ -869,7 +818,6 @@
             "russian female": "пожалуйста, включите свет",
             "german": "bitte schalten sie das licht ein",
             "finnish": "",
-            "dutch": "wilt u het licht aandoen?",
             "italian": "si prega di accendere le luci"
         },
         "please_be_quiet": {
@@ -880,7 +828,6 @@
             "russian female": "пожалуйста, потише!",
             "german": "bitte seien sie still",
             "finnish": "",
-            "dutch": "wilt u stil zijn?",
             "italian": "per favore silenzio"
         },
         "i_can't_sleep_i_can_not_sleep": {
@@ -891,7 +838,6 @@
             "russian female": "я не могу заснуть!",
             "german": "ich kann nicht schlafen",
             "finnish": "",
-            "dutch": "ik kan niet slapen",
             "italian": "non riesco a dormire"
         },
         "pain disturbs_the_sleep": {
@@ -902,7 +848,6 @@
             "russian female": "боль не даёт мне спать",
             "german": "ich kann nicht schlafen vor schmerzen",
             "finnish": "",
-            "dutch": "ik kan niet slapen door de pijn",
             "italian": "il dolore disturba il sonno"
         },
         "please_give_me_sleeping_pills": {
@@ -913,7 +858,6 @@
             "russian female": "дайте,пожалуйста, снотворное",
             "german": "bitte geben sie mir schlaftabletten",
             "finnish": "",
-            "dutch": "mag ik slaappillen?",
             "italian": "per favore, mi dia dei sonniferi"
         },
         "at_home_i_take_sleeping_pills": {
@@ -924,7 +868,6 @@
             "russian female": "дома принимаю тоже снотворное",
             "german": "zuhause nehme ich schlaftabletten",
             "finnish": "",
-            "dutch": "thuis neem ik slaappillen",
             "italian": "a casa prendo dei sonniferi"
         },
         "what's_going_on_bubblesing_here?": {
@@ -935,7 +878,6 @@
             "russian female": "что здесь шумит? как будто идёт дождь",
             "german": "was ist hier los?",
             "finnish": "",
-            "dutch": "wat gebeurt hier?",
             "italian": "cosa sta succedendo qui?"
         },
         "i_have_something_under_my_body_that_annoys_me": {
@@ -946,7 +888,6 @@
             "russian female": "у меня что-то под боком",
             "german": "es liegt etwas im bett, das mich stört",
             "finnish": "",
-            "dutch": "er ligt iets in mijn bed waar ik last van heb ***",
             "italian": "ho qualcosa sotto il mio corpo che mi da fastidio"
         },
         "washing_and_clothing": {
@@ -957,7 +898,6 @@
             "russian female": "мытьё и одевание",
             "german": "waschen und kleidung",
             "finnish": "",
-            "dutch": "wassen/kleding",
             "italian": "lavaggio / abbigliamento"
         },
         "i_want_to_brush_my_teeth": {
@@ -968,7 +908,6 @@
             "russian female": "хочу почистить зубы",
             "german": "ich möchte meine zähne putzen",
             "finnish": "",
-            "dutch": "ik wil mijn tanden poetsen",
             "italian": "vorrei lavarmi i denti"
         },
         "i_want_irrigate_my_mouth_a_mouthwash": {
@@ -979,7 +918,6 @@
             "russian female": "хочу прополаскать рот",
             "german": "ich möchte eine mundspüllösung",
             "finnish": "",
-            "dutch": "ik wil graag gorgelen",
             "italian": "vorrei risciaqcuare la bocca"
         },
         "i_have_saliva_in_my_mouth,_plase_remove_it": {
@@ -990,7 +928,6 @@
             "russian female": "во рту много слюней, пожалуйста, почистите!",
             "german": "ich habe speichel im mund, bitte entfernen sie ihn",
             "finnish": "",
-            "dutch": "ik heb speeksel in mijn mond, kunt u dit weghalen?",
             "italian": "ho la saliva in bocca, per favore me la rimuova"
         },
         "wash_my_face": {
@@ -1001,7 +938,6 @@
             "russian female": "помойте мне лицо",
             "german": "bitte waschen sie mein gesicht",
             "finnish": "",
-            "dutch": "kunt u mijn gezicht wassen?",
             "italian": "lavare la mia faccia"
         },
         "please_wash_me": {
@@ -1012,7 +948,6 @@
             "russian female": "пожалуйста, помойте меня",
             "german": "bitte waschen sie mich",
             "finnish": "",
-            "dutch": "wilt u mij wassen?",
             "italian": "per favore mi lavi"
         },
         "do_not_wash_me": {
@@ -1023,7 +958,6 @@
             "russian female": "не мойте меня",
             "german": "bitte waschen sie mich nicht",
             "finnish": "",
-            "dutch": "ik wil niet gewassen worden",
             "italian": "non mi lavare"
         },
         "please brush_my_hair": {
@@ -1034,7 +968,6 @@
             "russian female": "пожалуйста, причешите меня",
             "german": "bitte kämmen sie mir die haare",
             "finnish": "",
-            "dutch": "kunt u mijn haren kammen?",
             "italian": "per favore, mi pettina i capelli"
         },
         "where_are_my_things?": {
@@ -1045,7 +978,6 @@
             "russian female": "где мои вещи?",
             "german": "wo sind meine sachen?",
             "finnish": "",
-            "dutch": "waar zijn mijn spullen?",
             "italian": "dove sono le mie cose?"
         },
         "i_want_my_clothes_on": {
@@ -1056,7 +988,6 @@
             "russian female": "хочу одеться",
             "german": "ich möchte mich anziehen",
             "finnish": "",
-            "dutch": "ik wil me aankleden",
             "italian": "vorrei vestirmi"
         },
         "why_am_i_naked?": {
@@ -1067,7 +998,6 @@
             "russian female": "почему я голый?",
             "german": "warum bin ich nackt?",
             "finnish": "",
-            "dutch": "waarom ben ik naakt?",
             "italian": "perché sono nudo?"
         },
         "condition": {
@@ -1078,7 +1008,6 @@
             "russian female": "самочувствие",
             "german": "zustand",
             "finnish": "",
-            "dutch": "toestand",
             "italian": "condizione"
         },
         "i_feel_very_bad": {
@@ -1089,7 +1018,6 @@
             "russian female": "мне очень плохо",
             "german": "ich fühle mich sehr schlecht",
             "finnish": "",
-            "dutch": "ik voel me zeer slecht",
             "italian": "mi sento molto male"
         },
         "i'm_nauseous": {
@@ -1100,7 +1028,6 @@
             "russian female": "тошнит",
             "german": "mir ist übel",
             "finnish": "",
-            "dutch": "ik ben misselijk",
             "italian": "ho la nausea"
         },
         "i_feel_dizzy": {
@@ -1111,7 +1038,6 @@
             "russian female": "голова кружится",
             "german": "mir ist schwindelig",
             "finnish": "",
-            "dutch": "ik ben duizelig",
             "italian": "mi gira la testa"
         },
         "i_am_very_weak": {
@@ -1122,7 +1048,6 @@
             "russian female": "у меня нет силы",
             "german": "ich bin sehr schwach",
             "finnish": "",
-            "dutch": "zeer zwak",
             "italian": "molto debole"
         },
         "i_am_cold": {
@@ -1133,7 +1058,6 @@
             "russian female": "мне холодно",
             "german": "mir ist kalt",
             "finnish": "",
-            "dutch": "ik heb het koud",
             "italian": "ho freddo"
         },
         "i_am_hot": {
@@ -1144,7 +1068,6 @@
             "russian female": "мне жарко",
             "german": "mir ist heiß",
             "finnish": "",
-            "dutch": "ik heb het warm",
             "italian": "sento caldo"
         },
         "i_don't_feel_my_arms": {
@@ -1155,7 +1078,6 @@
             "russian female": "я не чувствую свои руки",
             "german": "ich kann meine arme nicht fühlen",
             "finnish": "",
-            "dutch": "ik kan mijn armen niet voelen",
             "italian": "non sento le mie braccia"
         },
         "i_don't_feel_my_legs": {
@@ -1166,7 +1088,6 @@
             "russian female": "я не чувствую свои ноги",
             "german": "ich kann meine beine nicht fühlen",
             "finnish": "",
-            "dutch": "ik kan mijn benen niet voelen",
             "italian": "non sento le gambe"
         },
         "breathing": {
@@ -1177,7 +1098,6 @@
             "russian female": "дыхание",
             "german": "atmung",
             "finnish": "",
-            "dutch": "ademen",
             "italian": "respirazione"
         },
         "there_is_not_enough_air": {
@@ -1188,7 +1108,6 @@
             "russian female": "не хватает воздуха",
             "german": "hier ist nicht genug frische luft",
             "finnish": "",
-            "dutch": "er is niet genoeg frisse lucht",
             "italian": "non c'è abbastanza aria"
         },
         "i_can't_breathe": {
@@ -1199,7 +1118,6 @@
             "russian female": "я не могу дышать!",
             "german": "ich kann nicht atmen",
             "finnish": "",
-            "dutch": "ik kan niet ademen",
             "italian": "non riesco a respirare"
         },
         "clear_the_breathing_tube": {
@@ -1210,7 +1128,6 @@
             "russian female": "почистите дыхательную трубку!",
             "german": "machen sie den schlauch sauber",
             "finnish": "",
-            "dutch": "kunt u de beademingsbuis vrijmaken?",
             "italian": "pulisca il tubo di respirazione"
         },
         "i_am_suffocating_there_is_no_air": {
@@ -1221,7 +1138,6 @@
             "russian female": "я захлёбываюсь, я задыхаюсь! воздуха не хватает",
             "german": "ich ersticke",
             "finnish": "",
-            "dutch": "ik stik",
             "italian": "sto soffocando"
         },
         "take_the_tube_away": {
@@ -1232,7 +1148,6 @@
             "russian female": "вытащите эту трубку!",
             "german": "bitte nehmen sie den schlauch weg",
             "finnish": "",
-            "dutch": "wilt u de beademingsbuis weghalen?",
             "italian": "porti via il tubo"
         },
         "when_will_the_tube_be_taken_away?": {
@@ -1243,7 +1158,6 @@
             "russian female": "когда вытащите эту трубку?",
             "german": "wann wird der schlauch entfernt?",
             "finnish": "",
-            "dutch": "wanneer wordt de beademingsbuis weggehaald?",
             "italian": "quando verrà tolto il tubo?"
         },
         "when_can_i_speak?": {
@@ -1254,7 +1168,6 @@
             "russian female": "когда я смогу говорить?",
             "german": "wann kann ich wieder sprechen?",
             "finnish": "",
-            "dutch": "wanneer kan ik weer praten?",
             "italian": "quando posso parlare?"
         },
         "will_i_ever_speak_again?": {
@@ -1265,7 +1178,6 @@
             "russian female": "я смогу когда-нибудь говорить?",
             "german": "kann ich jemals wieder sprechen?",
             "finnish": "",
-            "dutch": "kan ik ooit weer praten?",
             "italian": "tornerò mai più a parlare?"
         },
         "i_don't_have_strength_to_breathe": {
@@ -1276,7 +1188,6 @@
             "russian female": "у меня нет сил дышать",
             "german": "ich kann nicht atmen",
             "finnish": "",
-            "dutch": "ik kan niet ademen",
             "italian": "non ho la forza per respirare"
         },
         "let_the_machine_help_me_to_breathe": {
@@ -1287,7 +1198,6 @@
             "russian female": "пусть дыхательнвй аппарат поможет мне дышать",
             "german": "lassen sie die maschine mir beim atmen helfen",
             "finnish": "",
-            "dutch": "laat de machine mij helpen met ademen",
             "italian": "lasci che la macchina mi aiuti a respirare"
         },
         "entertainment": {
@@ -1298,7 +1208,6 @@
             "russian female": "времяпрепровождение",
             "german": "unterhaltung",
             "finnish": "",
-            "dutch": "entertainment",
             "italian": "divertimento"
         },
         "i_want_to_watch_tv": {
@@ -1309,7 +1218,6 @@
             "russian female": "желаю посмотреть телевизор",
             "german": "ich möchte fernsehen",
             "finnish": "",
-            "dutch": "ik wil tv kijken",
             "italian": "vorrei guardare la tv"
         },
         "i_want_to_listen_to_the_music": {
@@ -1320,7 +1228,6 @@
             "russian female": "желаю послушать музыку",
             "german": "ich möchte musik hören",
             "finnish": "",
-            "dutch": "ik wil muziek luisteren",
             "italian": "vorrei ascoltare la musica"
         },
         "please_put_the_tv_on": {
@@ -1331,7 +1238,6 @@
             "russian female": "пожалуйста, включите телевизор",
             "german": "bitte schalten sie den fernseher ein",
             "finnish": "",
-            "dutch": "kunt u de tv aanzetten?",
             "italian": "per favore, accenda la tv"
         },
         "please_close_the_tv": {
@@ -1342,7 +1248,6 @@
             "russian female": "пожалуйста, выключите телевизор",
             "german": "bitte schalten sie den fernseher aus",
             "finnish": "",
-            "dutch": "kunt u de tv uitzetten?",
             "italian": "per favore, spenga la tv"
         },
         "do_you_have_newspapers": {
@@ -1353,7 +1258,6 @@
             "russian female": "у вас есть газеты?",
             "german": "haben sie zeitungen?",
             "finnish": "",
-            "dutch": "heeft u de krant?",
             "italian": "ha dei giornali?"
         },
         "please_give_me_the_remote": {
@@ -1364,7 +1268,6 @@
             "russian female": "пожалуйста, дайте пульт",
             "german": "bitte geben sie mir die fernbedienung",
             "finnish": "",
-            "dutch": "kunt u mij de afstandsbediening geven?",
             "italian": "per favore mi dia il telecomando"
         },
         "i_want_to_watch_movie": {
@@ -1375,7 +1278,6 @@
             "russian female": "желаю посмотреть dvd",
             "german": "ich möchte einen film sehen",
             "finnish": "",
-            "dutch": "ik wil een film kijken",
             "italian": "vorrei guardare un film"
         },
         "please_put_it_a_little_bit_quiet": {
@@ -1386,7 +1288,6 @@
             "russian female": "пожалуйста, сделайте потише",
             "german": "bitte machen sie etwas leiser",
             "finnish": "",
-            "dutch": "kunt u het geluid zachter zetten?",
             "italian": "per favore, abbassi il volume"
         },
         "please_put_it_louder": {
@@ -1397,7 +1298,6 @@
             "russian female": "пожалуйста, сделайте погромче",
             "german": "bitte machen sie etwas lauter",
             "finnish": "",
-            "dutch": "kunt u het geluid harder zetten?",
             "italian": "per favore, alzi il volume"
         },
         "please_talk_to_me": {
@@ -1408,7 +1308,6 @@
             "russian female": "пожалуйста, поговорите со мной",
             "german": "bitte sprechen sie mit mir",
             "finnish": "",
-            "dutch": "wilt u tegen mij praten?",
             "italian": "per favore mi parli"
         },
         "emotions": {
@@ -1419,7 +1318,6 @@
             "russian female": "эмоции",
             "german": "emotionen",
             "finnish": "",
-            "dutch": "emoties",
             "italian": "emozioni"
         },
         "i_am_happy": {
@@ -1430,7 +1328,6 @@
             "russian female": "я рада",
             "german": "ich bin glücklich",
             "finnish": "",
-            "dutch": "ik ben blij",
             "italian": "sono felice"
         },
         "i_am_sad": {
@@ -1441,7 +1338,6 @@
             "russian female": "мне грустно",
             "german": "ich bin traurig",
             "finnish": "",
-            "dutch": "ik ben verdrietig",
             "italian": "sono triste"
         },
         "i_am_angry": {
@@ -1452,7 +1348,6 @@
             "russian female": "я злой",
             "german": "ich bin sauer",
             "finnish": "",
-            "dutch": "ik ben boos",
             "italian": "sono arrabbiato"
         },
         "i_am_afraid": {
@@ -1463,7 +1358,6 @@
             "russian female": "я боюсь",
             "german": "ich habe angst",
             "finnish": "",
-            "dutch": "ik ben bang",
             "italian": "ho paura"
         },
         "i_am_confused": {
@@ -1474,7 +1368,6 @@
             "russian female": "я уже в замешательстве",
             "german": "ich bin verwirrt",
             "finnish": "",
-            "dutch": "ik ben in de war",
             "italian": "sono confuso"
         },
         "i_am_surprised": {
@@ -1485,7 +1378,6 @@
             "russian female": "я удивлена",
             "german": "ich bin überrascht",
             "finnish": "",
-            "dutch": "ik ben verrast",
             "italian": "sono sorpreso"
         },
         "i_love_you": {
@@ -1496,7 +1388,6 @@
             "russian female": "я люблю тебя",
             "german": "ich liebe dich!",
             "finnish": "",
-            "dutch": "ik hou van jou",
             "italian": "ti amo"
         },
         "you_are_dear_to_me": {
@@ -1507,7 +1398,6 @@
             "russian female": "ты мне очень дорог",
             "german": "ich habe dich lieb!",
             "finnish": "",
-            "dutch": "je bent me dierbaar",
             "italian": "tu mi sei caro"
         },
         "i_want_to_hug_you": {
@@ -1518,7 +1408,6 @@
             "russian female": "я хочу тебя обнять",
             "german": "ich will dich umarmen",
             "finnish": "",
-            "dutch": "ik wil je een knuffel geven",
             "italian": "vorrei abbracciarti"
         },
         "i_don't_want_to_see_anyone.": {
@@ -1529,7 +1418,6 @@
             "russian female": "я не хочу никого видеть!",
             "german": "ich will dich nicht mehr sehen",
             "finnish": "",
-            "dutch": "ik wil niemand zien",
             "italian": "non voglio vedere nessuno."
         },
         "diet": {
@@ -1540,7 +1428,6 @@
             "russian female": "",
             "german": "",
             "finnish": "",
-            "dutch": "",
             "italian": "dieta"
         },
         "drink": {
@@ -1551,7 +1438,6 @@
             "russian female": "напиток",
             "german": "getränke",
             "finnish": "",
-            "dutch": "drinken",
             "italian": "bevanda"
         },
         "hot_drink": {
@@ -1562,7 +1448,6 @@
             "russian female": "горячий",
             "german": "heiß",
             "finnish": "",
-            "dutch": "heet",
             "italian": "caldo"
         },
         "warm_drink": {
@@ -1573,7 +1458,6 @@
             "russian female": "тёплый",
             "german": "warm",
             "finnish": "",
-            "dutch": "warm",
             "italian": "tiepido"
         },
         "cold_drink": {
@@ -1584,7 +1468,6 @@
             "russian female": "холодный",
             "german": "kalt",
             "finnish": "",
-            "dutch": "koud",
             "italian": "freddo"
         },
         "chamomile_tea": {
@@ -1595,7 +1478,6 @@
             "russian female": "ромашковый чай",
             "german": "kamillentee",
             "finnish": "",
-            "dutch": "kamille",
             "italian": "camomilla"
         },
         "coffee": {
@@ -1606,7 +1488,6 @@
             "russian female": "кофе",
             "german": "kaffee",
             "finnish": "",
-            "dutch": "koffie",
             "italian": "caffè"
         },
         "coffee_with_milk": {
@@ -1617,7 +1498,6 @@
             "russian female": "кофе со сливками или молоком",
             "german": "kaffee mit milch",
             "finnish": "",
-            "dutch": "koffie met melk",
             "italian": "latte macchiato"
         },
         "kakao_cocoa": {
@@ -1628,7 +1508,6 @@
             "russian female": "какао",
             "german": "kakao",
             "finnish": "",
-            "dutch": "cacao",
             "italian": "cacao"
         },
         "tea": {
@@ -1639,7 +1518,6 @@
             "russian female": "чай",
             "german": "tee",
             "finnish": "",
-            "dutch": "thee",
             "italian": "tè"
         },
         "yogurt": {
@@ -1650,7 +1528,6 @@
             "russian female": "йогурт",
             "german": "joghurt",
             "finnish": "",
-            "dutch": "yoghurt",
             "italian": "yogurt"
         },
         "water": {
@@ -1661,7 +1538,6 @@
             "russian female": "воду",
             "german": "wasser",
             "finnish": "",
-            "dutch": "water",
             "italian": "acqua"
         },
         "juice": {
@@ -1672,7 +1548,6 @@
             "russian female": "сок",
             "german": "saft",
             "finnish": "",
-            "dutch": "sap",
             "italian": "succo"
         },
         "kefir": {
@@ -1683,7 +1558,6 @@
             "russian female": "кефир",
             "german": "kefir",
             "finnish": "",
-            "dutch": "kefir",
             "italian": "kefir"
         },
         "food": {
@@ -1694,7 +1568,6 @@
             "russian female": "еда",
             "german": "essen",
             "finnish": "",
-            "dutch": "eten",
             "italian": "cibo"
         },
         "cake": {
@@ -1705,7 +1578,6 @@
             "russian female": "пирог",
             "german": "kuchen",
             "finnish": "",
-            "dutch": "cake",
             "italian": "torta"
         },
         "dessert": {
@@ -1716,7 +1588,6 @@
             "russian female": "сладенькое",
             "german": "nachtisch",
             "finnish": "",
-            "dutch": "dessert",
             "italian": "dolce"
         },
         "meal": {
@@ -1727,7 +1598,6 @@
             "russian female": "что-то мясное, второе блюдо",
             "german": "mahlzeit",
             "finnish": "",
-            "dutch": "maaltijd",
             "italian": "pasto"
         },
         "icecream": {
@@ -1738,7 +1608,6 @@
             "russian female": "мороженое",
             "german": "eis",
             "finnish": "",
-            "dutch": "ijs",
             "italian": "gelato"
         },
         "-": {
@@ -1749,7 +1618,6 @@
             "russian female": "сырочек",
             "german": "-",
             "finnish": "",
-            "dutch": "",
             "italian": "-"
         },
         "porridge": {
@@ -1760,7 +1628,6 @@
             "russian female": "кашу",
             "german": "haferbrei",
             "finnish": "",
-            "dutch": "havermout (pap)",
             "italian": "porridge"
         },
         "soup": {
@@ -1771,7 +1638,6 @@
             "russian female": "суп",
             "german": "suppe",
             "finnish": "",
-            "dutch": "soep",
             "italian": "minestra/zuppa"
         },
         "salad": {
@@ -1782,7 +1648,6 @@
             "russian female": "салат",
             "german": "salat",
             "finnish": "",
-            "dutch": "salade",
             "italian": "insalata"
         },
         "fruit": {
@@ -1793,7 +1658,6 @@
             "russian female": "фрукты",
             "german": "obst",
             "finnish": "",
-            "dutch": "fruit",
             "italian": "frutta"
         },
         "boiled_eggs": {
@@ -1804,7 +1668,6 @@
             "russian female": "варёное яицо",
             "german": "geckochte eier",
             "finnish": "",
-            "dutch": "gekookte eieren",
             "italian": "uova sode"
         }
     }

@@ -16,10 +16,10 @@ function ProcessDataCB(source, CBfunction){
 
             let obj = {
                       "label": data[2].toLowerCase().trim().replace(/ /g, "_"),
-                      "drawable": data[10],
+                      "drawable": data[11],
                       "viewCategory": data[0].toLowerCase().trim().replace(/ /g, "_"),
-                      "viewRedirect":"previous",
-                      "textToSpeech": true,
+                      "viewRedirect":data[9],
+                      "textToSpeech": data[10],
                     };
             viewObject["elements"].push(obj);
         };
