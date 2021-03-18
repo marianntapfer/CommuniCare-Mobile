@@ -1,5 +1,35 @@
 {
     "translations": {
+        "pain_&_feelings": {
+            "estonian": "valu ja tunded",
+            "english": "pain & feelings",
+            "arabic": "",
+            "russian male": "",
+            "russian female": "",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "questions": {
+            "estonian": "küsimused",
+            "english": "questions",
+            "arabic": "",
+            "russian male": "",
+            "russian female": "",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "comfort_&_needs": {
+            "estonian": "mugavus ja vajadused",
+            "english": "comfort & needs",
+            "arabic": "",
+            "russian male": "",
+            "russian female": "",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
         "thanks": {
             "estonian": "aitäh",
             "english": "thanks",
@@ -1610,15 +1640,15 @@
             "finnish": "",
             "italian": "gelato"
         },
-        "-": {
+        "": {
             "estonian": "ma soovin kohukest",
-            "english": "-",
+            "english": "",
             "arabic": "",
             "russian male": "сырочек",
             "russian female": "сырочек",
-            "german": "-",
+            "german": "",
             "finnish": "",
-            "italian": "-"
+            "italian": ""
         },
         "porridge": {
             "estonian": "ma soovin putru",

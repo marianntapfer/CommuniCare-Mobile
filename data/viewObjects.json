@@ -1,12 +1,33 @@
 {
     "elements": [
         {
+            "label": "pain_&_feelings",
+            "viewCategory": "home",
+            "viewRedirect": "emotions",
+            "textToSpeech": "TRUE",
+            "id": 0
+        },
+        {
+            "label": "questions",
+            "viewCategory": "home",
+            "viewRedirect": "condition",
+            "textToSpeech": "TRUE",
+            "id": 1
+        },
+        {
+            "label": "comfort_&_needs",
+            "viewCategory": "home",
+            "viewRedirect": "wc",
+            "textToSpeech": "TRUE",
+            "id": 2
+        },
+        {
             "label": "toilet",
             "drawable": "Home page/WC.png",
             "viewCategory": "wc",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 0
+            "id": 3
         },
         {
             "label": "i_want_to_go_to_the_toilet.",
@@ -14,7 +35,7 @@
             "viewCategory": "wc",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 1
+            "id": 4
         },
         {
             "label": "i_want_to_pee",
@@ -22,7 +43,7 @@
             "viewCategory": "wc",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 2
+            "id": 5
         },
         {
             "label": "i_want_to_poop",
@@ -30,7 +51,7 @@
             "viewCategory": "wc",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 3
+            "id": 6
         },
         {
             "label": "catheter_is_irritating",
@@ -38,7 +59,7 @@
             "viewCategory": "wc",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 4
+            "id": 7
         },
         {
             "label": "when_can_i_go_pee_on_my_own?",
@@ -46,7 +67,7 @@
             "viewCategory": "wc",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 5
+            "id": 8
         },
         {
             "label": "take_the_catheter_away",
@@ -54,7 +75,7 @@
             "viewCategory": "wc",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 6
+            "id": 9
         },
         {
             "label": "is_pee_coming?",
@@ -62,7 +83,7 @@
             "viewCategory": "wc",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 7
+            "id": 10
         },
         {
             "label": "i_want_to_go_to_the_potty_chair",
@@ -70,7 +91,7 @@
             "viewCategory": "wc",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 8
+            "id": 11
         },
         {
             "label": "i_want_a_bedpan",
@@ -78,7 +99,7 @@
             "viewCategory": "wc",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 9
+            "id": 12
         },
         {
             "label": "i_don't_want_a_bedpan.",
@@ -86,7 +107,7 @@
             "viewCategory": "wc",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 10
+            "id": 13
         },
         {
             "label": "pain",
@@ -94,7 +115,7 @@
             "viewCategory": "pain",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 11
+            "id": 14
         },
         {
             "label": "sharp_pain",
@@ -102,7 +123,7 @@
             "viewCategory": "pain",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 12
+            "id": 15
         },
         {
             "label": "numb_pain",
@@ -110,7 +131,7 @@
             "viewCategory": "pain",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 13
+            "id": 16
         },
         {
             "label": "burning_pain",
@@ -118,7 +139,7 @@
             "viewCategory": "pain",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 14
+            "id": 17
         },
         {
             "label": "tingle",
@@ -126,7 +147,7 @@
             "viewCategory": "pain",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 15
+            "id": 18
         },
         {
             "label": "stings",
@@ -134,7 +155,7 @@
             "viewCategory": "pain",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 16
+            "id": 19
         },
         {
             "label": "prickling_like_ants_running",
@@ -142,7 +163,7 @@
             "viewCategory": "pain",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 17
+            "id": 20
         },
         {
             "label": "chest_pain",
@@ -150,7 +171,7 @@
             "viewCategory": "pain",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 18
+            "id": 21
         },
         {
             "label": "it_is_painful_to_breathe",
@@ -158,7 +179,7 @@
             "viewCategory": "pain",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 19
+            "id": 22
         },
         {
             "label": "it_is_painful_to_cough",
@@ -166,7 +187,7 @@
             "viewCategory": "pain",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 20
+            "id": 23
         },
         {
             "label": "gas_pain",
@@ -174,7 +195,7 @@
             "viewCategory": "pain",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 21
+            "id": 24
         },
         {
             "label": "position_and_movement",
@@ -182,7 +203,7 @@
             "viewCategory": "position_and_movement",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 22
+            "id": 25
         },
         {
             "label": "raise_the_head",
@@ -190,7 +211,7 @@
             "viewCategory": "position_and_movement",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 23
+            "id": 26
         },
         {
             "label": "lower_the_bed_head",
@@ -198,7 +219,7 @@
             "viewCategory": "position_and_movement",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 24
+            "id": 27
         },
         {
             "label": "turn_me_on_my_side",
@@ -206,7 +227,7 @@
             "viewCategory": "position_and_movement",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 25
+            "id": 28
         },
         {
             "label": "i_want_to_get_up",
@@ -214,7 +235,7 @@
             "viewCategory": "position_and_movement",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 26
+            "id": 29
         },
         {
             "label": "my_back_is_tired",
@@ -222,7 +243,7 @@
             "viewCategory": "position_and_movement",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 27
+            "id": 30
         },
         {
             "label": "my_position_is_uncomfortable",
@@ -230,7 +251,7 @@
             "viewCategory": "position_and_movement",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 28
+            "id": 31
         },
         {
             "label": "i_want_to_do_exercise",
@@ -238,7 +259,7 @@
             "viewCategory": "position_and_movement",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 29
+            "id": 32
         },
         {
             "label": "i_want_to_sit_on_the_chair",
@@ -246,7 +267,7 @@
             "viewCategory": "position_and_movement",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 30
+            "id": 33
         },
         {
             "label": "i_want_to_go_to_bed",
@@ -254,7 +275,7 @@
             "viewCategory": "position_and_movement",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 31
+            "id": 34
         },
         {
             "label": "i_want_to_walk",
@@ -262,7 +283,7 @@
             "viewCategory": "family_and_work",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 32
+            "id": 35
         },
         {
             "label": "family_and_work",
@@ -270,7 +291,7 @@
             "viewCategory": "family_and_work",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 33
+            "id": 36
         },
         {
             "label": "does_my_family_know?",
@@ -278,7 +299,7 @@
             "viewCategory": "family_and_work",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 34
+            "id": 37
         },
         {
             "label": "i_want_to_call_home",
@@ -286,7 +307,7 @@
             "viewCategory": "family_and_work",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 35
+            "id": 38
         },
         {
             "label": "i_want_to_call_for_my_work",
@@ -294,7 +315,7 @@
             "viewCategory": "family_and_work",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 36
+            "id": 39
         },
         {
             "label": "when_can_i_go_home?",
@@ -302,7 +323,7 @@
             "viewCategory": "family_and_work",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 37
+            "id": 40
         },
         {
             "label": "i_want_to_go_home",
@@ -310,7 +331,7 @@
             "viewCategory": "family_and_work",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 38
+            "id": 41
         },
         {
             "label": "my_pets_are_alone_at_home",
@@ -318,7 +339,7 @@
             "viewCategory": "family_and_work",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 39
+            "id": 42
         },
         {
             "label": "i_want_to_see_my_family",
@@ -326,7 +347,7 @@
             "viewCategory": "family_and_work",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 40
+            "id": 43
         },
         {
             "label": "call_my_family_here",
@@ -334,7 +355,7 @@
             "viewCategory": "family_and_work",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 41
+            "id": 44
         },
         {
             "label": "has_someone_called?",
@@ -342,7 +363,7 @@
             "viewCategory": "family_and_work",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 42
+            "id": 45
         },
         {
             "label": "therapy",
@@ -350,7 +371,7 @@
             "viewCategory": "therapy",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 43
+            "id": 46
         },
         {
             "label": "how_am_i_doing?",
@@ -358,7 +379,7 @@
             "viewCategory": "therapy",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 44
+            "id": 47
         },
         {
             "label": "is_the_operation_done?",
@@ -366,7 +387,7 @@
             "viewCategory": "therapy",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 45
+            "id": 48
         },
         {
             "label": "how_did_the_operation_go?",
@@ -374,7 +395,7 @@
             "viewCategory": "therapy",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 46
+            "id": 49
         },
         {
             "label": "how_can_i_call_a_doctor_or_a_nurse?",
@@ -382,7 +403,7 @@
             "viewCategory": "therapy",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 47
+            "id": 50
         },
         {
             "label": "when_does_the_surgeon_come?",
@@ -390,7 +411,7 @@
             "viewCategory": "therapy",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 48
+            "id": 51
         },
         {
             "label": "i_want_physiotherapy",
@@ -398,7 +419,7 @@
             "viewCategory": "therapy",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 49
+            "id": 52
         },
         {
             "label": "what_is_the_treatment_plan?",
@@ -406,7 +427,7 @@
             "viewCategory": "therapy",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 50
+            "id": 53
         },
         {
             "label": "what_is_the_day_plan?",
@@ -414,7 +435,7 @@
             "viewCategory": "therapy",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 51
+            "id": 54
         },
         {
             "label": "what_examination_is_this?",
@@ -422,7 +443,7 @@
             "viewCategory": "therapy",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 52
+            "id": 55
         },
         {
             "label": "end_the_treatment,_i_want_to_die",
@@ -430,7 +451,7 @@
             "viewCategory": "therapy",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 53
+            "id": 56
         },
         {
             "label": "what_kind_of_procedure_is_it?",
@@ -438,7 +459,7 @@
             "viewCategory": "concerns",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 54
+            "id": 57
         },
         {
             "label": "concerns",
@@ -446,7 +467,7 @@
             "viewCategory": "concerns",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 55
+            "id": 58
         },
         {
             "label": "where_am_i?",
@@ -454,7 +475,7 @@
             "viewCategory": "concerns",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 56
+            "id": 59
         },
         {
             "label": "what_happened?",
@@ -462,7 +483,7 @@
             "viewCategory": "concerns",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 57
+            "id": 60
         },
         {
             "label": "how_long_have_i_been_here?",
@@ -470,7 +491,7 @@
             "viewCategory": "concerns",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 58
+            "id": 61
         },
         {
             "label": "will_i_die?",
@@ -478,7 +499,7 @@
             "viewCategory": "concerns",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 59
+            "id": 62
         },
         {
             "label": "what_happens_with_my_pets?",
@@ -486,7 +507,7 @@
             "viewCategory": "concerns",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 60
+            "id": 63
         },
         {
             "label": "i_am_afraid_to_die",
@@ -494,7 +515,7 @@
             "viewCategory": "concerns",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 61
+            "id": 64
         },
         {
             "label": "i_don't_want_to_die_in_pain",
@@ -502,7 +523,7 @@
             "viewCategory": "concerns",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 62
+            "id": 65
         },
         {
             "label": "i_don't_want_to_be_alone",
@@ -510,7 +531,7 @@
             "viewCategory": "concerns",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 63
+            "id": 66
         },
         {
             "label": "i_don't_want_to_be_here",
@@ -518,7 +539,7 @@
             "viewCategory": "concerns",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 64
+            "id": 67
         },
         {
             "label": "untie_my_arms",
@@ -526,7 +547,7 @@
             "viewCategory": "concerns",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 65
+            "id": 68
         },
         {
             "label": "sleep",
@@ -534,7 +555,7 @@
             "viewCategory": "sleep",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 66
+            "id": 69
         },
         {
             "label": "i_want_to_sleep",
@@ -542,7 +563,7 @@
             "viewCategory": "sleep",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 67
+            "id": 70
         },
         {
             "label": "please_turn_the_lights_off",
@@ -550,7 +571,7 @@
             "viewCategory": "sleep",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 68
+            "id": 71
         },
         {
             "label": "please_put_the_lights_on",
@@ -558,7 +579,7 @@
             "viewCategory": "sleep",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 69
+            "id": 72
         },
         {
             "label": "please_be_quiet",
@@ -566,7 +587,7 @@
             "viewCategory": "sleep",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 70
+            "id": 73
         },
         {
             "label": "i_can't_sleep_i_can_not_sleep",
@@ -574,7 +595,7 @@
             "viewCategory": "sleep",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 71
+            "id": 74
         },
         {
             "label": "pain disturbs_the_sleep",
@@ -582,7 +603,7 @@
             "viewCategory": "sleep",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 72
+            "id": 75
         },
         {
             "label": "please_give_me_sleeping_pills",
@@ -590,7 +611,7 @@
             "viewCategory": "sleep",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 73
+            "id": 76
         },
         {
             "label": "at_home_i_take_sleeping_pills",
@@ -598,7 +619,7 @@
             "viewCategory": "sleep",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 74
+            "id": 77
         },
         {
             "label": "what's_going_on_bubblesing_here?",
@@ -606,7 +627,7 @@
             "viewCategory": "sleep",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 75
+            "id": 78
         },
         {
             "label": "i_have_something_under_my_body_that_annoys_me",
@@ -614,7 +635,7 @@
             "viewCategory": "washing_and_clothing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 76
+            "id": 79
         },
         {
             "label": "washing_and_clothing",
@@ -622,7 +643,7 @@
             "viewCategory": "washing_and_clothing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 77
+            "id": 80
         },
         {
             "label": "i_want_to_brush_my_teeth",
@@ -630,7 +651,7 @@
             "viewCategory": "washing_and_clothing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 78
+            "id": 81
         },
         {
             "label": "i_want_irrigate_my_mouth_a_mouthwash",
@@ -638,7 +659,7 @@
             "viewCategory": "washing_and_clothing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 79
+            "id": 82
         },
         {
             "label": "i_have_saliva_in_my_mouth,_plase_remove_it",
@@ -646,7 +667,7 @@
             "viewCategory": "washing_and_clothing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 80
+            "id": 83
         },
         {
             "label": "wash_my_face",
@@ -654,7 +675,7 @@
             "viewCategory": "washing_and_clothing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 81
+            "id": 84
         },
         {
             "label": "please_wash_me",
@@ -662,7 +683,7 @@
             "viewCategory": "washing_and_clothing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 82
+            "id": 85
         },
         {
             "label": "do_not_wash_me",
@@ -670,7 +691,7 @@
             "viewCategory": "washing_and_clothing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 83
+            "id": 86
         },
         {
             "label": "please brush_my_hair",
@@ -678,7 +699,7 @@
             "viewCategory": "washing_and_clothing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 84
+            "id": 87
         },
         {
             "label": "where_are_my_things?",
@@ -686,7 +707,7 @@
             "viewCategory": "washing_and_clothing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 85
+            "id": 88
         },
         {
             "label": "i_want_my_clothes_on",
@@ -694,7 +715,7 @@
             "viewCategory": "washing_and_clothing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 86
+            "id": 89
         },
         {
             "label": "why_am_i_naked?",
@@ -702,7 +723,7 @@
             "viewCategory": "washing_and_clothing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 87
+            "id": 90
         },
         {
             "label": "condition",
@@ -710,7 +731,7 @@
             "viewCategory": "condition",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 88
+            "id": 91
         },
         {
             "label": "i_feel_very_bad",
@@ -718,7 +739,7 @@
             "viewCategory": "condition",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 89
+            "id": 92
         },
         {
             "label": "i'm_nauseous",
@@ -726,7 +747,7 @@
             "viewCategory": "condition",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 90
+            "id": 93
         },
         {
             "label": "i_feel_dizzy",
@@ -734,7 +755,7 @@
             "viewCategory": "condition",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 91
+            "id": 94
         },
         {
             "label": "i_am_very_weak",
@@ -742,7 +763,7 @@
             "viewCategory": "condition",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 92
+            "id": 95
         },
         {
             "label": "i_am_cold",
@@ -750,7 +771,7 @@
             "viewCategory": "condition",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 93
+            "id": 96
         },
         {
             "label": "i_am_hot",
@@ -758,7 +779,7 @@
             "viewCategory": "condition",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 94
+            "id": 97
         },
         {
             "label": "i_don't_feel_my_arms",
@@ -766,7 +787,7 @@
             "viewCategory": "condition",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 95
+            "id": 98
         },
         {
             "label": "i_don't_feel_my_legs",
@@ -774,7 +795,7 @@
             "viewCategory": "condition",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 96
+            "id": 99
         },
         {
             "label": "breathing",
@@ -782,7 +803,7 @@
             "viewCategory": "breathing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 97
+            "id": 100
         },
         {
             "label": "there_is_not_enough_air",
@@ -790,7 +811,7 @@
             "viewCategory": "breathing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 98
+            "id": 101
         },
         {
             "label": "i_can't_breathe",
@@ -798,7 +819,7 @@
             "viewCategory": "breathing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 99
+            "id": 102
         },
         {
             "label": "clear_the_breathing_tube",
@@ -806,7 +827,7 @@
             "viewCategory": "breathing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 100
+            "id": 103
         },
         {
             "label": "i_am_suffocating_there_is_no_air",
@@ -814,7 +835,7 @@
             "viewCategory": "breathing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 101
+            "id": 104
         },
         {
             "label": "take_the_tube_away",
@@ -822,7 +843,7 @@
             "viewCategory": "breathing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 102
+            "id": 105
         },
         {
             "label": "when_will_the_tube_be_taken_away?",
@@ -830,7 +851,7 @@
             "viewCategory": "breathing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 103
+            "id": 106
         },
         {
             "label": "when_can_i_speak?",
@@ -838,7 +859,7 @@
             "viewCategory": "breathing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 104
+            "id": 107
         },
         {
             "label": "will_i_ever_speak_again?",
@@ -846,7 +867,7 @@
             "viewCategory": "breathing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 105
+            "id": 108
         },
         {
             "label": "i_don't_have_strength_to_breathe",
@@ -854,7 +875,7 @@
             "viewCategory": "breathing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 106
+            "id": 109
         },
         {
             "label": "let_the_machine_help_me_to_breathe",
@@ -862,7 +883,7 @@
             "viewCategory": "breathing",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 107
+            "id": 110
         },
         {
             "label": "entertainment",
@@ -870,7 +891,7 @@
             "viewCategory": "entertainment",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 108
+            "id": 111
         },
         {
             "label": "i_want_to_watch_tv",
@@ -878,7 +899,7 @@
             "viewCategory": "entertainment",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 109
+            "id": 112
         },
         {
             "label": "i_want_to_listen_to_the_music",
@@ -886,7 +907,7 @@
             "viewCategory": "entertainment",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 110
+            "id": 113
         },
         {
             "label": "please_put_the_tv_on",
@@ -894,7 +915,7 @@
             "viewCategory": "entertainment",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 111
+            "id": 114
         },
         {
             "label": "please_close_the_tv",
@@ -902,7 +923,7 @@
             "viewCategory": "entertainment",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 112
+            "id": 115
         },
         {
             "label": "do_you_have_newspapers",
@@ -910,7 +931,7 @@
             "viewCategory": "entertainment",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 113
+            "id": 116
         },
         {
             "label": "please_give_me_the_remote",
@@ -918,7 +939,7 @@
             "viewCategory": "entertainment",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 114
+            "id": 117
         },
         {
             "label": "i_want_to_watch_movie",
@@ -926,7 +947,7 @@
             "viewCategory": "entertainment",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 115
+            "id": 118
         },
         {
             "label": "please_put_it_a_little_bit_quiet",
@@ -934,7 +955,7 @@
             "viewCategory": "entertainment",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 116
+            "id": 119
         },
         {
             "label": "please_put_it_louder",
@@ -942,7 +963,7 @@
             "viewCategory": "entertainment",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 117
+            "id": 120
         },
         {
             "label": "please_talk_to_me",
@@ -950,7 +971,7 @@
             "viewCategory": "entertainment",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 118
+            "id": 121
         },
         {
             "label": "emotions",
@@ -958,7 +979,7 @@
             "viewCategory": "emotions",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 119
+            "id": 122
         },
         {
             "label": "i_am_happy",
@@ -966,7 +987,7 @@
             "viewCategory": "emotions",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 120
+            "id": 123
         },
         {
             "label": "i_am_sad",
@@ -974,7 +995,7 @@
             "viewCategory": "emotions",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 121
+            "id": 124
         },
         {
             "label": "i_am_angry",
@@ -982,7 +1003,7 @@
             "viewCategory": "emotions",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 122
+            "id": 125
         },
         {
             "label": "i_am_afraid",
@@ -990,7 +1011,7 @@
             "viewCategory": "emotions",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 123
+            "id": 126
         },
         {
             "label": "i_am_confused",
@@ -998,7 +1019,7 @@
             "viewCategory": "emotions",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 124
+            "id": 127
         },
         {
             "label": "i_am_surprised",
@@ -1006,7 +1027,7 @@
             "viewCategory": "emotions",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 125
+            "id": 128
         },
         {
             "label": "i_love_you",
@@ -1014,7 +1035,7 @@
             "viewCategory": "emotions",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 126
+            "id": 129
         },
         {
             "label": "you_are_dear_to_me",
@@ -1022,7 +1043,7 @@
             "viewCategory": "emotions",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 127
+            "id": 130
         },
         {
             "label": "i_want_to_hug_you",
@@ -1030,7 +1051,7 @@
             "viewCategory": "emotions",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 128
+            "id": 131
         },
         {
             "label": "i_don't_want_to_see_anyone.",
@@ -1038,7 +1059,7 @@
             "viewCategory": "emotions",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 129
+            "id": 132
         },
         {
             "label": "diet",
@@ -1046,7 +1067,7 @@
             "viewCategory": "drink",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 130
+            "id": 133
         },
         {
             "label": "drink",
@@ -1054,7 +1075,7 @@
             "viewCategory": "drink",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 131
+            "id": 134
         },
         {
             "label": "hot_drink",
@@ -1062,7 +1083,7 @@
             "viewCategory": "drink",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 132
+            "id": 135
         },
         {
             "label": "warm_drink",
@@ -1070,7 +1091,7 @@
             "viewCategory": "drink",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 133
+            "id": 136
         },
         {
             "label": "cold_drink",
@@ -1078,7 +1099,7 @@
             "viewCategory": "drink",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 134
+            "id": 137
         },
         {
             "label": "chamomile_tea",
@@ -1086,7 +1107,7 @@
             "viewCategory": "drink",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 135
+            "id": 138
         },
         {
             "label": "coffee",
@@ -1094,7 +1115,7 @@
             "viewCategory": "drink",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 136
+            "id": 139
         },
         {
             "label": "coffee_with_milk",
@@ -1102,7 +1123,7 @@
             "viewCategory": "drink",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 137
+            "id": 140
         },
         {
             "label": "kakao_cocoa",
@@ -1110,7 +1131,7 @@
             "viewCategory": "drink",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 138
+            "id": 141
         },
         {
             "label": "tea",
@@ -1118,7 +1139,7 @@
             "viewCategory": "drink",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 139
+            "id": 142
         },
         {
             "label": "yogurt",
@@ -1126,7 +1147,7 @@
             "viewCategory": "drink",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 140
+            "id": 143
         },
         {
             "label": "water",
@@ -1134,7 +1155,7 @@
             "viewCategory": "drink",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 141
+            "id": 144
         },
         {
             "label": "juice",
@@ -1142,7 +1163,7 @@
             "viewCategory": "drink",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 142
+            "id": 145
         },
         {
             "label": "kefir",
@@ -1150,7 +1171,7 @@
             "viewCategory": "drink",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 143
+            "id": 146
         },
         {
             "label": "food",
@@ -1158,7 +1179,7 @@
             "viewCategory": "food",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 144
+            "id": 147
         },
         {
             "label": "cake",
@@ -1166,7 +1187,7 @@
             "viewCategory": "food",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 145
+            "id": 148
         },
         {
             "label": "dessert",
@@ -1174,7 +1195,7 @@
             "viewCategory": "food",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 146
+            "id": 149
         },
         {
             "label": "meal",
@@ -1182,7 +1203,7 @@
             "viewCategory": "food",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 147
+            "id": 150
         },
         {
             "label": "icecream",
@@ -1190,15 +1211,15 @@
             "viewCategory": "food",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 148
+            "id": 151
         },
         {
-            "label": "-",
+            "label": "",
             "drawable": "jooksikikoonid/KOHUKEST.png",
             "viewCategory": "food",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 149
+            "id": 152
         },
         {
             "label": "porridge",
@@ -1206,7 +1227,7 @@
             "viewCategory": "food",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 150
+            "id": 153
         },
         {
             "label": "soup",
@@ -1214,7 +1235,7 @@
             "viewCategory": "food",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 151
+            "id": 154
         },
         {
             "label": "salad",
@@ -1222,7 +1243,7 @@
             "viewCategory": "food",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 152
+            "id": 155
         },
         {
             "label": "fruit",
@@ -1230,7 +1251,7 @@
             "viewCategory": "food",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 153
+            "id": 156
         },
         {
             "label": "boiled_eggs",
@@ -1238,7 +1259,7 @@
             "viewCategory": "food",
             "viewRedirect": "previous",
             "textToSpeech": "TRUE",
-            "id": 154
+            "id": 157
         }
     ]
 }
