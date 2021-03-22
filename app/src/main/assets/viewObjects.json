@@ -1,0 +1,1268 @@
+{
+    "elements": [
+        {
+            "label": "pain_&_feelings",
+            "drawable": "Home page/PAINFEELINGS.png",
+            "viewCategory": "home",
+            "viewRedirect": "emotions",
+            "textToSpeech": "TRUE",
+            "id": 0
+        },
+        {
+            "label": "questions",
+            "drawable": "Home page/QUESTIONS.png",
+            "viewCategory": "home",
+            "viewRedirect": "condition",
+            "textToSpeech": "TRUE",
+            "id": 1
+        },
+        {
+            "label": "comfort_&_needs",
+            "drawable": "Home page/COMFORTNEEDS.png",
+            "viewCategory": "home",
+            "viewRedirect": "wc",
+            "textToSpeech": "TRUE",
+            "id": 2
+        },
+        {
+            "label": "toilet",
+            "drawable": "Home page/WC.png",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 3
+        },
+        {
+            "label": "i_want_to_go_to_the_toilet.",
+            "drawable": "WC/TAHAN-WC-SSE.png",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 4
+        },
+        {
+            "label": "i_want_to_pee",
+            "drawable": "WC/TAHAN-PISSILE.png",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 5
+        },
+        {
+            "label": "i_want_to_poop",
+            "drawable": "WC/TAHAN-KAKALE.png",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 6
+        },
+        {
+            "label": "catheter_is_irritating",
+            "drawable": "WC/KATEETER-ARRITAB.png",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 7
+        },
+        {
+            "label": "when_can_i_go_pee_on_my_own?",
+            "drawable": "WC/MILLAL-SAAN-ISE-PISSIDA.png",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 8
+        },
+        {
+            "label": "take_the_catheter_away",
+            "drawable": "WC/VOTKE-KATEETER-ARA.png",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 9
+        },
+        {
+            "label": "is_pee_coming?",
+            "drawable": "WC/KAS-PISSI-IKKA-TULEB.png",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 10
+        },
+        {
+            "label": "i_want_to_go_to_the_potty_chair",
+            "drawable": "WC/TAHAN-POTITOOLILE.png",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 11
+        },
+        {
+            "label": "i_want_a_bedpan",
+            "drawable": "WC/TAHAN-SIIBRIT.png",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 12
+        },
+        {
+            "label": "i_don't_want_a_bedpan.",
+            "drawable": "WC/EI-TAHA-SIIBRIT.png",
+            "viewCategory": "wc",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 13
+        },
+        {
+            "label": "pain",
+            "drawable": "Home page/VALU-TUUP.png",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 14
+        },
+        {
+            "label": "sharp_pain",
+            "drawable": "valutp/TERAV-VALU.png",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 15
+        },
+        {
+            "label": "numb_pain",
+            "drawable": "valutp/TUIM-VALU.png",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 16
+        },
+        {
+            "label": "burning_pain",
+            "drawable": "valutp/POLETAV-VALU.png",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 17
+        },
+        {
+            "label": "tingle",
+            "drawable": "valutp/PAKITSEB.png",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 18
+        },
+        {
+            "label": "stings",
+            "drawable": "valutp/KIPITAB.png",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 19
+        },
+        {
+            "label": "prickling_like_ants_running",
+            "drawable": "valutp/SIPELGAD-JOOKSEVAD.png",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 20
+        },
+        {
+            "label": "chest_pain",
+            "drawable": "valutp/RINNUS-PIGISTAB.png",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 21
+        },
+        {
+            "label": "it_is_painful_to_breathe",
+            "drawable": "valutp/HINGATA-ON-VALUS.png",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 22
+        },
+        {
+            "label": "it_is_painful_to_cough",
+            "drawable": "valutp/KOHIDA-ON-VALUS.png",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 23
+        },
+        {
+            "label": "gas_pain",
+            "drawable": "valutp/GAASIVALU.png",
+            "viewCategory": "pain",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 24
+        },
+        {
+            "label": "position_and_movement",
+            "drawable": "Home page/ASEND_LIIKUMINE.png",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 25
+        },
+        {
+            "label": "raise_the_head",
+            "drawable": "asendliikumine/TOSTA-PEATSIT.png",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 26
+        },
+        {
+            "label": "lower_the_bed_head",
+            "drawable": "asendliikumine/LANGETA-PEATSIT.png",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 27
+        },
+        {
+            "label": "turn_me_on_my_side",
+            "drawable": "asendliikumine/KEERA-KULJELE.png",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 28
+        },
+        {
+            "label": "i_want_to_get_up",
+            "drawable": "asendliikumine/TAHAN-VOODIST-TOUSTA.png",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 29
+        },
+        {
+            "label": "my_back_is_tired",
+            "drawable": "asendliikumine/MU-SELG-ON-VASINUD.png",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 30
+        },
+        {
+            "label": "my_position_is_uncomfortable",
+            "drawable": "asendliikumine/MU-ASEND-ON-EBAMUGAV.png",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 31
+        },
+        {
+            "label": "i_want_to_do_exercise",
+            "drawable": "asendliikumine/TAHAN-VOIMELDA.png",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 32
+        },
+        {
+            "label": "i_want_to_sit_on_the_chair",
+            "drawable": "asendliikumine/TAHAN-TOOLILE.png",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 33
+        },
+        {
+            "label": "i_want_to_go_to_bed",
+            "drawable": "asendliikumine/TAHAN-VOODISSE.png",
+            "viewCategory": "position_and_movement",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 34
+        },
+        {
+            "label": "i_want_to_walk",
+            "drawable": "asendliikumine/TAHAN-KONDIDA.png",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 35
+        },
+        {
+            "label": "family_and_work",
+            "drawable": "Home page/PERE_TOO.png",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 36
+        },
+        {
+            "label": "does_my_family_know?",
+            "drawable": "peret/KAS-MU-PERE-TEAB.png",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 37
+        },
+        {
+            "label": "i_want_to_call_home",
+            "drawable": "peret/TAHAN-KOJU-HELISTADA.png",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 38
+        },
+        {
+            "label": "i_want_to_call_for_my_work",
+            "drawable": "peret/TAHAN-TOOLE-HELISTADA.png",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 39
+        },
+        {
+            "label": "when_can_i_go_home?",
+            "drawable": "peret/MILLAL-SAAN-KOJU.png",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 40
+        },
+        {
+            "label": "i_want_to_go_home",
+            "drawable": "peret/MA-TAHAN-KOJU-MINNA.png",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 41
+        },
+        {
+            "label": "my_pets_are_alone_at_home",
+            "drawable": "peret/MU-LEMMIKLOOMAD-ON-KODUS-UKSI.png",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 42
+        },
+        {
+            "label": "i_want_to_see_my_family",
+            "drawable": "peret/TAHAN-NAHA-OMA-PERET.png",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 43
+        },
+        {
+            "label": "call_my_family_here",
+            "drawable": "peret/KUTSUGE-MU-PERE-SIIA.png",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 44
+        },
+        {
+            "label": "has_someone_called?",
+            "drawable": "peret/KAS-KEEGI-ON-HELISTANUD.png",
+            "viewCategory": "family_and_work",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 45
+        },
+        {
+            "label": "therapy",
+            "drawable": "Home page/RAVI.png",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 46
+        },
+        {
+            "label": "how_am_i_doing?",
+            "drawable": "Ravi/KUIDAS-MUL-LÄHEB.png",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 47
+        },
+        {
+            "label": "is_the_operation_done?",
+            "drawable": "Ravi/KAS-OPERATSIOON-ON-TEHTUD.png",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 48
+        },
+        {
+            "label": "how_did_the_operation_go?",
+            "drawable": "Ravi/KUIDAS-OPERATSIOON-LAKS.png",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 49
+        },
+        {
+            "label": "how_can_i_call_a_doctor_or_a_nurse?",
+            "drawable": "Ravi/KUIDAS-MA-SAAN-KUTSUDA-ODE-ARSTI.png",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 50
+        },
+        {
+            "label": "when_does_the_surgeon_come?",
+            "drawable": "Ravi/MILLAL-KIRURG-TULEB.png",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 51
+        },
+        {
+            "label": "i_want_physiotherapy",
+            "drawable": "Ravi/MA-SOOVIN-FUSIOTERAAPIAT.png",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 52
+        },
+        {
+            "label": "what_is_the_treatment_plan?",
+            "drawable": "Ravi/MILLINE-ON-RAVIPLAAN.png",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 53
+        },
+        {
+            "label": "what_is_the_day_plan?",
+            "drawable": "Ravi/MILLINE-ON-PAEVAPLAAN.png",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 54
+        },
+        {
+            "label": "what_examination_is_this?",
+            "drawable": "Ravi/MIS-UURING-SEE-ON.png",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 55
+        },
+        {
+            "label": "end_the_treatment,_i_want_to_die",
+            "drawable": "Ravi/LOPETAGE-RAVI-TAHAN-SURRA.png",
+            "viewCategory": "therapy",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 56
+        },
+        {
+            "label": "what_kind_of_procedure_is_it?",
+            "drawable": "Ravi/MIS-PROTSEDUUR-SEE-ON.png",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 57
+        },
+        {
+            "label": "concerns",
+            "drawable": "Home page/MURED_KKK.png",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 58
+        },
+        {
+            "label": "where_am_i?",
+            "drawable": "muredkkk/KUS-MA-OLEN.png",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 59
+        },
+        {
+            "label": "what_happened?",
+            "drawable": "muredkkk/MIS-JUHTUS.png",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 60
+        },
+        {
+            "label": "how_long_have_i_been_here?",
+            "drawable": "muredkkk/KAUA-MA-SIIN-OLEN-OLNUD.png",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 61
+        },
+        {
+            "label": "will_i_die?",
+            "drawable": "muredkkk/KAS-MA-SUREN.png",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 62
+        },
+        {
+            "label": "what_happens_with_my_pets?",
+            "drawable": "muredkkk/MIS-MU-LOOMADEST-SAAB.png",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 63
+        },
+        {
+            "label": "i_am_afraid_to_die",
+            "drawable": "muredkkk/MA-KARDAN-SURRA.png",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 64
+        },
+        {
+            "label": "i_don't_want_to_die_in_pain",
+            "drawable": "muredkkk/MA-EI-TAHA-VALUDEGA-SURRA.png",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 65
+        },
+        {
+            "label": "i_don't_want_to_be_alone",
+            "drawable": "muredkkk/MA-EI-TAHA-UKSINDA-OLLA.png",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 66
+        },
+        {
+            "label": "i_don't_want_to_be_here",
+            "drawable": "muredkkk/MA-EI-TAHA-SIIN-OLLA.png",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 67
+        },
+        {
+            "label": "untie_my_arms",
+            "drawable": "muredkkk/LASKE-MU-KAED-LAHTI.png",
+            "viewCategory": "concerns",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 68
+        },
+        {
+            "label": "sleep",
+            "drawable": "Home page/UNI.png",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 69
+        },
+        {
+            "label": "i_want_to_sleep",
+            "drawable": "uniwcuuesti/SOOVIN-MAGADA.png",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 70
+        },
+        {
+            "label": "please_turn_the_lights_off",
+            "drawable": "uniwcuuesti/PALUN-PANGE-TULI-KUSTU.png",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 71
+        },
+        {
+            "label": "please_put_the_lights_on",
+            "drawable": "uniwcuuesti/PALUN-PANGE-TULI-POLEMA.png",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 72
+        },
+        {
+            "label": "please_be_quiet",
+            "drawable": "uniwcuuesti/PALUN-OLGE-TASEM.png",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 73
+        },
+        {
+            "label": "i_can't_sleep_i_can_not_sleep",
+            "drawable": "uniwcuuesti/MA-EI-SAA-MAGADA.png",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 74
+        },
+        {
+            "label": "pain disturbs_the_sleep",
+            "drawable": "uniwcuuesti/VALU-SEGAB-MAGADA.png",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 75
+        },
+        {
+            "label": "please_give_me_sleeping_pills",
+            "drawable": "uniwcuuesti/PALUN-UNEROHTU.png",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 76
+        },
+        {
+            "label": "at_home_i_take_sleeping_pills",
+            "drawable": "uniwcuuesti/KODUS-VOTAN-KA-UNEROHTU.png",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 77
+        },
+        {
+            "label": "what's_going_on_bubblesing_here?",
+            "drawable": "uniwcuuesti/MIS-SIIN-MULISEB.png",
+            "viewCategory": "sleep",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 78
+        },
+        {
+            "label": "i_have_something_under_my_body_that_annoys_me",
+            "drawable": "uniwcuuesti/MUL-ON-MIDAGI-KULJE-ALL.png",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 79
+        },
+        {
+            "label": "washing_and_clothing",
+            "drawable": "Home page/PESEMINE-RIIETUMINE.png",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 80
+        },
+        {
+            "label": "i_want_to_brush_my_teeth",
+            "drawable": "pesemineriietumine/TAHAN-HAMBAID-PESTA.png",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 81
+        },
+        {
+            "label": "i_want_irrigate_my_mouth_a_mouthwash",
+            "drawable": "pesemineriietumine/TAHAN-SUUD-NIISUTADA.png",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 82
+        },
+        {
+            "label": "i_have_saliva_in_my_mouth,_plase_remove_it",
+            "drawable": "pesemineriietumine/SUUS-ON-SULGE-PUHASTAGE-PALUN.png",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 83
+        },
+        {
+            "label": "wash_my_face",
+            "drawable": "pesemineriietumine/PESKE-MU-NAGU.png",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 84
+        },
+        {
+            "label": "please_wash_me",
+            "drawable": "pesemineriietumine/PALUN-PESKE-MIND.png",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 85
+        },
+        {
+            "label": "do_not_wash_me",
+            "drawable": "pesemineriietumine/ARGE-PESKE-MIND.png",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 86
+        },
+        {
+            "label": "please brush_my_hair",
+            "drawable": "pesemineriietumine/PALUN-KAMMIGE-MU-JUUKSED.png",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 87
+        },
+        {
+            "label": "where_are_my_things?",
+            "drawable": "pesemineriietumine/KUS-MU-ASJAD-ON.png",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 88
+        },
+        {
+            "label": "i_want_my_clothes_on",
+            "drawable": "pesemineriietumine/TAHAN-RIIDEID-SELGA.png",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 89
+        },
+        {
+            "label": "why_am_i_naked?",
+            "drawable": "pesemineriietumine/MIKS-MA-PALJAS-OLEN.png",
+            "viewCategory": "washing_and_clothing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 90
+        },
+        {
+            "label": "condition",
+            "drawable": "Home page/ENESETUNNE.png",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 91
+        },
+        {
+            "label": "i_feel_very_bad",
+            "drawable": "enesetunne/MUL-ON-VAGA-HALB-OLLA.png",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 92
+        },
+        {
+            "label": "i'm_nauseous",
+            "drawable": "enesetunne/AJAB-IIVELDAMA.png",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 93
+        },
+        {
+            "label": "i_feel_dizzy",
+            "drawable": "enesetunne/PEA-KAIB-RINGI.png",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 94
+        },
+        {
+            "label": "i_am_very_weak",
+            "drawable": "enesetunne/NORKUS-ON-SUUR.png",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 95
+        },
+        {
+            "label": "i_am_cold",
+            "drawable": "enesetunne/MUL-ON-KULM.png",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 96
+        },
+        {
+            "label": "i_am_hot",
+            "drawable": "enesetunne/MUL-ON-PALAV.png",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 97
+        },
+        {
+            "label": "i_don't_feel_my_arms",
+            "drawable": "enesetunne/MA-EI-TUNNE-OMA-KASI.png",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 98
+        },
+        {
+            "label": "i_don't_feel_my_legs",
+            "drawable": "enesetunne/MA-EI-TUNNE-OMA-JALGU.png",
+            "viewCategory": "condition",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 99
+        },
+        {
+            "label": "breathing",
+            "drawable": "Home page/HINGAMINE.png",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 100
+        },
+        {
+            "label": "there_is_not_enough_air",
+            "drawable": "hingamine/OHKU-EI-JATKU.png",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 101
+        },
+        {
+            "label": "i_can't_breathe",
+            "drawable": "hingamine/MA-EI-SAA-HINGATA.png",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 102
+        },
+        {
+            "label": "clear_the_breathing_tube",
+            "drawable": "hingamine/PUHASTAGE-HINGAMISTORU.png",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 103
+        },
+        {
+            "label": "i_am_suffocating_there_is_no_air",
+            "drawable": "hingamine/MA-EI-JOUA-HINGATA.png",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 104
+        },
+        {
+            "label": "take_the_tube_away",
+            "drawable": "hingamine/VOTKE-SEE-TORU-ARA.png",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 105
+        },
+        {
+            "label": "when_will_the_tube_be_taken_away?",
+            "drawable": "hingamine/MILLAL-TORU-ARA-VOETAKSE.png",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 106
+        },
+        {
+            "label": "when_can_i_speak?",
+            "drawable": "hingamine/MILLAL-MA-RAAKIDA-SAAN.png",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 107
+        },
+        {
+            "label": "will_i_ever_speak_again?",
+            "drawable": "hingamine/KAS-MA-HAKKAN-KUNAGI-RAAKIMA.png",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 108
+        },
+        {
+            "label": "i_don't_have_strength_to_breathe",
+            "drawable": "hingamine/MA-EI-JOUA-HINGATA.png",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 109
+        },
+        {
+            "label": "let_the_machine_help_me_to_breathe",
+            "drawable": "hingamine/LAS-MASIN-AITAB-HINGATA.png",
+            "viewCategory": "breathing",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 110
+        },
+        {
+            "label": "entertainment",
+            "drawable": "Home page/AJAVIIDE.png",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 111
+        },
+        {
+            "label": "i_want_to_watch_tv",
+            "drawable": "AJVIIDE/SOOVIN-TV-VAADATA.png",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 112
+        },
+        {
+            "label": "i_want_to_listen_to_the_music",
+            "drawable": "AJVIIDE/SOOVIN-MUUSIKAT-KUULATA.png",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 113
+        },
+        {
+            "label": "please_put_the_tv_on",
+            "drawable": "AJVIIDE/PALUN-PANGE-TELER-KAIMA.png",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 114
+        },
+        {
+            "label": "please_close_the_tv",
+            "drawable": "AJVIIDE/PALUN-LULITAGE_TELER_VALJA.png",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 115
+        },
+        {
+            "label": "do_you_have_newspapers",
+            "drawable": "AJVIIDE/KAS-TEIL-AJALEHTI-ON.png",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 116
+        },
+        {
+            "label": "please_give_me_the_remote",
+            "drawable": "AJVIIDE/PALUN-ANDKE-TV-PULT.png",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 117
+        },
+        {
+            "label": "i_want_to_watch_movie",
+            "drawable": "AJVIIDE/SOOVIN-VAADATA-DVD.png",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 118
+        },
+        {
+            "label": "please_put_it_a_little_bit_quiet",
+            "drawable": "AJVIIDE/PALUN-PANGE-VAIKSEMAKS.png",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 119
+        },
+        {
+            "label": "please_put_it_louder",
+            "drawable": "AJVIIDE/PALUN-PANGE-VALJEMAKS.png",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 120
+        },
+        {
+            "label": "please_talk_to_me",
+            "drawable": "AJVIIDE/PALUN-RAAKIGE-MINUGA-JUTTU.png",
+            "viewCategory": "entertainment",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 121
+        },
+        {
+            "label": "emotions",
+            "drawable": "Home page/EMOTSIOONID.png",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 122
+        },
+        {
+            "label": "i_am_happy",
+            "drawable": "untitled folder/OLEN-ROOMUS.png",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 123
+        },
+        {
+            "label": "i_am_sad",
+            "drawable": "untitled folder/OLEN-KURB.png",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 124
+        },
+        {
+            "label": "i_am_angry",
+            "drawable": "untitled folder/OLEN-VIHANE.png",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 125
+        },
+        {
+            "label": "i_am_afraid",
+            "drawable": "untitled folder/MA-KARDAN.png",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 126
+        },
+        {
+            "label": "i_am_confused",
+            "drawable": "untitled folder/OLEN-SEGADUSES.png",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 127
+        },
+        {
+            "label": "i_am_surprised",
+            "drawable": "untitled folder/OLEN-ULLATUNUD.png",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 128
+        },
+        {
+            "label": "i_love_you",
+            "drawable": "untitled folder/MA-ARMASTAN-SIND.png",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 129
+        },
+        {
+            "label": "you_are_dear_to_me",
+            "drawable": "untitled folder/OLED-MULLE-KALLIS.png",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 130
+        },
+        {
+            "label": "i_want_to_hug_you",
+            "drawable": "untitled folder/TAHAN-SIND-KALLISTADA.png",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 131
+        },
+        {
+            "label": "i_don't_want_to_see_anyone.",
+            "drawable": "untitled folder/MA-EI-TAHA-KEDAGI-NAHA.png",
+            "viewCategory": "emotions",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 132
+        },
+        {
+            "label": "diet",
+            "drawable": "jooksikikoonid/PUUVILJU.png",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 133
+        },
+        {
+            "label": "drink",
+            "drawable": "jooksikikoonid/JOOK/VETT.png",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 134
+        },
+        {
+            "label": "hot_drink",
+            "drawable": "jooksikikoonid/JOOK/KUUMA.png",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 135
+        },
+        {
+            "label": "warm_drink",
+            "drawable": "jooksikikoonid/JOOK/SOOJA.png",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 136
+        },
+        {
+            "label": "cold_drink",
+            "drawable": "jooksikikoonid/JOOK/KULMA.png",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 137
+        },
+        {
+            "label": "chamomile_tea",
+            "drawable": "jooksikikoonid/JOOK/KUMMELITEED.png",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 138
+        },
+        {
+            "label": "coffee",
+            "drawable": "jooksikikoonid/JOOK/KOHVI.png",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 139
+        },
+        {
+            "label": "coffee_with_milk",
+            "drawable": "jooksikikoonid/JOOK/PIIMAGA_KOHVI.png",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 140
+        },
+        {
+            "label": "kakao_cocoa",
+            "drawable": "jooksikikoonid/JOOK/KAKAOD.png",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 141
+        },
+        {
+            "label": "tea",
+            "drawable": "jooksikikoonid/JOOK/TEED.png",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 142
+        },
+        {
+            "label": "yogurt",
+            "drawable": "jooksikikoonid/JOOK/JOGURTIT.png",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 143
+        },
+        {
+            "label": "water",
+            "drawable": "jooksikikoonid/JOOK/VETT.png",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 144
+        },
+        {
+            "label": "juice",
+            "drawable": "jooksikikoonid/JOOK/MAHLA.png",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 145
+        },
+        {
+            "label": "kefir",
+            "drawable": "jooksikikoonid/JOOK/KEEFIRI.png",
+            "viewCategory": "drink",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 146
+        },
+        {
+            "label": "food",
+            "drawable": "jooksikikoonid/PUUVILJU.png",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 147
+        },
+        {
+            "label": "cake",
+            "drawable": "jooksikikoonid/KOOKI.png",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 148
+        },
+        {
+            "label": "dessert",
+            "drawable": "jooksikikoonid/MAGUSTOITU.png",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 149
+        },
+        {
+            "label": "meal",
+            "drawable": "jooksikikoonid/PRAADI.png",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 150
+        },
+        {
+            "label": "icecream",
+            "drawable": "jooksikikoonid/JAATIST.png",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 151
+        },
+        {
+            "label": "",
+            "drawable": "jooksikikoonid/KOHUKEST.png",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 152
+        },
+        {
+            "label": "porridge",
+            "drawable": "jooksikikoonid/PUTRU.png",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 153
+        },
+        {
+            "label": "soup",
+            "drawable": "jooksikikoonid/SUPPI.png",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 154
+        },
+        {
+            "label": "salad",
+            "drawable": "jooksikikoonid/SALATIT.png",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 155
+        },
+        {
+            "label": "fruit",
+            "drawable": "jooksikikoonid/PUUVILJU.png",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 156
+        },
+        {
+            "label": "boiled_eggs",
+            "drawable": "jooksikikoonid/KEEDETUD_MUNA.png",
+            "viewCategory": "food",
+            "viewRedirect": "previous",
+            "textToSpeech": "TRUE",
+            "id": 157
+        }
+    ]
+}

@@ -14,9 +14,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.communicare_mobile.model.TileModel;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 /**
  * Demonstrates the use of {@link RecyclerView} with a {@link LinearLayoutManager} and a
@@ -50,7 +55,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
 
         // Initialize dataset, this data would usually come from a local content provider or
         // remote server.
-        initDataset();
+        initDataset("viewObjects.json", "elements", "home", "english");
     }
 
     @Override
@@ -123,18 +128,56 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
      * Generates Strings for RecyclerView's adapter. This data would usually come
      * from a local content provider or remote server.
      */
-    private void initDataset() {
+    private void initDataset(String fileName, String objectKey, String category, String language) {
+
         // TODO: Replace with data from json - home screen
         mDataset = new ArrayList<>();
-        for (int i = 0; i < DATASET_COUNT; i++) {
-            TileModel tile = new TileModel();
-            tile.setId(i);
-            tile.setLabel(String.valueOf(UUID.randomUUID()));
-            tile.setViewCategory("home");
-            tile.setViewRedirect("pain");
-            tile.setTextToSpeech(true);
-            mDataset.add(tile);
+        try {
+            JSONArray jsonDataArray = new JSONObject(LoadJsonFromAsset(fileName)).getJSONArray(objectKey);
+            JSONObject jsonTransObj = new JSONObject(LoadJsonFromAsset("translations.json")).getJSONObject("translations");
+
+            for (int i=0; i<jsonDataArray.length(); i++){
+                JSONObject itemObj = jsonDataArray.getJSONObject(i);
+
+                long id = itemObj.getLong("id");
+                String label = itemObj.getString("label");
+                String viewCategory = itemObj.getString("viewCategory");
+                String viewRedirect = itemObj.getString("viewRedirect");
+                boolean textToSpeech = itemObj.getBoolean("textToSpeech");
+
+                if (viewCategory.equals(category)){
+                    String translation = jsonTransObj.getJSONObject(label).getString(language);
+                    TileModel tile = new TileModel();
+                    tile.setId(id);
+                    tile.setLabel(translation);
+                    tile.setViewCategory(viewCategory);
+                    tile.setViewRedirect(viewRedirect);
+                    tile.setTextToSpeech(textToSpeech);
+                    mDataset.add(tile);
+                }
+
+            }
+        }catch (JSONException e){
+            Log.d(TAG, "addItemsFromJSON: ", e);
+            e.printStackTrace();
         }
+    }
+
+    public String  LoadJsonFromAsset(String fileName) {
+        String json = null;
+        try{
+            InputStream in = getActivity().getAssets().open(fileName);
+            int size = in.available();
+            byte[] buffer = new byte[size];
+            in.read(buffer);
+            in.close();
+            json = new String(buffer, "UTF-8");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return json;
     }
 
     @Override
