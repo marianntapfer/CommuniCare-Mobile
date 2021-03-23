@@ -1,31 +1,48 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="mees_eest"
+        app:srcCompat="@drawable/mees_eest" />
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:checkedButton="@+id/linear_layout_rb"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
-        android:checkedButton="@+id/linear_layout_rb">
+        android:visibility="invisible">
 
         <RadioButton
             android:id="@+id/linear_layout_rb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="linear_layout_manager" />
+            android:text="linear_layout_manager"
+            android:visibility="invisible" />
 
         <RadioButton
             android:id="@+id/grid_layout_rb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="grid_layout_manager" />
+            android:text="grid_layout_manager"
+            android:visibility="invisible" />
+
     </RadioGroup>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:overScrollMode="never"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:visibility="visible">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
 </LinearLayout>
