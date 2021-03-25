@@ -72,34 +72,26 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         rootView.setTag(TAG);
 
         // BEGIN_INCLUDE(initializeRecyclerView)
-        mRecyclerView = (RecyclerView) rootView.findViewById(R.id.recyclerView);
+        mRecyclerView = rootView.findViewById(R.id.recyclerView);
         mRecyclerView.setNestedScrollingEnabled(false);
 
+        boolean columnsLayout = mDataset.size() % 2 == 0 || mDataset.size() > 5;
 
-        // LinearLayoutManager is used here, this will layout the elements in a similar fashion
-        // to the way ListView would layout elements. The RecyclerView.LayoutManager defines how
-        // elements are laid out.
-        mLayoutManager = new LinearLayoutManager(getActivity());
-
-        mCurrentLayoutManagerType = LayoutManagerType.GRID_LAYOUT_MANAGER;
-
-        if (savedInstanceState != null) {
-            // Restore saved layout manager type.
-            mCurrentLayoutManagerType = (LayoutManagerType) savedInstanceState
-                    .getSerializable(KEY_LAYOUT_MANAGER);
+        if (columnsLayout) {
+            setRecyclerViewLayoutManager(LayoutManagerType.GRID_LAYOUT_MANAGER);
+        } else {
+            setRecyclerViewLayoutManager(LayoutManagerType.LINEAR_LAYOUT_MANAGER);
         }
-        // TODO: Init layout based on json mapping or tile count
-        setRecyclerViewLayoutManager(mCurrentLayoutManagerType);
 
         mAdapter = new TileViewAdapter(mDataset, this);
         // Set CustomAdapter as the adapter for RecyclerView.
         mRecyclerView.setAdapter(mAdapter);
         // END_INCLUDE(initializeRecyclerView)
 
-        mLinearLayoutRadioButton = (RadioButton) rootView.findViewById(R.id.linear_layout_rb);
+        mLinearLayoutRadioButton = rootView.findViewById(R.id.linear_layout_rb);
         mLinearLayoutRadioButton.setOnClickListener(v -> setRecyclerViewLayoutManager(LayoutManagerType.LINEAR_LAYOUT_MANAGER));
 
-        mGridLayoutRadioButton = (RadioButton) rootView.findViewById(R.id.grid_layout_rb);
+        mGridLayoutRadioButton = rootView.findViewById(R.id.grid_layout_rb);
         mGridLayoutRadioButton.setOnClickListener(v -> setRecyclerViewLayoutManager(LayoutManagerType.GRID_LAYOUT_MANAGER));
 
         return rootView;
@@ -107,9 +99,9 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
 
     @Override
     public void onInit(int status) {
-        if(status == TextToSpeech.SUCCESS){
+        if (status == TextToSpeech.SUCCESS) {
             int result = tts.setLanguage(Locale.ENGLISH);
-            if(result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED){
+            if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                 Log.e("TTS", "This language is not supported");
             } else {
                 speakOut();
@@ -120,15 +112,25 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
 
     @Override
     public void onDestroy() {
-        if(tts != null){
+        if (tts != null) {
             tts.stop();
             tts.shutdown();
         }
         super.onDestroy();
     }
 
-    private void speakOut(){
+    private void speakOut() {
         tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+    }
+
+    public void setColumnLayout() {
+        boolean columnsLayout = mDataset.size() % 2 == 0 || mDataset.size() > 5;
+
+        if (columnsLayout) {
+            setRecyclerViewLayoutManager(LayoutManagerType.GRID_LAYOUT_MANAGER);
+        } else {
+            setRecyclerViewLayoutManager(LayoutManagerType.LINEAR_LAYOUT_MANAGER);
+        }
     }
 
     /**
@@ -166,7 +168,6 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         mDataset = (ArrayList<TileModel>) getDataByCategory(category, language);
     }
 
-
     @Override
     public void onAdapterItemClickListener(TileModel tile) {
         // TODO: Implement textToSpeech logic here + adapter reload based on redirect
@@ -176,6 +177,11 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         speakOut();
         mDataset = (ArrayList<TileModel>) getDataByCategory(tile.getViewRedirect(), "english");
         System.out.println(mDataset);
+
+        setColumnLayout();
+        mAdapter = new TileViewAdapter(mDataset, this);
+        // Set CustomAdapter as the adapter for RecyclerView.
+        mRecyclerView.setAdapter(mAdapter);
 //        mAdapter.notifyDataSetChanged();
 //        mRecyclerView.invalidate();
         // this part does not work
@@ -184,15 +190,13 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     }
 
 
-
-
     private List<TileModel> getDataByCategory(String category, String language) {
         mDataset = new ArrayList<>();
         try {
             JSONArray jsonDataArray = new JSONObject(LoadJsonFromAsset("viewObjects.json")).getJSONArray("elements");
             JSONObject jsonTransObj = new JSONObject(LoadJsonFromAsset("translations.json")).getJSONObject("translations");
 
-            for (int i=0; i<jsonDataArray.length(); i++){
+            for (int i = 0; i < jsonDataArray.length(); i++) {
                 JSONObject itemObj = jsonDataArray.getJSONObject(i);
 
                 long id = itemObj.getLong("id");
@@ -201,7 +205,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
                 String viewRedirect = itemObj.getString("viewRedirect");
                 boolean textToSpeech = itemObj.getBoolean("textToSpeech");
 
-                if (viewCategory.equals(category)){
+                if (viewCategory.equals(category)) {
                     String translation = jsonTransObj.getJSONObject(label).getString(language);
                     TileModel tile = new TileModel();
                     tile.setId(id);
@@ -212,16 +216,16 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
                     mDataset.add(tile);
                 }
             }
-        }catch (JSONException e){
+        } catch (JSONException e) {
             Log.d(TAG, "addItemsFromJSON: ", e);
             e.printStackTrace();
         }
         return mDataset;
     }
 
-    public String  LoadJsonFromAsset(String fileName) {
+    public String LoadJsonFromAsset(String fileName) {
         String json = null;
-        try{
+        try {
             InputStream in = getActivity().getAssets().open(fileName);
             int size = in.available();
             byte[] buffer = new byte[size];

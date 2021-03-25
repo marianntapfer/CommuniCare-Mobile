@@ -20,7 +20,7 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
     private static List<TileModel> localDataSet;
     private OnAdapterItemClickListener adapterItemClickListener;
     public String labelLang = "english";
-    
+
 
     /**
      * Provide a reference to the type of views that you are using
@@ -66,12 +66,13 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
         // Create a new view, which defines the UI of the list item
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.tile_view_item, parent, false);
-        int h = parent.getHeight();
+        int h = parent.getHeight() == 0 ? 600 : parent.getHeight();
         // margin - activity_vertical_margin
         // rows - number of rows in diffrent display modes
         // h = (h - Math.round(margin * 2)) / rows;
         // TODO: Implement dynamic tile generation based on item count
-        h = (h - Math.round(15 * 2)) / 5;
+        int rows = getItemCount() / 2;
+        h = (h - Math.round(40 * 2)) / rows;
 
         RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) itemView.getLayoutParams();
         params.height = h;
@@ -98,7 +99,7 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
         return localDataSet.size();
     }
 
-    public void updateTileModelListItems (List<TileModel> tiles){
+    public void updateTileModelListItems(List<TileModel> tiles) {
         final TileModelDiffCallback diffCallback = new TileModelDiffCallback(this.localDataSet, tiles);
         final DiffUtil.DiffResult diffResult = DiffUtil.calculateDiff(diffCallback);
 
