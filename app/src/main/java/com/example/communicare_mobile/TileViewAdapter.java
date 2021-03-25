@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.communicare_mobile.model.TileModel;
@@ -16,8 +17,10 @@ import java.util.List;
 public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHolder> {
     private static final String TAG = "TileViewAdapter";
 
-    private List<TileModel> localDataSet;
+    private static List<TileModel> localDataSet;
     private OnAdapterItemClickListener adapterItemClickListener;
+    public String labelLang = "english";
+    
 
     /**
      * Provide a reference to the type of views that you are using
@@ -85,6 +88,7 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
         // Get element from your dataset at this position and replace the contents of the view
         // with that element
         // TODO: implement translation query based on the label
+
         viewHolder.getTileView().setText(localDataSet.get(position).getLabel());
     }
 
@@ -93,4 +97,16 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
     public int getItemCount() {
         return localDataSet.size();
     }
+
+    public void updateTileModelListItems (List<TileModel> tiles){
+        final TileModelDiffCallback diffCallback = new TileModelDiffCallback(this.localDataSet, tiles);
+        final DiffUtil.DiffResult diffResult = DiffUtil.calculateDiff(diffCallback);
+
+        this.localDataSet.clear();
+        this.localDataSet.addAll(tiles);
+        diffResult.dispatchUpdatesTo(this);
+
+    }
+
+
 }

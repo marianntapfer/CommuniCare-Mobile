@@ -1,6 +1,8 @@
 package com.example.communicare_mobile;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,17 +24,20 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Demonstrates the use of {@link RecyclerView} with a {@link LinearLayoutManager} and a
  * {@link GridLayoutManager}.
  */
-public class RecyclerViewFragment extends Fragment implements OnAdapterItemClickListener {
+public class RecyclerViewFragment extends Fragment implements OnAdapterItemClickListener, TextToSpeech.OnInitListener {
 
     private static final String TAG = "RecyclerViewFragment";
     private static final String KEY_LAYOUT_MANAGER = "layoutManager";
     private static final int SPAN_COUNT = 2;
     private static final int DATASET_COUNT = 10;
+    private TextToSpeech tts;
+    private String text;
 
     private enum LayoutManagerType {
         GRID_LAYOUT_MANAGER,
@@ -47,7 +52,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     protected RecyclerView mRecyclerView;
     protected TileViewAdapter mAdapter;
     protected RecyclerView.LayoutManager mLayoutManager;
-    protected List<TileModel> mDataset;
+    protected ArrayList<TileModel> mDataset;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -55,7 +60,9 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
 
         // Initialize dataset, this data would usually come from a local content provider or
         // remote server.
-        initDataset("viewObjects.json", "elements", "home", "english");
+        initDataset("home", "english");
+        Context context = getContext();
+        tts = new TextToSpeech(context, this);
     }
 
     @Override
@@ -98,6 +105,32 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         return rootView;
     }
 
+    @Override
+    public void onInit(int status) {
+        if(status == TextToSpeech.SUCCESS){
+            int result = tts.setLanguage(Locale.ENGLISH);
+            if(result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED){
+                Log.e("TTS", "This language is not supported");
+            } else {
+                speakOut();
+            }
+        }
+
+    }
+
+    @Override
+    public void onDestroy() {
+        if(tts != null){
+            tts.stop();
+            tts.shutdown();
+        }
+        super.onDestroy();
+    }
+
+    private void speakOut(){
+        tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+    }
+
     /**
      * Set RecyclerView's LayoutManager to the one given.
      *
@@ -128,12 +161,35 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
      * Generates Strings for RecyclerView's adapter. This data would usually come
      * from a local content provider or remote server.
      */
-    private void initDataset(String fileName, String objectKey, String category, String language) {
-
+    private void initDataset(String category, String language) {
         // TODO: Replace with data from json - home screen
+        mDataset = (ArrayList<TileModel>) getDataByCategory(category, language);
+    }
+
+
+    @Override
+    public void onAdapterItemClickListener(TileModel tile) {
+        // TODO: Implement textToSpeech logic here + adapter reload based on redirect
+        Log.d(TAG, "RecyclerView Element " + tile + " clicked.");
+        // TODO: this needs to be the correct language label based on the language chosen from translation.
+        text = tile.getLabel();
+        speakOut();
+        mDataset = (ArrayList<TileModel>) getDataByCategory(tile.getViewRedirect(), "english");
+        System.out.println(mDataset);
+//        mAdapter.notifyDataSetChanged();
+//        mRecyclerView.invalidate();
+        // this part does not work
+//        dispatchUpdatesTo(RecyclerView.Adapter);
+//        dispatchUpdatesTo(ListUpdateCallback);
+    }
+
+
+
+
+    private List<TileModel> getDataByCategory(String category, String language) {
         mDataset = new ArrayList<>();
         try {
-            JSONArray jsonDataArray = new JSONObject(LoadJsonFromAsset(fileName)).getJSONArray(objectKey);
+            JSONArray jsonDataArray = new JSONObject(LoadJsonFromAsset("viewObjects.json")).getJSONArray("elements");
             JSONObject jsonTransObj = new JSONObject(LoadJsonFromAsset("translations.json")).getJSONObject("translations");
 
             for (int i=0; i<jsonDataArray.length(); i++){
@@ -155,12 +211,12 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
                     tile.setTextToSpeech(textToSpeech);
                     mDataset.add(tile);
                 }
-
             }
         }catch (JSONException e){
             Log.d(TAG, "addItemsFromJSON: ", e);
             e.printStackTrace();
         }
+        return mDataset;
     }
 
     public String  LoadJsonFromAsset(String fileName) {
@@ -180,9 +236,4 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         return json;
     }
 
-    @Override
-    public void onAdapterItemClickListener(TileModel tile) {
-        // TODO: Implement textToSpeech logic here + adapter reload based on redirect
-        Log.d(TAG, "RecyclerView Element " + tile + " clicked.");
-    }
 }
