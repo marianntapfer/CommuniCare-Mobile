@@ -7,14 +7,70 @@
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-    <include
-        android:id="@+id/action_bar"
-        layout="@layout/action_bar"
+    <LinearLayout
+        android:id="@+id/navigation_bar"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        android:maxHeight="72dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/BackButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_weight="1"
+                android:drawableTop="?attr/homeAsUpIndicator"
+                android:drawableTint="#125873"
+                android:fontFamily="sans-serif-black"
+                android:text="back"
+                android:textAllCaps="true"
+                android:textColor="#125873"
+                android:textSize="16sp"
+                app:backgroundTint="#FAFAFAFA"
+                app:iconPadding="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/homeButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/round_home_24"
+                android:drawableTint="#125873"
+                android:fontFamily="sans-serif-black"
+                android:text="Home"
+                android:textAllCaps="true"
+                android:textColor="#125873"
+                android:textSize="16sp"
+                app:backgroundTint="#FAFAFAFA"
+                app:iconPadding="0dp" />
+
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -91,7 +147,8 @@
             android:textSize="24sp" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spinner1"
+            android:entries="@array/language"
             android:layout_width="317dp"
             android:layout_height="49dp"
             android:layout_marginStart="52dp"
@@ -114,6 +171,7 @@
 
         <Spinner
             android:id="@+id/spinner2"
+            android:entries="@array/language"
             android:layout_width="317dp"
             android:layout_height="49dp"
             android:layout_marginStart="52dp"
@@ -123,39 +181,45 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/ResetButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#FAFAFAFA"
-        android:fontFamily="sans-serif-black"
-        android:text="Reset application"
-        android:textAllCaps="true"
-        android:textColor="#125873"
-        android:textSize="30sp"
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="238dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/action_bar"
-        app:layout_constraintVertical_bias="0.724" />
+        app:layout_constraintStart_toStartOf="parent">
 
-    <Button
-        android:id="@+id/FeedbackButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#FAFAFAFA"
-        android:fontFamily="sans-serif-black"
-        android:text="Feedback"
-        android:textAllCaps="true"
-        android:textColor="#125873"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/action_bar"
-        app:layout_constraintVertical_bias="0.857" />
+        <Button
+            android:id="@+id/ResetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:background="#FAFAFAFA"
+            android:fontFamily="sans-serif-black"
+            android:text="Reset application"
+            android:textAllCaps="true"
+            android:textColor="#125873"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/FeedbackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:layout_marginLeft="128dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="64dp"
+            android:layout_weight="1"
+            android:background="#FAFAFAFA"
+            android:fontFamily="sans-serif-black"
+            android:text="Feedback"
+            android:textAllCaps="true"
+            android:textColor="#125873"
+            android:textSize="30sp" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

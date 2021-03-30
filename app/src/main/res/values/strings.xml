@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Communicare-mobile</string>
+    <string name="app_name">MyAndroidApp</string>
+    <string-array name="language">
+        <item>Estonian</item>
+        <item>English</item>
+    </string-array>
 </resources>
