@@ -6,6 +6,10 @@ public class TileModel {
     private String viewCategory;
     private String viewRedirect;
     private boolean textToSpeech;
+    private String drawable;
+
+    public String getDrawable() { return drawable; }
+    public void setDrawable (String drawable) { this.drawable = drawable;}
 
     public long getId() {
         return id;

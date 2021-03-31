@@ -49,26 +49,25 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     }
 
     protected LayoutManagerType mCurrentLayoutManagerType;
-
     protected RadioButton mLinearLayoutRadioButton;
     protected RadioButton mGridLayoutRadioButton;
-
     protected RecyclerView mRecyclerView;
     protected ConstraintLayout painOverlay;
     protected SeekBar painBar;
     protected TileViewAdapter mAdapter;
     protected RecyclerView.LayoutManager mLayoutManager;
     protected ArrayList<TileModel> mDataset;
+    protected String language = "english";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         // Initialize dataset, this data would usually come from a local content provider or
         // remote server.
-        initDataset("home", "english");
+        initDataset("home", language);
         Context context = getContext();
         tts = new TextToSpeech(context, this);
+
     }
 
     @Override
@@ -93,7 +92,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
             setRecyclerViewLayoutManager(LayoutManagerType.LINEAR_LAYOUT_MANAGER);
         }
 
-        mAdapter = new TileViewAdapter(mDataset, this);
+        mAdapter = new TileViewAdapter(mDataset, this, this);
         // Set CustomAdapter as the adapter for RecyclerView.
         mRecyclerView.setAdapter(mAdapter);
         // END_INCLUDE(initializeRecyclerView)
@@ -117,7 +116,6 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
                 speakOut();
             }
         }
-
     }
 
     @Override
@@ -188,18 +186,11 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         if(tile.getViewRedirect().equals("pain")){
            displayPainOverlay();
         }else {
-            mDataset = (ArrayList<TileModel>) getDataByCategory(tile.getViewRedirect(), "english");
-            System.out.println(mDataset);
-
+            mDataset = (ArrayList<TileModel>) getDataByCategory(tile.getViewRedirect(), language);
             setColumnLayout();
-            mAdapter = new TileViewAdapter(mDataset, this);
+            mAdapter = new TileViewAdapter(mDataset, this,this);
             // Set CustomAdapter as the adapter for RecyclerView.
             mRecyclerView.setAdapter(mAdapter);
-//        mAdapter.notifyDataSetChanged();
-//        mRecyclerView.invalidate();
-            // this part does not work
-//        dispatchUpdatesTo(RecyclerView.Adapter);
-//        dispatchUpdatesTo(ListUpdateCallback);
         }
 
     }
@@ -219,6 +210,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
                 String viewCategory = itemObj.getString("viewCategory");
                 String viewRedirect = itemObj.getString("viewRedirect");
                 boolean textToSpeech = itemObj.getBoolean("textToSpeech");
+                String drawable = itemObj.getString("drawable");
 
                 if (viewCategory.equals(category)) {
                     String translation = jsonTransObj.getJSONObject(label).getString(language);
@@ -228,6 +220,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
                     tile.setViewCategory(viewCategory);
                     tile.setViewRedirect(viewRedirect);
                     tile.setTextToSpeech(textToSpeech);
+                    tile.setDrawable(drawable);
                     mDataset.add(tile);
                 }
             }

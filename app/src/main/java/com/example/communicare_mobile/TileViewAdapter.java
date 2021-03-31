@@ -1,5 +1,10 @@
 package com.example.communicare_mobile;
 
+import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,11 +12,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.communicare_mobile.model.TileModel;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHolder> {
@@ -19,7 +25,7 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
 
     private static List<TileModel> localDataSet;
     private OnAdapterItemClickListener adapterItemClickListener;
-    public String labelLang = "english";
+    RecyclerViewFragment context;
 
 
     /**
@@ -53,10 +59,12 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
      *
      * @param dataSet String[] containing the data to populate views to be used
      *                by RecyclerView.
+     * @param context
      */
-    public TileViewAdapter(List<TileModel> dataSet, OnAdapterItemClickListener listener) {
+    public TileViewAdapter(List<TileModel> dataSet, OnAdapterItemClickListener listener, RecyclerViewFragment context) {
         localDataSet = dataSet;
         this.adapterItemClickListener = listener;
+        this.context = context;
     }
 
     // Create new views (invoked by the layout manager)
@@ -68,7 +76,7 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
                 .inflate(R.layout.tile_view_item, parent, false);
         int h = parent.getHeight() == 0 ? 600 : parent.getHeight();
         // margin - activity_vertical_margin
-        // rows - number of rows in diffrent display modes
+        // rows - number of rows in different display modes
         // h = (h - Math.round(margin * 2)) / rows;
         // TODO: Implement dynamic tile generation based on item count
         int rows = getItemCount() / 2;
@@ -91,6 +99,37 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
         // TODO: implement translation query based on the label
 
         viewHolder.getTileView().setText(localDataSet.get(position).getLabel());
+
+        String drawable = localDataSet.get(position).getDrawable();
+//        this works
+//        Drawable drawableIcon = context.getResources().getDrawable(R.drawable.home);
+//        drawableIcon.setBounds(0,0,0,0);
+
+//        this does not work
+
+        AssetManager manager = context.getActivity().getAssets();
+
+        InputStream open = null;
+
+        try {
+            open = manager.open(drawable);
+            Bitmap bitmap = BitmapFactory.decodeStream(open);
+
+            Drawable icon = new BitmapDrawable(context.getResources(), bitmap);
+//            icon.setBounds(0,0, icon.getMinimumWidth(), icon.getMinimumHeight());
+//            ScaleDrawable scaledIcon = new ScaleDrawable(icon, 0, 10f, 10f);
+            viewHolder.getTileView().setCompoundDrawablesWithIntrinsicBounds(null, icon, null, null);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }   finally {
+            if (open != null){
+                try {
+                    open.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     // Return the size of your dataset (invoked by the layout manager)
@@ -98,16 +137,5 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
     public int getItemCount() {
         return localDataSet.size();
     }
-
-    public void updateTileModelListItems(List<TileModel> tiles) {
-        final TileModelDiffCallback diffCallback = new TileModelDiffCallback(this.localDataSet, tiles);
-        final DiffUtil.DiffResult diffResult = DiffUtil.calculateDiff(diffCallback);
-
-        this.localDataSet.clear();
-        this.localDataSet.addAll(tiles);
-        diffResult.dispatchUpdatesTo(this);
-
-    }
-
 
 }
