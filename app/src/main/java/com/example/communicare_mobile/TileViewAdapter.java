@@ -3,8 +3,11 @@ package com.example.communicare_mobile;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
+import android.graphics.RectF;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -74,13 +77,15 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
         // Create a new view, which defines the UI of the list item
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.tile_view_item, parent, false);
-        int h = parent.getHeight() == 0 ? 600 : parent.getHeight();
+        DisplayMetrics displayMetrics = itemView.getContext().getResources().getDisplayMetrics();
+        int dpHeight = (int) (displayMetrics.heightPixels * 0.72);
+
+        int h = parent.getHeight() == 0 ? dpHeight : parent.getHeight();
         // margin - activity_vertical_margin
         // rows - number of rows in different display modes
         // h = (h - Math.round(margin * 2)) / rows;
-        // TODO: Implement dynamic tile generation based on item count
-        int rows = getItemCount() / 2;
-        h = (h - Math.round(40 * 2)) / rows;
+        int rows = getItemCount() > 5 ? getItemCount() / 2 : getItemCount();
+        h = (h - Math.round(25 * 2)) / rows;
 
         RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) itemView.getLayoutParams();
         params.height = h;
@@ -97,8 +102,8 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
         // Get element from your dataset at this position and replace the contents of the view
         // with that element
         // TODO: implement translation query based on the label
-
-        viewHolder.getTileView().setText(localDataSet.get(position).getLabel());
+        Button tile = viewHolder.getTileView();
+        tile.setText(localDataSet.get(position).getLabel());
 
         String drawable = localDataSet.get(position).getDrawable();
 //        this works
@@ -114,15 +119,15 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
         try {
             open = manager.open(drawable);
             Bitmap bitmap = BitmapFactory.decodeStream(open);
+            int height = (int) (tile.getMinHeight() * 1.25);
+            int width = tile.getMinWidth();
+            Drawable icon = new BitmapDrawable(context.getResources(), scaleBitmapAndKeepRation(bitmap, height, width));
 
-            Drawable icon = new BitmapDrawable(context.getResources(), bitmap);
-//            icon.setBounds(0,0, icon.getMinimumWidth(), icon.getMinimumHeight());
-//            ScaleDrawable scaledIcon = new ScaleDrawable(icon, 0, 10f, 10f);
             viewHolder.getTileView().setCompoundDrawablesWithIntrinsicBounds(null, icon, null, null);
         } catch (IOException e) {
             e.printStackTrace();
-        }   finally {
-            if (open != null){
+        } finally {
+            if (open != null) {
                 try {
                     open.close();
                 } catch (IOException e) {
@@ -138,4 +143,9 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
         return localDataSet.size();
     }
 
+    public static Bitmap scaleBitmapAndKeepRation(Bitmap targetBmp, int reqHeightInPixels, int reqWidthInPixels) {
+        Matrix matrix = new Matrix();
+        matrix.setRectToRect(new RectF(0, 0, targetBmp.getWidth(), targetBmp.getHeight()), new RectF(0, 0, reqWidthInPixels, reqHeightInPixels), Matrix.ScaleToFit.CENTER);
+        return Bitmap.createBitmap(targetBmp, 0, 0, targetBmp.getWidth(), targetBmp.getHeight(), matrix, true);
+    }
 }

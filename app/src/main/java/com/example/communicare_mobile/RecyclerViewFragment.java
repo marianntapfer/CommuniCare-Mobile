@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.RadioButton;
+import android.widget.LinearLayout;
 import android.widget.SeekBar;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -38,10 +38,10 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     private static final String TAG = "RecyclerViewFragment";
     private static final String KEY_LAYOUT_MANAGER = "layoutManager";
     private static final int SPAN_COUNT = 2;
-    private static final int DATASET_COUNT = 10;
     private TextToSpeech tts;
     private String text;
     private Button lastPainRegion;
+    private boolean showYesNoBar;
 
     private enum LayoutManagerType {
         GRID_LAYOUT_MANAGER,
@@ -49,21 +49,25 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     }
 
     protected LayoutManagerType mCurrentLayoutManagerType;
-    protected RadioButton mLinearLayoutRadioButton;
-    protected RadioButton mGridLayoutRadioButton;
     protected RecyclerView mRecyclerView;
     protected ConstraintLayout painOverlay;
+    protected LinearLayout yesNoBar;
+    protected Button homeButton;
+    protected Button settingsButton;
+    protected Button backButton;
     protected SeekBar painBar;
     protected TileViewAdapter mAdapter;
     protected RecyclerView.LayoutManager mLayoutManager;
     protected ArrayList<TileModel> mDataset;
     protected String language = "english";
+    protected MainActivity main;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Initialize dataset, this data would usually come from a local content provider or
         // remote server.
+        main = (MainActivity) getActivity();
         initDataset("home", language);
         Context context = getContext();
         tts = new TextToSpeech(context, this);
@@ -84,7 +88,14 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         painBar = rootView.findViewById(R.id.painBar);
         initPainRegions(rootView);
 
-        boolean columnsLayout = mDataset.size() % 2 == 0 || mDataset.size() > 5;
+        homeButton = main.findViewById(R.id.homeButton);
+        settingsButton = main.findViewById(R.id.settingsButton);
+        backButton = main.findViewById(R.id.navigation_bar);
+        yesNoBar = main.findViewById(R.id.yes_no_bar);
+        showYesNoBar = true;
+
+        boolean columnsLayout = (mDataset.size() % 2 == 0 && mDataset.size() > 2)
+                || mDataset.size() > 5;
 
         if (columnsLayout) {
             setRecyclerViewLayoutManager(LayoutManagerType.GRID_LAYOUT_MANAGER);
@@ -95,13 +106,6 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         mAdapter = new TileViewAdapter(mDataset, this, this);
         // Set CustomAdapter as the adapter for RecyclerView.
         mRecyclerView.setAdapter(mAdapter);
-        // END_INCLUDE(initializeRecyclerView)
-
-        mLinearLayoutRadioButton = rootView.findViewById(R.id.linear_layout_rb);
-        mLinearLayoutRadioButton.setOnClickListener(v -> setRecyclerViewLayoutManager(LayoutManagerType.LINEAR_LAYOUT_MANAGER));
-
-        mGridLayoutRadioButton = rootView.findViewById(R.id.grid_layout_rb);
-        mGridLayoutRadioButton.setOnClickListener(v -> setRecyclerViewLayoutManager(LayoutManagerType.GRID_LAYOUT_MANAGER));
 
         return rootView;
     }
@@ -132,8 +136,8 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     }
 
     public void setColumnLayout() {
-        boolean columnsLayout = mDataset.size() % 2 == 0 || mDataset.size() > 5;
-
+        boolean columnsLayout = (mDataset.size() % 2 == 0 && mDataset.size() > 2)
+                || mDataset.size() > 5;
         if (columnsLayout) {
             setRecyclerViewLayoutManager(LayoutManagerType.GRID_LAYOUT_MANAGER);
         } else {
@@ -178,17 +182,20 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
 
     @Override
     public void onAdapterItemClickListener(TileModel tile) {
-        // TODO: Implement textToSpeech logic here + adapter reload based on redirect
         Log.d(TAG, "RecyclerView Element " + tile + " clicked.");
         // TODO: this needs to be the correct language label based on the language chosen from translation.
+        if (showYesNoBar) {
+            showYesNoBar = false;
+            yesNoBar.setVisibility(View.GONE);
+        }
         text = tile.getLabel();
         speakOut();
-        if(tile.getViewRedirect().equals("pain")){
-           displayPainOverlay();
-        }else {
+        if (tile.getViewRedirect().equals("pain")) {
+            displayPainOverlay();
+        } else {
             mDataset = (ArrayList<TileModel>) getDataByCategory(tile.getViewRedirect(), language);
             setColumnLayout();
-            mAdapter = new TileViewAdapter(mDataset, this,this);
+            mAdapter = new TileViewAdapter(mDataset, this, this);
             // Set CustomAdapter as the adapter for RecyclerView.
             mRecyclerView.setAdapter(mAdapter);
         }
@@ -247,40 +254,42 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         }
         return json;
     }
-    private void displayPainOverlay(){
+
+    private void displayPainOverlay() {
         painOverlay.setVisibility(View.VISIBLE);
     }
 
-    private void displayPainBar(Button painRegionButton){
+    private void displayPainBar(Button painRegionButton) {
         lastPainRegion = painRegionButton;
         painBar.setVisibility(View.VISIBLE);
     }
-    private void initPainRegions(View rootView){
+
+    private void initPainRegions(View rootView) {
         painBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                String painValue = String.valueOf(progress/10);
-                lastPainRegion.setText(painValue);
-                painBar.setVisibility(View.GONE);
-                text = lastPainRegion.getTag()+" pain level is " + painValue;
-                Log.i("painOverlay", text);
-                speakOut();
-            }
+                                               @Override
+                                               public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                                                   String painValue = String.valueOf(progress / 10);
+                                                   lastPainRegion.setText(painValue);
+                                                   painBar.setVisibility(View.GONE);
+                                                   text = lastPainRegion.getTag() + " pain level is " + painValue;
+                                                   Log.i("painOverlay", text);
+                                                   speakOut();
+                                               }
 
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
+                                               @Override
+                                               public void onStartTrackingTouch(SeekBar seekBar) {
 
-            }
+                                               }
 
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
+                                               @Override
+                                               public void onStopTrackingTouch(SeekBar seekBar) {
 
-            }
-        }
+                                               }
+                                           }
 
         );
         Button headButton = rootView.findViewById(R.id.headButton);
-        headButton.setOnClickListener(button->{
+        headButton.setOnClickListener(button -> {
             displayPainBar((Button) button);
         });
         //saan juurde teha
