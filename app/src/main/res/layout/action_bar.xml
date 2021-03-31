@@ -9,6 +9,35 @@
     android:orientation="horizontal">
 
     <LinearLayout
+        android:id="@+id/backButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_weight="1"
+            android:drawableTop="?attr/homeAsUpIndicator"
+            android:drawableTint="#125873"
+            android:fontFamily="sans-serif-black"
+            android:text="Back"
+            android:textAllCaps="true"
+            android:textColor="#125873"
+            android:textSize="16sp"
+            app:backgroundTint="#FAFAFAFA"
+            app:iconPadding="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settingsButtonLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"

@@ -41,6 +41,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     private TextToSpeech tts;
     private String text;
     private Button lastPainRegion;
+    private TileModel lastTile;
     private boolean showYesNoBar;
 
     private enum LayoutManagerType {
@@ -52,9 +53,13 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     protected RecyclerView mRecyclerView;
     protected ConstraintLayout painOverlay;
     protected LinearLayout yesNoBar;
+    protected LinearLayout backButtonLayout;
+    protected LinearLayout settingsButtonLayout;
     protected Button homeButton;
     protected Button settingsButton;
     protected Button backButton;
+    protected Button yesButton;
+    protected Button noButton;
     protected SeekBar painBar;
     protected TileViewAdapter mAdapter;
     protected RecyclerView.LayoutManager mLayoutManager;
@@ -88,11 +93,8 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         painBar = rootView.findViewById(R.id.painBar);
         initPainRegions(rootView);
 
-        homeButton = main.findViewById(R.id.homeButton);
-        settingsButton = main.findViewById(R.id.settingsButton);
-        backButton = main.findViewById(R.id.navigation_bar);
-        yesNoBar = main.findViewById(R.id.yes_no_bar);
-        showYesNoBar = true;
+        initNavigationButtons();
+        initYesNoBar();
 
         boolean columnsLayout = (mDataset.size() % 2 == 0 && mDataset.size() > 2)
                 || mDataset.size() > 5;
@@ -108,6 +110,53 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         mRecyclerView.setAdapter(mAdapter);
 
         return rootView;
+    }
+
+    private void initYesNoBar() {
+        yesButton = main.findViewById(R.id.yesButton);
+        noButton = main.findViewById(R.id.noButton);
+        yesNoBar = main.findViewById(R.id.yes_no_bar);
+        showYesNoBar = true;
+
+        yesButton.setOnClickListener(button -> {
+            text = "yes";
+            speakOut();
+        });
+        noButton.setOnClickListener(button -> {
+            text = "no";
+            speakOut();
+        });
+    }
+
+    private void initNavigationButtons() {
+        homeButton = main.findViewById(R.id.homeButton);
+        settingsButton = main.findViewById(R.id.settingsButton);
+        settingsButtonLayout = main.findViewById(R.id.settingsButtonLayout);
+        backButton = main.findViewById(R.id.backButton);
+        backButtonLayout = main.findViewById(R.id.backButtonLayout);
+
+        backButton.setOnClickListener(button -> {
+            lastTile = getPreviousScreen(lastTile.getViewCategory());
+            if (lastTile == null) {
+                redirectViewHome();
+            } else {
+                changeViewToTile(lastTile);
+            }
+
+        });
+        homeButton.setOnClickListener(button -> {
+            redirectViewHome();
+        });
+    }
+
+    private void redirectViewHome() {
+        yesNoBar.setVisibility(View.VISIBLE);
+        TileModel homeTile = new TileModel();
+        homeTile.setViewRedirect("home");
+        changeViewToTile(homeTile);
+        backButtonLayout.setVisibility(View.GONE);
+        settingsButtonLayout.setVisibility(View.VISIBLE);
+        showYesNoBar = true;
     }
 
     @Override
@@ -187,9 +236,18 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         if (showYesNoBar) {
             showYesNoBar = false;
             yesNoBar.setVisibility(View.GONE);
+            settingsButtonLayout.setVisibility(View.GONE);
+            backButtonLayout.setVisibility(View.VISIBLE);
         }
+        lastTile = tile;
         text = tile.getLabel();
         speakOut();
+        changeViewToTile(tile);
+
+
+    }
+
+    private void changeViewToTile(TileModel tile) {
         if (tile.getViewRedirect().equals("pain")) {
             displayPainOverlay();
         } else {
@@ -199,7 +257,6 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
             // Set CustomAdapter as the adapter for RecyclerView.
             mRecyclerView.setAdapter(mAdapter);
         }
-
     }
 
 
@@ -236,6 +293,38 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
             e.printStackTrace();
         }
         return mDataset;
+    }
+
+    private TileModel getPreviousScreen(String category) {
+        try {
+            JSONArray jsonDataArray = new JSONObject(LoadJsonFromAsset("viewObjects.json")).getJSONArray("elements");
+
+            for (int i = 0; i < jsonDataArray.length(); i++) {
+                JSONObject itemObj = jsonDataArray.getJSONObject(i);
+
+                long id = itemObj.getLong("id");
+                String label = itemObj.getString("label");
+                String viewCategory = itemObj.getString("viewCategory");
+                String viewRedirect = itemObj.getString("viewRedirect");
+                boolean textToSpeech = itemObj.getBoolean("textToSpeech");
+                String drawable = itemObj.getString("drawable");
+
+                if (viewRedirect.equals(category)) {
+                    TileModel tile = new TileModel();
+                    tile.setId(id);
+                    tile.setLabel(label);
+                    tile.setViewCategory(viewCategory);
+                    tile.setViewRedirect(viewRedirect);
+                    tile.setTextToSpeech(textToSpeech);
+                    tile.setDrawable(drawable);
+                    return tile;
+                }
+            }
+        } catch (JSONException e) {
+            Log.d(TAG, "addItemsFromJSON: ", e);
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public String LoadJsonFromAsset(String fileName) {

@@ -7,70 +7,28 @@
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/navigation_bar"
+    <FrameLayout
+        android:id="@+id/tileViewHolder"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="#FFFFFF"
-        android:maxHeight="72dp"
-        android:orientation="horizontal"
+        android:layout_height="0px"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="2"
+        app:layout_constraintBottom_toTopOf="@+id/yes_no_bar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/action_bar" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/BackButton"
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:layout_marginStart="24dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_weight="1"
-                android:drawableTop="?attr/homeAsUpIndicator"
-                android:drawableTint="#125873"
-                android:fontFamily="sans-serif-black"
-                android:text="back"
-                android:textAllCaps="true"
-                android:textColor="#125873"
-                android:textSize="16sp"
-                app:backgroundTint="#FAFAFAFA"
-                app:iconPadding="0dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/homeButton"
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:layout_marginStart="24dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_weight="1"
-                android:drawableTop="@drawable/round_home_24"
-                android:drawableTint="#125873"
-                android:fontFamily="sans-serif-black"
-                android:text="Home"
-                android:textAllCaps="true"
-                android:textColor="#125873"
-                android:textSize="16sp"
-                app:backgroundTint="#FAFAFAFA"
-                app:iconPadding="0dp" />
-
-        </LinearLayout>
-    </LinearLayout>
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
