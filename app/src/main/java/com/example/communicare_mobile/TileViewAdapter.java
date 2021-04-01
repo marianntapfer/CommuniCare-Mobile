@@ -117,7 +117,7 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
         InputStream open = null;
 
         try {
-            open = manager.open(drawable);
+            open = manager.open("icons/" + drawable);
             Bitmap bitmap = BitmapFactory.decodeStream(open);
             int height = (int) (tile.getMinHeight() * 1.25);
             int width = tile.getMinWidth();
