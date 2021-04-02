@@ -105,12 +105,19 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
         Button tile = viewHolder.getTileView();
         tile.setText(localDataSet.get(position).getLabel());
 
-        String drawable = localDataSet.get(position).getDrawable();
-//        this works
-//        Drawable drawableIcon = context.getResources().getDrawable(R.drawable.home);
-//        drawableIcon.setBounds(0,0,0,0);
+        String category = localDataSet.get(position).getViewCategory();
 
-//        this does not work
+        double iconScale = 1.5;
+
+        if (category.equals("home")) {
+            iconScale = 3.0;
+        } else if (category.equals("questions")) {
+            iconScale = 3.0;
+        } else {
+            iconScale = 1.5;
+        }
+
+        String drawable = localDataSet.get(position).getDrawable();
 
         AssetManager manager = context.getActivity().getAssets();
 
@@ -119,8 +126,8 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
         try {
             open = manager.open("icons/" + drawable);
             Bitmap bitmap = BitmapFactory.decodeStream(open);
-            int height = (int) (tile.getMinHeight() * 1.25);
-            int width = tile.getMinWidth();
+            int height = (int) (tile.getMinHeight() * iconScale);
+            int width = (int) (tile.getMinWidth() * iconScale);
             Drawable icon = new BitmapDrawable(context.getResources(), scaleBitmapAndKeepRation(bitmap, height, width));
 
             viewHolder.getTileView().setCompoundDrawablesWithIntrinsicBounds(null, icon, null, null);
