@@ -407,10 +407,26 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
             displayPainBar((Button) button);
         });
 
-        // saan juurde teha
-        //        //Button headButton = rootView.findViewById(R.id.headButton);
-        //        //headButton.setOnClickListener(button->{
-        //        //    displayPainBar((Button) button);
-        //        //});
+        Button rightThighButton = rootView.findViewById(R.id.rightThighButton);
+        rightThighButton.setOnClickListener(button->{
+            displayPainBar((Button) button);
+        });
+
+        Button leftThighButton = rootView.findViewById(R.id.leftThighButton);
+        leftThighButton.setOnClickListener(button->{
+            displayPainBar((Button) button);
+        });
+
+        Button leftShinButton = rootView.findViewById(R.id.leftShinButton);
+        leftShinButton.setOnClickListener(button->{
+            displayPainBar((Button) button);
+        });
+
+        Button rightShinButton = rootView.findViewById(R.id.rightShinButton);
+        rightShinButton.setOnClickListener(button->{
+            displayPainBar((Button) button);
+        });
+
+
     }
 }

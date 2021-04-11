@@ -31,7 +31,6 @@
             android:layout_height="0dp"
             android:background="@android:color/transparent"
             android:tag="Head"
-            android:text="Button"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="@+id/divider"
             app:layout_constraintEnd_toStartOf="@+id/divider2"
@@ -75,6 +74,17 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <View
+            android:id="@+id/divider18"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
             android:id="@+id/divider4"
             android:layout_width="411dp"
             android:layout_height="1dp"
@@ -93,7 +103,6 @@
             android:background="@android:color/transparent"
             android:shadowColor="@android:color/transparent"
             android:tag="Chest"
-            android:text="Button"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="@+id/divider11"
             app:layout_constraintEnd_toEndOf="@+id/divider9"
@@ -109,7 +118,7 @@
             android:background="?android:attr/listDivider"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.68"
+            app:layout_constraintHorizontal_bias="0.7"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
@@ -198,13 +207,36 @@
             app:layout_constraintTop_toBottomOf="@+id/meesEest"
             app:layout_constraintVertical_bias="0.471" />
 
+        <View
+            android:id="@+id/divider17"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/meesEest"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meesEest"
+            app:layout_constraintVertical_bias="0.296" />
+
+        <View
+            android:id="@+id/divider19"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/meesEest"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meesEest"
+            app:layout_constraintVertical_bias="0.107" />
+
         <Button
             android:id="@+id/bellyButton"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@android:color/transparent"
             android:tag="Belly"
-            android:text="Button"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="@+id/divider12"
@@ -220,7 +252,6 @@
             android:layout_marginBottom="65dp"
             android:background="@android:color/transparent"
             android:tag="Left Shoulder"
-            android:text="Button"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="@+id/divider11"
             app:layout_constraintEnd_toStartOf="@+id/divider10"
@@ -239,7 +270,6 @@
             android:layout_marginBottom="12dp"
             android:background="@android:color/transparent"
             android:tag="Left Arm"
-            android:text="Button"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/divider12"
             app:layout_constraintEnd_toStartOf="@+id/divider10"
@@ -275,7 +305,6 @@
             android:layout_height="108dp"
             android:background="@android:color/transparent"
             android:tag="Right Shoulder"
-            android:text="Button"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/divider11"
             app:layout_constraintEnd_toStartOf="@+id/divider15"
@@ -290,13 +319,65 @@
             android:layout_height="0dp"
             android:background="@android:color/transparent"
             android:tag="Right Arm"
-            android:text="Button"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/divider12"
             app:layout_constraintEnd_toStartOf="@+id/divider16"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@id/divider9"
             app:layout_constraintTop_toBottomOf="@+id/divider11" />
+
+        <Button
+            android:id="@+id/leftThighButton"
+            android:layout_width="76dp"
+            android:layout_height="137dp"
+            android:background="@android:color/transparent"
+            android:tag="Left Thigh"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/divider17"
+            app:layout_constraintEnd_toStartOf="@+id/divider18"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/divider10"
+            app:layout_constraintTop_toBottomOf="@+id/divider12"
+            app:layout_constraintVertical_bias="0.888" />
+
+        <Button
+            android:id="@+id/rightThighButton"
+            android:layout_width="82dp"
+            android:layout_height="135dp"
+            android:background="@android:color/transparent"
+            android:tag="Right Thigh"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/divider17"
+            app:layout_constraintEnd_toStartOf="@+id/divider9"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/divider18"
+            app:layout_constraintTop_toBottomOf="@+id/divider12"
+            app:layout_constraintVertical_bias="0.532" />
+
+        <Button
+            android:id="@+id/leftShinButton"
+            android:layout_width="69dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:tag="Left Shin"
+            app:layout_constraintBottom_toTopOf="@+id/divider19"
+            app:layout_constraintEnd_toStartOf="@+id/divider18"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/divider10"
+            app:layout_constraintTop_toBottomOf="@+id/divider17"
+            app:layout_constraintVertical_bias="0.913" />
+
+        <Button
+            android:id="@+id/rightShinButton"
+            android:layout_width="67dp"
+            android:layout_height="137dp"
+            android:background="@android:color/transparent"
+            android:tag="Right Shin"
+            app:layout_constraintBottom_toTopOf="@+id/divider19"
+            app:layout_constraintEnd_toStartOf="@+id/divider9"
+            app:layout_constraintStart_toEndOf="@+id/divider18"
+            app:layout_constraintTop_toBottomOf="@+id/divider17" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
