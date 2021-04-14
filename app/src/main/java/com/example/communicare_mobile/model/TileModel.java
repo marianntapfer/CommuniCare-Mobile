@@ -3,12 +3,18 @@ package com.example.communicare_mobile.model;
 public class TileModel {
     private long id;
     private String label;
+    private String ttsPhrase;
     private String viewCategory;
     private String viewRedirect;
     private boolean textToSpeech;
     private String drawable;
 
+    public String getTtsPhrase(){ return ttsPhrase; }
+
+    public void setTtsPhrase(String ttsPhrase) { this.ttsPhrase = ttsPhrase; }
+
     public String getDrawable() { return drawable; }
+
     public void setDrawable (String drawable) { this.drawable = drawable;}
 
     public long getId() {
@@ -56,9 +62,11 @@ public class TileModel {
         return "TileModel{" +
                 "id=" + id +
                 ", label='" + label + '\'' +
+                ", ttsPhrase='" + ttsPhrase + '\'' +
                 ", viewCategory='" + viewCategory + '\'' +
                 ", viewRedirect='" + viewRedirect + '\'' +
-                ", textToSpeech=" + textToSpeech +
+                ", textToSpeech=" + textToSpeech + '\'' +
+                ", drawable='" + drawable + '\'' +
                 '}';
     }
 }

@@ -1,1191 +1,41 @@
 {
     "translations": {
-        "pain_&_feelings": {
-            "estonian": "valu ja tunded",
-            "english": "pain & feelings",
-            "arabic": "",
-            "russian male": "",
-            "russian female": "",
-            "german": "",
-            "finnish": "",
-            "italian": ""
-        },
-        "questions": {
-            "estonian": "küsimused",
-            "english": "questions",
-            "arabic": "",
-            "russian male": "",
-            "russian female": "",
-            "german": "",
-            "finnish": "",
-            "italian": ""
-        },
-        "comfort_&_needs": {
-            "estonian": "mugavus ja vajadused",
-            "english": "comfort & needs",
-            "arabic": "",
-            "russian male": "",
-            "russian female": "",
-            "german": "",
-            "finnish": "",
-            "italian": ""
-        },
-        "thanks": {
-            "estonian": "aitäh",
-            "english": "thanks",
-            "arabic": "شكرا",
-            "russian male": "спасибо",
-            "russian female": "спасибо",
-            "german": "danke",
-            "finnish": "",
-            "italian": "grazie"
-        },
-        "back": {
-            "estonian": "tagasi",
-            "english": "back",
-            "arabic": "عودة",
-            "russian male": "обратно",
-            "russian female": "обратно",
-            "german": "",
-            "finnish": "",
-            "italian": ""
-        },
-        "yes": {
-            "estonian": "jah",
-            "english": "yes",
-            "arabic": "نعم",
-            "russian male": "да",
-            "russian female": "да",
-            "german": "ja",
-            "finnish": "",
-            "italian": "sì"
-        },
-        "no": {
-            "estonian": "ei",
-            "english": "no",
-            "arabic": "لا",
-            "russian male": "нет",
-            "russian female": "нет",
-            "german": "nein",
-            "finnish": "",
-            "italian": "no"
-        },
-        "font_size": {
-            "estonian": "kirja suurus",
-            "english": "font size",
-            "arabic": "حجم الخط",
-            "russian male": "размер шрифта",
-            "russian female": "размер шрифта",
-            "german": "",
-            "finnish": "",
-            "italian": ""
-        },
-        "about_us": {
-            "estonian": "meist",
-            "english": "about us",
-            "arabic": "حولنا",
-            "russian male": "о нас",
-            "russian female": "о нас",
-            "german": "",
-            "finnish": "",
-            "italian": ""
-        },
-        "feedback": {
-            "estonian": "saatke meile tagasisidet",
-            "english": "feedback",
-            "arabic": "مراجعة",
-            "russian male": "отправьте нам отзыв",
-            "russian female": "отправьте нам отзыв",
-            "german": "",
-            "finnish": "",
-            "italian": ""
-        },
-        "language": {
-            "estonian": "valige keel",
-            "english": "language",
-            "arabic": "اللغة",
-            "russian male": "выберите язык",
-            "russian female": "выберите язык",
-            "german": "",
-            "finnish": "",
-            "italian": ""
-        },
-        "clear_all": {
-            "estonian": "kustuta kõik",
-            "english": "clear all",
-            "arabic": "مسح",
-            "russian male": "очистить всё",
-            "russian female": "очистить всё",
-            "german": "",
-            "finnish": "",
-            "italian": ""
-        },
-        "i_speak:_english": {
-            "estonian": "mina räägin: eesti keeles",
-            "english": "i speak: english",
-            "arabic": "انا اتكلم",
-            "russian male": "я говорю: по русски",
-            "russian female": "я говорю: по русски",
-            "german": "",
-            "finnish": "",
-            "italian": ""
-        },
-        "my_caregiver_speaks:_english": {
-            "estonian": "minu hooldaja räägib: eesti keeles",
-            "english": "my caregiver speaks: english",
-            "arabic": "الراعي يتكلم",
-            "russian male": "мой опекун говорит: по русски",
-            "russian female": "мой опекун говорит: по русски",
-            "german": "",
-            "finnish": "",
-            "italian": ""
-        },
-        "continue": {
-            "estonian": "edasi",
-            "english": "continue",
-            "arabic": "متابعة",
-            "russian male": "дальше",
-            "russian female": "дальше",
-            "german": "",
-            "finnish": "",
-            "italian": ""
-        },
-        "toilet": {
-            "estonian": "tualetti",
-            "english": "toilet",
-            "arabic": "دورة المياه",
-            "russian male": "туалет",
-            "russian female": "туалет",
-            "german": "wc",
-            "finnish": "",
-            "italian": "bagno"
-        },
-        "i_want_to_go_to_the_toilet.": {
-            "estonian": "tahan wc-sse",
-            "english": "i want to go to the toilet.",
-            "arabic": "اريد الذهاب الى دورة المياه",
-            "russian male": "хочу в туалет",
-            "russian female": "хочу в туалет",
-            "german": "ich muss auf die toilette",
-            "finnish": "",
-            "italian": "vorrei andare al bagno."
-        },
-        "i_want_to_pee": {
-            "estonian": "tahan pissile",
-            "english": "i want to pee",
-            "arabic": "اريد ان ابول",
-            "russian male": "хочу пописать",
-            "russian female": "хочу пописать",
-            "german": "ich muss urinieren",
-            "finnish": "",
-            "italian": "vorrei fare la pipì"
-        },
-        "i_want_to_poop": {
-            "estonian": "tahan kakale",
-            "english": "i want to poop",
-            "arabic": "اريد ان أتغوط",
-            "russian male": "хочу какать",
-            "russian female": "хочу какать",
-            "german": "ich muss stuhlen",
-            "finnish": "",
-            "italian": "vorrei fare la cacca"
-        },
-        "catheter_is_irritating": {
-            "estonian": "kateeter ärritab",
-            "english": "catheter is irritating",
-            "arabic": "القسطرة مزعجة",
-            "russian male": "катетер раздражает",
-            "russian female": "катетер раздражает",
-            "german": "der katheter stört",
-            "finnish": "",
-            "italian": "il catetere è irritante"
-        },
-        "when_can_i_go_pee_on_my_own?": {
-            "estonian": "millal saan ise pissida?",
-            "english": "when can i go pee on my own?",
-            "arabic": "متى استطيع الذهاب الى الحمام بنفسي",
-            "russian male": "когда смогу сам писать?",
-            "russian female": "когда смогу сам писать?",
-            "german": "wann darf ich alleine urinieren gehen",
-            "finnish": "",
-            "italian": "quando posso fare la pipì da solo?"
-        },
-        "take_the_catheter_away": {
-            "estonian": "võtke kateeter ära",
-            "english": "take the catheter away",
-            "arabic": "اخرج القسطرة",
-            "russian male": "вытащите катетер",
-            "russian female": "вытащите катетер",
-            "german": "nehmen sie bitte den katheter weg",
-            "finnish": "",
-            "italian": "porta via il catetere"
-        },
-        "is_pee_coming?": {
-            "estonian": "kas pissi ikka tuleb?",
-            "english": "is pee coming?",
-            "arabic": "هل يخرج البول",
-            "russian male": "моча идёт?",
-            "russian female": "моча идёт?",
-            "german": "kommt urin raus?",
-            "finnish": "",
-            "italian": "la pipì sta arrivando?"
-        },
-        "i_want_to_go_to_the_potty_chair": {
-            "estonian": "tahan potitoolile",
-            "english": "i want to go to the potty chair",
-            "arabic": "اريد الذهاب الى كرسي الحمام",
-            "russian male": "хочу воспользоваться туалет-стулом",
-            "russian female": "хочу воспользоваться туалет-стулом",
-            "german": "ich muss auf das töpfchen",
-            "finnish": "",
-            "italian": "vorrei andare alla sedia da comodo"
-        },
-        "i_want_a_bedpan": {
-            "estonian": "tahan siibrit",
-            "english": "i want a bedpan",
-            "arabic": "اريد نونية السرير",
-            "russian male": "хочу на шибер",
-            "russian female": "хочу на шибер",
-            "german": "ich bräuchte eine bettpfanne",
-            "finnish": "",
-            "italian": "vorrei il vaso da notte"
-        },
-        "i_don't_want_a_bedpan.": {
-            "estonian": "ei taha siibrit",
-            "english": "i don't want a bedpan.",
-            "arabic": "لا اريد نونية السرير",
-            "russian male": "не хочу шибер",
-            "russian female": "не хочу шибер",
-            "german": "ich brauche keine bettpfanne",
-            "finnish": "",
-            "italian": "non voglio il vaso da notte"
-        },
-        "pain": {
-            "estonian": "valu tüüp",
-            "english": "pain",
-            "arabic": "الالم",
-            "russian male": "тип боли",
-            "russian female": "тип боли",
-            "german": "schmerz",
-            "finnish": "",
-            "italian": "dolore"
-        },
-        "sharp_pain": {
-            "estonian": "terav valu",
-            "english": "sharp pain",
-            "arabic": "الم حاد",
-            "russian male": "острая, режущая боль",
-            "russian female": "острая, режущая боль",
-            "german": "starker schmerz",
-            "finnish": "",
-            "italian": "dolore intenso"
-        },
-        "numb_pain": {
-            "estonian": "tuim valu",
-            "english": "numb pain",
-            "arabic": "الم خدر",
-            "russian male": "тупая боль",
-            "russian female": "тупая боль",
-            "german": "tauber schmerz",
-            "finnish": "",
-            "italian": "dolore leggero"
-        },
-        "burning_pain": {
-            "estonian": "põletav valu",
-            "english": "burning pain",
-            "arabic": "الم حارق",
-            "russian male": "жгучая боль",
-            "russian female": "жгучая боль",
-            "german": "brennender schmerz",
-            "finnish": "",
-            "italian": "dolore bruciante"
-        },
-        "tingle": {
-            "estonian": "pakitseb",
-            "english": "tingle",
-            "arabic": "ارتعاش",
-            "russian male": "покалывает",
-            "russian female": "покалывает",
-            "german": "kribbeln",
-            "finnish": "",
-            "italian": "formicolio"
-        },
-        "stings": {
-            "estonian": "kipitab",
-            "english": "stings",
-            "arabic": "وخز",
-            "russian male": "щипит",
-            "russian female": "щипит",
-            "german": "stiche",
-            "finnish": "",
-            "italian": "stings"
-        },
-        "prickling_like_ants_running": {
-            "estonian": "\"sipelgad jooksevad\"",
-            "english": "prickling like ants running",
-            "arabic": "لا استطيع الحركة",
-            "russian male": "мурашки",
-            "russian female": "мурашки",
-            "german": "es fühlt sich taub an",
-            "finnish": "",
-            "italian": "non riesco a spostarmi/mi sento intirizzito"
-        },
-        "chest_pain": {
-            "estonian": "rinnus pigistab",
-            "english": "chest pain",
-            "arabic": "الم بالصدر",
-            "russian male": "в грудй жмёт",
-            "russian female": "в грудй жмёт",
-            "german": "brustschmerzen",
-            "finnish": "",
-            "italian": "dolore al petto"
-        },
-        "it_is_painful_to_breathe": {
-            "estonian": "hingata on valus",
-            "english": "it is painful to breathe",
-            "arabic": "من المؤلم التنفس",
-            "russian male": "больно дышать",
-            "russian female": "больно дышать",
-            "german": "es tut weh, zu atmen",
-            "finnish": "",
-            "italian": "è doloroso respirare"
-        },
-        "it_is_painful_to_cough": {
-            "estonian": "köhida on valus",
-            "english": "it is painful to cough",
-            "arabic": "من المؤلم السعال",
-            "russian male": "больно кашлять",
-            "russian female": "больно кашлять",
-            "german": "est tut weh, zu husten",
-            "finnish": "",
-            "italian": "è doloroso tossire"
-        },
-        "gas_pain": {
-            "estonian": "gaasivalu",
-            "english": "gas pain",
-            "arabic": "غازات",
-            "russian male": "боль из-за газов",
-            "russian female": "боль из-за газов",
-            "german": "blähungschmerzen",
-            "finnish": "",
-            "italian": "po'd'aria nello stomaco"
-        },
-        "position_and_movement": {
-            "estonian": "asend / liikumine",
-            "english": "position and movement",
-            "arabic": "الحركة والوضعية",
-            "russian male": "положение  и движение",
-            "russian female": "положение  и движение",
-            "german": "position / bewegung",
-            "finnish": "",
-            "italian": "posizione / movimento"
-        },
-        "raise_the_head": {
-            "estonian": "tõsta peatsit",
-            "english": "raise the head",
-            "arabic": "ارفع الراس",
-            "russian male": "поднимите изголовье",
-            "russian female": "поднимите изголовье",
-            "german": "heben sie den kopf hoch",
-            "finnish": "",
-            "italian": "alza la testa"
-        },
-        "lower_the_bed_head": {
-            "estonian": "langeta peatsit",
-            "english": "lower the bed head",
-            "arabic": "اخفض التخت عند منطقة الراس",
-            "russian male": "опустите изголовье",
-            "russian female": "опустите изголовье",
-            "german": "den kopfteil des bettes senken",
-            "finnish": "",
-            "italian": "abbassi la testata del letto"
-        },
-        "turn_me_on_my_side": {
-            "estonian": "keera küljele",
-            "english": "turn me on my side",
-            "arabic": "اقلبني على جانبي",
-            "russian male": "поверните на бок",
-            "russian female": "поверните на бок",
-            "german": "drehen sie mich auf die seite",
-            "finnish": "",
-            "italian": "mi gira su un lato"
-        },
-        "i_want_to_get_up": {
-            "estonian": "tahan voodist tõusta",
-            "english": "i want to get up",
-            "arabic": "اريد النهوض",
-            "russian male": "хочу подняться с кровати",
-            "russian female": "хочу подняться с кровати",
-            "german": "ich möchte aufstehen",
-            "finnish": "",
-            "italian": "vorrei alzarmi"
-        },
-        "my_back_is_tired": {
-            "estonian": "mu selg on väsinud",
-            "english": "my back is tired",
-            "arabic": "ظهري متعب",
-            "russian male": "у меня устала спина",
-            "russian female": "у меня устала спина",
-            "german": "mein rücken tut weh",
-            "finnish": "",
-            "italian": "mi fa male la schiena"
-        },
-        "my_position_is_uncomfortable": {
-            "estonian": "mu asend on ebamugav",
-            "english": "my position is uncomfortable",
-            "arabic": "وضعيتي غير مريحة",
-            "russian male": "мне так неудобно",
-            "russian female": "мне так неудобно",
-            "german": "meine position ist unangenehm",
-            "finnish": "",
-            "italian": "la mia posizione è scomoda"
-        },
-        "i_want_to_do_exercise": {
-            "estonian": "tahan võimelda",
-            "english": "i want to do exercise",
-            "arabic": "اريد ان اتمرّن",
-            "russian male": "хочу размяться",
-            "russian female": "хочу размяться",
-            "german": "ich möchte übungen machen",
-            "finnish": "",
-            "italian": "vorrei fare esercizio"
-        },
-        "i_want_to_sit_on_the_chair": {
-            "estonian": "tahan toolile",
-            "english": "i want to sit on the chair",
-            "arabic": "اريد ان اجلس على كرسي",
-            "russian male": "хочу посидет",
-            "russian female": "хочу посидет",
-            "german": "ich möchte mich auf den stuhl setzen",
-            "finnish": "",
-            "italian": "vorrei sedermi sulla sedia"
-        },
-        "i_want_to_go_to_bed": {
-            "estonian": "tahan voodisse",
-            "english": "i want to go to bed",
-            "arabic": "اريد ان اذهب الى السرير",
-            "russian male": "хочу лечь",
-            "russian female": "хочу лечь",
-            "german": "ich möchte schlafen",
-            "finnish": "",
-            "italian": "vorreiandare a letto"
-        },
-        "i_want_to_walk": {
-            "estonian": "tahan kõndida",
-            "english": "i want to walk",
-            "arabic": "اريد ان امشي",
-            "russian male": "хочу походить",
-            "russian female": "хочу походить",
-            "german": "ich möchte laufen",
-            "finnish": "",
-            "italian": "vorrei camminare"
-        },
-        "family_and_work": {
-            "estonian": "pere / töö",
-            "english": "family and work",
-            "arabic": "العائلة و العمل",
-            "russian male": "семья и работа",
-            "russian female": "семья и работа",
-            "german": "familie und arbeit",
-            "finnish": "",
-            "italian": "famiglia / lavoro"
-        },
-        "does_my_family_know?": {
-            "estonian": "kas mu pere teab",
-            "english": "does my family know?",
-            "arabic": "هل عائلتي تدري بي",
-            "russian male": "моя семья знает?",
-            "russian female": "моя семья знает?",
-            "german": "weiß meine familie bescheid?",
-            "finnish": "",
-            "italian": "la mia famiglia lo sa"
-        },
-        "i_want_to_call_home": {
-            "estonian": "tahan koju helistada",
-            "english": "i want to call home",
-            "arabic": "اريد ان اتصل بالمنزل",
-            "russian male": "хочу позвонить домой",
-            "russian female": "хочу позвонить домой",
-            "german": "ich möchte zuhause anrufen",
-            "finnish": "",
-            "italian": "vorrei chiamare a casa"
-        },
-        "i_want_to_call_for_my_work": {
-            "estonian": "tahan tööle helistadai",
-            "english": "i want to call for my work",
-            "arabic": "اريد ان اتصل بالعمل",
-            "russian male": "хочу позвонить на работу",
-            "russian female": "хочу позвонить на работу",
-            "german": "ich möchte auf meiner arbeit anrufen",
-            "finnish": "",
-            "italian": "vorrei fare una chiamata per il mio lavoro"
-        },
-        "when_can_i_go_home?": {
-            "estonian": "millal saan koju?",
-            "english": "when can i go home?",
-            "arabic": "متى استطيع العودة الى المنزل",
-            "russian male": "когда смогу пойти домой?",
-            "russian female": "когда смогу пойти домой?",
-            "german": "wann darf ich nach hause gehen?",
-            "finnish": "",
-            "italian": "quando posso tornare a casa?"
-        },
-        "i_want_to_go_home": {
-            "estonian": "ma tahan koju minna",
-            "english": "i want to go home",
-            "arabic": "اريد العودة الى المنزل",
-            "russian male": "я хочу пойти домой",
-            "russian female": "я хочу пойти домой",
-            "german": "ich möchte nach hause gehen",
-            "finnish": "",
-            "italian": "vorrei andare a casa"
-        },
-        "my_pets_are_alone_at_home": {
-            "estonian": "mu lemmikloomad on üksi kodus",
-            "english": "my pets are alone at home",
-            "arabic": "حيواناتي الاليفة وحيدة بالمنزل",
-            "russian male": "мои домашние животные остались одни дома",
-            "russian female": "мои домашние животные остались одни дома",
-            "german": "meine haustiere sind alleine zuhause",
-            "finnish": "",
-            "italian": "i miei animali sono soli a casa"
-        },
-        "i_want_to_see_my_family": {
-            "estonian": "tahan näha oma peret",
-            "english": "i want to see my family",
-            "arabic": "اريد ان ارى عائلتي",
-            "russian male": "хочу увидеть свою семью",
-            "russian female": "хочу увидеть свою семью",
-            "german": "ich möchte meine familie sehen",
-            "finnish": "",
-            "italian": "vorrei vedere la mia famiglia"
-        },
-        "call_my_family_here": {
-            "estonian": "kutsuge mu pere siia",
-            "english": "call my family here",
-            "arabic": "اتصل بأسرتي للمجيء إلى هنا",
-            "russian male": "позовите мою семью сюда",
-            "russian female": "позовите мою семью сюда",
-            "german": "holen sie meine familie her",
-            "finnish": "",
-            "italian": "faccia venire la mia famiglia qui"
-        },
-        "has_someone_called?": {
-            "estonian": "kas keegi on helistanud?",
-            "english": "has someone called?",
-            "arabic": "هل اتصل بي احدهم",
-            "russian male": "кто-то звонил?",
-            "russian female": "кто-то звонил?",
-            "german": "hat jemand für mich angerufen?",
-            "finnish": "",
-            "italian": "qualcuno ha chiamato?"
-        },
-        "therapy": {
-            "estonian": "ravi",
-            "english": "therapy",
-            "arabic": "العلاج",
-            "russian male": "лечение",
-            "russian female": "лечение",
-            "german": "therapie",
-            "finnish": "",
-            "italian": "terapia"
-        },
-        "how_am_i_doing?": {
-            "estonian": "kuidas mul läheb?-",
-            "english": "how am i doing?",
-            "arabic": "كيف حالي الان؟",
-            "russian male": "как моё состояние здоровья?",
-            "russian female": "как моё состояние здоровья?",
-            "german": "wie ist mein zustand?",
-            "finnish": "",
-            "italian": "come sto?"
-        },
-        "is_the_operation_done?": {
-            "estonian": "kas operatsioon on tehtud?-",
-            "english": "is the operation done?",
-            "arabic": "هل تمت العملية؟",
-            "russian male": "операция сделана?",
-            "russian female": "операция сделана?",
-            "german": "ist die operation vorbei?",
-            "finnish": "",
-            "italian": "l'operazione è stata eseguita?"
-        },
-        "how_did_the_operation_go?": {
-            "estonian": "kuidas operatsioon läks?-",
-            "english": "how did the operation go?",
-            "arabic": "كيف تمت العملية؟",
-            "russian male": "как прошла операция?",
-            "russian female": "как прошла операция?",
-            "german": "wie lief die operation?",
-            "finnish": "",
-            "italian": "com'è andata l'operazione?"
-        },
-        "how_can_i_call_a_doctor_or_a_nurse?": {
-            "estonian": "kuidas ma saan kutsuda õde /arsti?-",
-            "english": "how can i call a doctor or a nurse?",
-            "arabic": "كيف استطيع مناداة الممرضة او الدكتور؟",
-            "russian male": "как я смогу позвать сестру / врача?",
-            "russian female": "как я смогу позвать сестру / врача?",
-            "german": "wie kann ich einen arzt / eine krankenschwester rufen?",
-            "finnish": "",
-            "italian": "come posso chiamare un medico / infermiere?"
-        },
-        "when_does_the_surgeon_come?": {
-            "estonian": "millal kirurg tuleb?",
-            "english": "when does the surgeon come?",
-            "arabic": "متى سيأتي الجرّاح؟",
-            "russian male": "когда придёт хирург?",
-            "russian female": "когда придёт хирург?",
-            "german": "wann kommt der chirurg?",
-            "finnish": "",
-            "italian": "quando verrà il chirurgo?"
-        },
-        "i_want_physiotherapy": {
-            "estonian": "ma soovin füsioteraapiat",
-            "english": "i want physiotherapy",
-            "arabic": "أريد معالجة فيزيائية",
-            "russian male": "я желаю физиотерапию",
-            "russian female": "я желаю физиотерапию",
-            "german": "ich möchte physiotherapie machen",
-            "finnish": "",
-            "italian": "vorrei la fisioterapia"
-        },
-        "what_is_the_treatment_plan?": {
-            "estonian": "milline on raviplaan?",
-            "english": "what is the treatment plan?",
-            "arabic": "ماهي خطة العلاج؟",
-            "russian male": "какой план лечения?",
-            "russian female": "какой план лечения?",
-            "german": "wie ist der behandlungsplan?",
-            "finnish": "",
-            "italian": "qual è il piano terapeutico?"
-        },
-        "what_is_the_day_plan?": {
-            "estonian": "milline on päevaplaan?",
-            "english": "what is the day plan?",
-            "arabic": "ماهي الخطة اليوم؟",
-            "russian male": "какой план дня?",
-            "russian female": "какой план дня?",
-            "german": "wie ist der tagesplan?",
-            "finnish": "",
-            "italian": "qual è il piano giornaliero?"
-        },
-        "what_examination_is_this?": {
-            "estonian": "mis uuring see on?",
-            "english": "what examination is this?",
-            "arabic": "اي فحص هو هذا؟",
-            "russian male": "что это за исследование?",
-            "russian female": "что это за исследование?",
-            "german": "welche untersuchung ist das?",
-            "finnish": "",
-            "italian": "che indagine è questa?"
-        },
-        "end_the_treatment,_i_want_to_die": {
-            "estonian": "lõpetage ravi, tahan surra",
-            "english": "end the treatment, i want to die",
-            "arabic": "أوقفو العلاج",
-            "russian male": "прекратите лечение! хочу умереть",
-            "russian female": "прекратите лечение! хочу умереть",
-            "german": "beenden sie die behandlung. ich will sterben!",
-            "finnish": "",
-            "italian": "termini la cura, vorrei morire"
-        },
-        "what_kind_of_procedure_is_it?": {
-            "estonian": "mis protseduur see on?",
-            "english": "what kind of procedure is it?",
-            "arabic": "ماهي العملية التي ستقومون بها؟",
-            "russian male": "что за процедура?",
-            "russian female": "что за процедура?",
-            "german": "welche prozedur ist das?",
-            "finnish": "",
-            "italian": "che tipo di procedura è?"
-        },
-        "concerns": {
-            "estonian": "mured / kkk",
-            "english": "concerns",
-            "arabic": "مخاوف",
-            "russian male": "переживания",
-            "russian female": "переживания",
-            "german": "sorgen",
-            "finnish": "",
-            "italian": "preoccupazioni"
-        },
-        "where_am_i?": {
-            "estonian": "kus ma olen?",
-            "english": "where am i?",
-            "arabic": "أين انا؟",
-            "russian male": "где я нахожусь?",
-            "russian female": "где я нахожусь?",
-            "german": "wo bin ich?",
-            "finnish": "",
-            "italian": "dove sono?"
-        },
-        "what_happened?": {
-            "estonian": "mis juhtus?",
-            "english": "what happened?",
-            "arabic": "ماللذي حدث؟",
-            "russian male": "что случилось со мной?",
-            "russian female": "что случилось со мной?",
-            "german": "was ist passiert?",
-            "finnish": "",
-            "italian": "che è successo?"
-        },
-        "how_long_have_i_been_here?": {
-            "estonian": "kaua ma siin olen olnud?",
-            "english": "how long have i been here?",
-            "arabic": "منذ متى وأنا هنا؟",
-            "russian male": "как долго я уже здесь?",
-            "russian female": "как долго я уже здесь?",
-            "german": "seit wann bin ich hier?",
-            "finnish": "",
-            "italian": "da quanto tempo sono qui?"
-        },
-        "will_i_die?": {
-            "estonian": "kas ma suren?",
-            "english": "will i die?",
-            "arabic": "هل ساموت؟",
-            "russian male": "я умру?",
-            "russian female": "я умру?",
-            "german": "werde ich sterben?",
-            "finnish": "",
-            "italian": "morirò?"
-        },
-        "what_happens_with_my_pets?": {
-            "estonian": "mis mu loomadest saab?",
-            "english": "what happens with my pets?",
-            "arabic": "ماذا حدث لحيواناتي الاليفة؟",
-            "russian male": "что станет с моими животными?",
-            "russian female": "что станет с моими животными?",
-            "german": "was wird meinen haustieren passieren?",
-            "finnish": "",
-            "italian": "che succede ai miei animali?"
-        },
-        "i_am_afraid_to_die": {
-            "estonian": "ma kardan surra",
-            "english": "i am afraid to die",
-            "arabic": "أنا خائف من الموت",
-            "russian male": "я боюсь умирать",
-            "russian female": "я боюсь умирать",
-            "german": "ich habe angst zu sterben",
-            "finnish": "",
-            "italian": "ho paura di morire"
-        },
-        "i_don't_want_to_die_in_pain": {
-            "estonian": "ma ei taha valudega surra",
-            "english": "i don't want to die in pain",
-            "arabic": "لا أريد ان أتالم",
-            "russian male": "я не хочу умереть, чувствуя боль",
-            "russian female": "я не хочу умереть, чувствуя боль",
-            "german": "ich will nicht unter schmerzen sterben",
-            "finnish": "",
-            "italian": "non voglio morire dal dolore"
-        },
-        "i_don't_want_to_be_alone": {
-            "estonian": "ma ei taha üksinda olla",
-            "english": "i don't want to be alone",
-            "arabic": "لا أريد ان اكون وحيدا",
-            "russian male": "я не хочу быть один",
-            "russian female": "я не хочу быть одна",
-            "german": "ich will nicht alleine sein",
-            "finnish": "",
-            "italian": "non voglio essere solo"
-        },
-        "i_don't_want_to_be_here": {
-            "estonian": "ma ei taha siin olla",
-            "english": "i don't want to be here",
-            "arabic": "لا اريد انا اكون هنا",
-            "russian male": "я не хочу здесь быть",
-            "russian female": "я не хочу здесь быть",
-            "german": "ich will nicht hier sein",
-            "finnish": "",
-            "italian": "non voglio essere qui da solo"
-        },
-        "untie_my_arms": {
-            "estonian": "laske mu käed lahti",
-            "english": "untie my arms",
-            "arabic": "فك لي يداي",
-            "russian male": "развяжите мне руки!",
-            "russian female": "развяжите мне руки!",
-            "german": "öffnen sie bitte meine arme",
-            "finnish": "",
-            "italian": "apro le braccia"
-        },
-        "sleep": {
-            "estonian": "uni",
-            "english": "sleep",
-            "arabic": "النوم",
-            "russian male": "сон",
-            "russian female": "сон",
-            "german": "schlaf",
-            "finnish": "",
-            "italian": "dormire"
-        },
-        "i_want_to_sleep": {
-            "estonian": "soovin magada",
-            "english": "i want to sleep",
-            "arabic": "أريد ان انام",
-            "russian male": "хочу спать",
-            "russian female": "хочу спать",
-            "german": "ich möchte schlafen",
-            "finnish": "",
-            "italian": "vorrei dormire"
-        },
-        "please_turn_the_lights_off": {
-            "estonian": "palun, pange tuli kustu",
-            "english": "please turn the lights off",
-            "arabic": "من فضلك اطفىء الأضوية",
-            "russian male": "пожалуйста, выключите свет",
-            "russian female": "пожалуйста, выключите свет",
-            "german": "bitte schalten sie das licht aus",
-            "finnish": "",
-            "italian": "si prega di spegnere le luci"
-        },
-        "please_put_the_lights_on": {
-            "estonian": "palun, pange tuli põlema",
-            "english": "please put the lights on",
-            "arabic": "من فضلك اشعل الأضوية",
-            "russian male": "пожалуйста, включите свет",
-            "russian female": "пожалуйста, включите свет",
-            "german": "bitte schalten sie das licht ein",
-            "finnish": "",
-            "italian": "si prega di accendere le luci"
-        },
-        "please_be_quiet": {
-            "estonian": "palun olge tasem!",
-            "english": "please be quiet",
-            "arabic": "من فضلك كن هادئا",
-            "russian male": "пожалуйста, потише!",
-            "russian female": "пожалуйста, потише!",
-            "german": "bitte seien sie still",
-            "finnish": "",
-            "italian": "per favore silenzio"
-        },
-        "i_can't_sleep_i_can_not_sleep": {
-            "estonian": "ma ei saa magada!",
-            "english": "i can't sleep i can not sleep",
-            "arabic": "لا أستطيع النوم",
-            "russian male": "я не могу заснуть!",
-            "russian female": "я не могу заснуть!",
-            "german": "ich kann nicht schlafen",
-            "finnish": "",
-            "italian": "non riesco a dormire"
-        },
-        "pain disturbs_the_sleep": {
-            "estonian": "valu segab magada",
-            "english": "pain disturbs the sleep",
-            "arabic": "الألم لايدعني انام",
-            "russian male": "боль не даёт мне спать",
-            "russian female": "боль не даёт мне спать",
-            "german": "ich kann nicht schlafen vor schmerzen",
-            "finnish": "",
-            "italian": "il dolore disturba il sonno"
-        },
-        "please_give_me_sleeping_pills": {
-            "estonian": "palun unerohtu",
-            "english": "please give me sleeping pills",
-            "arabic": "أريد حبوبا تساعدني على النوم",
-            "russian male": "дайте,пожалуйста, снотворное",
-            "russian female": "дайте,пожалуйста, снотворное",
-            "german": "bitte geben sie mir schlaftabletten",
-            "finnish": "",
-            "italian": "per favore, mi dia dei sonniferi"
-        },
-        "at_home_i_take_sleeping_pills": {
-            "estonian": "kodus võtan ka unerohtu",
-            "english": "at home i take sleeping pills",
-            "arabic": "في المنزل استخدم حبوبا منومة",
-            "russian male": "дома принимаю тоже снотворное",
-            "russian female": "дома принимаю тоже снотворное",
-            "german": "zuhause nehme ich schlaftabletten",
-            "finnish": "",
-            "italian": "a casa prendo dei sonniferi"
-        },
-        "what's_going_on_bubblesing_here?": {
-            "estonian": "mis siin muliseb?",
-            "english": "what's going on bubblesing here?",
-            "arabic": "مالذي يصدر صوت الفقاعات؟",
-            "russian male": "что здесь шумит? как будто идёт дождь",
-            "russian female": "что здесь шумит? как будто идёт дождь",
-            "german": "was ist hier los?",
-            "finnish": "",
-            "italian": "cosa sta succedendo qui?"
-        },
-        "i_have_something_under_my_body_that_annoys_me": {
-            "estonian": "mul on midagi külje all",
-            "english": "i have something under my body that annoys me",
-            "arabic": "هنالك شيء يزعجني في السرير",
-            "russian male": "у меня что-то под боком",
-            "russian female": "у меня что-то под боком",
-            "german": "es liegt etwas im bett, das mich stört",
-            "finnish": "",
-            "italian": "ho qualcosa sotto il mio corpo che mi da fastidio"
-        },
-        "washing_and_clothing": {
-            "estonian": "pesemine / riietumine",
-            "english": "washing and clothing",
-            "arabic": "الملابس و النظافة",
-            "russian male": "мытьё и одевание",
-            "russian female": "мытьё и одевание",
-            "german": "waschen und kleidung",
-            "finnish": "",
-            "italian": "lavaggio / abbigliamento"
-        },
-        "i_want_to_brush_my_teeth": {
-            "estonian": "tahan hambaid pesta",
-            "english": "i want to brush my teeth",
-            "arabic": "اريد ان انظف اسناني",
-            "russian male": "хочу почистить зубы",
-            "russian female": "хочу почистить зубы",
-            "german": "ich möchte meine zähne putzen",
-            "finnish": "",
-            "italian": "vorrei lavarmi i denti"
-        },
-        "i_want_irrigate_my_mouth_a_mouthwash": {
-            "estonian": "tahan suud niisutada",
-            "english": "i want irrigate my mouth a mouthwash",
-            "arabic": "اريد ان اغرغر فمي",
-            "russian male": "хочу прополаскать рот",
-            "russian female": "хочу прополаскать рот",
-            "german": "ich möchte eine mundspüllösung",
-            "finnish": "",
-            "italian": "vorrei risciaqcuare la bocca"
-        },
-        "i_have_saliva_in_my_mouth,_plase_remove_it": {
-            "estonian": "suus on sülge, puhastage palun",
-            "english": "i have saliva in my mouth, plase remove it",
-            "arabic": "لدي لعاب في فمي ، يرجى إزالته",
-            "russian male": "во рту много слюней, пожалуйста, почистите!",
-            "russian female": "во рту много слюней, пожалуйста, почистите!",
-            "german": "ich habe speichel im mund, bitte entfernen sie ihn",
-            "finnish": "",
-            "italian": "ho la saliva in bocca, per favore me la rimuova"
-        },
-        "wash_my_face": {
-            "estonian": "peske mu nägu",
-            "english": "wash my face",
-            "arabic": "اغسل وجهي من فضلك",
-            "russian male": "помойте мне лицо",
-            "russian female": "помойте мне лицо",
-            "german": "bitte waschen sie mein gesicht",
-            "finnish": "",
-            "italian": "lavare la mia faccia"
-        },
-        "please_wash_me": {
-            "estonian": "palun, peske mind",
-            "english": "please wash me",
-            "arabic": "اغسلني من فضلك",
-            "russian male": "пожалуйста, помойте меня",
-            "russian female": "пожалуйста, помойте меня",
-            "german": "bitte waschen sie mich",
-            "finnish": "",
-            "italian": "per favore mi lavi"
-        },
-        "do_not_wash_me": {
-            "estonian": "ärge peske mind",
-            "english": "do not wash me",
-            "arabic": "لا اريد ان اغتسل",
-            "russian male": "не мойте меня",
-            "russian female": "не мойте меня",
-            "german": "bitte waschen sie mich nicht",
-            "finnish": "",
-            "italian": "non mi lavare"
-        },
-        "please brush_my_hair": {
-            "estonian": "palun, kammige mu juukseid",
-            "english": "please brush my hair",
-            "arabic": "من فضلك مشط لي شعري",
-            "russian male": "пожалуйста, причешите меня",
-            "russian female": "пожалуйста, причешите меня",
-            "german": "bitte kämmen sie mir die haare",
-            "finnish": "",
-            "italian": "per favore, mi pettina i capelli"
-        },
-        "where_are_my_things?": {
-            "estonian": "kus mu asjad on?",
-            "english": "where are my things?",
-            "arabic": "اين هي اغراضي؟",
-            "russian male": "где мои вещи?",
-            "russian female": "где мои вещи?",
-            "german": "wo sind meine sachen?",
-            "finnish": "",
-            "italian": "dove sono le mie cose?"
-        },
-        "i_want_my_clothes_on": {
-            "estonian": "tahan riideid selga",
-            "english": "i want my clothes on",
-            "arabic": "اريد ان ارتدي ملابسي",
-            "russian male": "хочу одеться",
-            "russian female": "хочу одеться",
-            "german": "ich möchte mich anziehen",
-            "finnish": "",
-            "italian": "vorrei vestirmi"
-        },
-        "why_am_i_naked?": {
-            "estonian": "miks ma paljas olen?",
-            "english": "why am i naked?",
-            "arabic": "لماذا انا عاري؟",
-            "russian male": "почему я голый?",
-            "russian female": "почему я голый?",
-            "german": "warum bin ich nackt?",
-            "finnish": "",
-            "italian": "perché sono nudo?"
-        },
-        "condition": {
-            "estonian": "enesetunne",
-            "english": "condition",
-            "arabic": "حالتي",
-            "russian male": "самочувствие",
-            "russian female": "самочувствие",
-            "german": "zustand",
-            "finnish": "",
-            "italian": "condizione"
-        },
-        "i_feel_very_bad": {
-            "estonian": "mul on väga halb olla",
-            "english": "i feel very bad",
-            "arabic": "انني اشعر بالحزن",
-            "russian male": "мне очень плохо",
-            "russian female": "мне очень плохо",
-            "german": "ich fühle mich sehr schlecht",
-            "finnish": "",
-            "italian": "mi sento molto male"
-        },
-        "i'm_nauseous": {
-            "estonian": "ajab iiveldama",
-            "english": "i'm nauseous",
-            "arabic": "انني متوتر",
-            "russian male": "тошнит",
-            "russian female": "тошнит",
-            "german": "mir ist übel",
-            "finnish": "",
-            "italian": "ho la nausea"
-        },
-        "i_feel_dizzy": {
-            "estonian": "pea käib ringi",
-            "english": "i feel dizzy",
-            "arabic": "اشعر بالدوار",
-            "russian male": "голова кружится",
-            "russian female": "голова кружится",
-            "german": "mir ist schwindelig",
-            "finnish": "",
-            "italian": "mi gira la testa"
-        },
-        "i_am_very_weak": {
-            "estonian": "nõrkus on suur",
-            "english": "i am very weak",
-            "arabic": "اشعر بالضعف الشديد",
-            "russian male": "у меня нет силы",
-            "russian female": "у меня нет силы",
-            "german": "ich bin sehr schwach",
-            "finnish": "",
-            "italian": "molto debole"
-        },
-        "i_am_cold": {
-            "estonian": "mul on külm",
-            "english": "i am cold",
-            "arabic": "اشعر بالبرد",
-            "russian male": "мне холодно",
-            "russian female": "мне холодно",
-            "german": "mir ist kalt",
-            "finnish": "",
-            "italian": "ho freddo"
-        },
-        "i_am_hot": {
-            "estonian": "mul on palav",
-            "english": "i am hot",
-            "arabic": "اشعر بالحر",
-            "russian male": "мне жарко",
-            "russian female": "мне жарко",
-            "german": "mir ist heiß",
-            "finnish": "",
-            "italian": "sento caldo"
-        },
-        "i_don't_feel_my_arms": {
-            "estonian": "ma ei tunne oma käsi",
-            "english": "i don't feel my arms",
-            "arabic": "لا استطيع ان اشعر بيداي",
-            "russian male": "я не чувствую свои руки",
-            "russian female": "я не чувствую свои руки",
-            "german": "ich kann meine arme nicht fühlen",
-            "finnish": "",
-            "italian": "non sento le mie braccia"
-        },
-        "i_don't_feel_my_legs": {
-            "estonian": "ma ei tunne oma jalgu",
-            "english": "i don't feel my legs",
-            "arabic": "لا استطيع ان اشعر بقدماي",
-            "russian male": "я не чувствую свои ноги",
-            "russian female": "я не чувствую свои ноги",
-            "german": "ich kann meine beine nicht fühlen",
-            "finnish": "",
-            "italian": "non sento le gambe"
-        },
-        "breathing": {
-            "estonian": "hingamine",
-            "english": "breathing",
-            "arabic": "التنفس",
-            "russian male": "дыхание",
-            "russian female": "дыхание",
-            "german": "atmung",
-            "finnish": "",
-            "italian": "respirazione"
-        },
-        "there_is_not_enough_air": {
-            "estonian": "õhku ei jätku!",
-            "english": "there is not enough air",
-            "arabic": "ليس هنالك هواء كاف",
-            "russian male": "не хватает воздуха",
-            "russian female": "не хватает воздуха",
-            "german": "hier ist nicht genug frische luft",
-            "finnish": "",
-            "italian": "non c'è abbastanza aria"
-        },
-        "i_can't_breathe": {
-            "estonian": "ma ei saa hingata!",
-            "english": "i can't breathe",
-            "arabic": "لا استطيع التنفس",
-            "russian male": "я не могу дышать!",
-            "russian female": "я не могу дышать!",
-            "german": "ich kann nicht atmen",
-            "finnish": "",
-            "italian": "non riesco a respirare"
+        "take_the_tube_away": {
+            "estonian": "võtke see toru ära",
+            "english": "take the tube away",
+            "arabic": "لا اريد انبوبة التنفس",
+            "russian_male": "вытащите эту трубку!",
+            "russian_female": "вытащите эту трубку!",
+            "german": "bitte nehmen sie den schlauch weg",
+            "finnish": "",
+            "italian": "porti via il tubo"
         },
         "clear_the_breathing_tube": {
             "estonian": "puhastage hingamistoru!",
             "english": "clear the breathing tube",
             "arabic": "من فضلك نضّف انبوبة التنفس",
-            "russian male": "почистите дыхательную трубку!",
-            "russian female": "почистите дыхательную трубку!",
+            "russian_male": "почистите дыхательную трубку!",
+            "russian_female": "почистите дыхательную трубку!",
             "german": "machen sie den schlauch sauber",
             "finnish": "",
             "italian": "pulisca il tubo di respirazione"
         },
-        "i_am_suffocating_there_is_no_air": {
-            "estonian": "ma lämbun õhku ei jätku!",
-            "english": "i am suffocating there is no air",
+        "there_is_not_enough_air": {
+            "estonian": "õhku ei jätku!",
+            "english": "there is not enough air",
             "arabic": "ليس هنالك هواء كاف",
-            "russian male": "я захлёбываюсь, я задыхаюсь! воздуха не хватает",
-            "russian female": "я захлёбываюсь, я задыхаюсь! воздуха не хватает",
-            "german": "ich ersticke",
+            "russian_male": "не хватает воздуха",
+            "russian_female": "не хватает воздуха",
+            "german": "hier ist nicht genug frische luft",
             "finnish": "",
-            "italian": "sto soffocando"
-        },
-        "take_the_tube_away": {
-            "estonian": "võtke see toru ära",
-            "english": "take the tube away",
-            "arabic": "لا اريد انبوبة التنفس",
-            "russian male": "вытащите эту трубку!",
-            "russian female": "вытащите эту трубку!",
-            "german": "bitte nehmen sie den schlauch weg",
-            "finnish": "",
-            "italian": "porti via il tubo"
+            "italian": "non c'è abbastanza aria"
         },
         "when_will_the_tube_be_taken_away?": {
             "estonian": "millal toru ära võetakse",
             "english": "when will the tube be taken away?",
             "arabic": "متى سيتم ازالة انبوبة التنفس",
-            "russian male": "когда вытащите эту трубку?",
-            "russian female": "когда вытащите эту трубку?",
+            "russian_male": "когда вытащите эту трубку?",
+            "russian_female": "когда вытащите эту трубку?",
             "german": "wann wird der schlauch entfernt?",
             "finnish": "",
             "italian": "quando verrà tolto il tubo?"
@@ -1194,28 +44,38 @@
             "estonian": "millal ma rääkida saan?",
             "english": "when can i speak?",
             "arabic": "متى استطيع التحدث",
-            "russian male": "когда я смогу говорить?",
-            "russian female": "когда я смогу говорить?",
+            "russian_male": "когда я смогу говорить?",
+            "russian_female": "когда я смогу говорить?",
             "german": "wann kann ich wieder sprechen?",
             "finnish": "",
             "italian": "quando posso parlare?"
         },
-        "will_i_ever_speak_again?": {
-            "estonian": "kas ma hakkan kunagi rääkima?",
-            "english": "will i ever speak again?",
-            "arabic": "متى استطيع التحدث مجددا",
-            "russian male": "я смогу когда-нибудь говорить?",
-            "russian female": "я смогу когда-нибудь говорить?",
-            "german": "kann ich jemals wieder sprechen?",
+        "i_can't_breathe": {
+            "estonian": "ma ei saa hingata!",
+            "english": "i can't breathe",
+            "arabic": "لا استطيع التنفس",
+            "russian_male": "я не могу дышать!",
+            "russian_female": "я не могу дышать!",
+            "german": "ich kann nicht atmen",
             "finnish": "",
-            "italian": "tornerò mai più a parlare?"
+            "italian": "non riesco a respirare"
+        },
+        "i_am_suffocating_there_is_no_air": {
+            "estonian": "ma lämbun õhku ei jätku!",
+            "english": "i am suffocating there is no air",
+            "arabic": "ليس هنالك هواء كاف",
+            "russian_male": "я захлёбываюсь, я задыхаюсь! воздуха не хватает",
+            "russian_female": "я захлёбываюсь, я задыхаюсь! воздуха не хватает",
+            "german": "ich ersticke",
+            "finnish": "",
+            "italian": "sto soffocando"
         },
         "i_don't_have_strength_to_breathe": {
             "estonian": "ma ei jõua hingata",
             "english": "i don't have strength to breathe",
             "arabic": "لا املك الطاقة لاتنفس",
-            "russian male": "у меня нет сил дышать",
-            "russian female": "у меня нет сил дышать",
+            "russian_male": "у меня нет сил дышать",
+            "russian_female": "у меня нет сил дышать",
             "german": "ich kann nicht atmen",
             "finnish": "",
             "italian": "non ho la forza per respirare"
@@ -1224,28 +84,438 @@
             "estonian": "las masin aitab hingata",
             "english": "let the machine help me to breathe",
             "arabic": "اريد ان تساعدني الالة بالتنفس",
-            "russian male": "пусть дыхательнвй аппарат поможет мне дышать",
-            "russian female": "пусть дыхательнвй аппарат поможет мне дышать",
+            "russian_male": "пусть дыхательнвй аппарат поможет мне дышать",
+            "russian_female": "пусть дыхательнвй аппарат поможет мне дышать",
             "german": "lassen sie die maschine mir beim atmen helfen",
             "finnish": "",
             "italian": "lasci che la macchina mi aiuti a respirare"
+        },
+        "will_i_ever_speak_again?": {
+            "estonian": "kas ma hakkan kunagi rääkima?",
+            "english": "will i ever speak again?",
+            "arabic": "متى استطيع التحدث مجددا",
+            "russian_male": "я смогу когда-нибудь говорить?",
+            "russian_female": "я смогу когда-нибудь говорить?",
+            "german": "kann ich jemals wieder sprechen?",
+            "finnish": "",
+            "italian": "tornerò mai più a parlare?"
+        },
+        "breathing": {
+            "estonian": "hingamine",
+            "english": "breathing",
+            "arabic": "التنفس",
+            "russian_male": "дыхание",
+            "russian_female": "дыхание",
+            "german": "atmung",
+            "finnish": "",
+            "italian": "respirazione"
+        },
+        "wc": {
+            "estonian": "wc",
+            "english": "wc",
+            "arabic": "",
+            "russian_male": "",
+            "russian_female": "",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "drink": {
+            "estonian": "jook",
+            "english": "drink",
+            "arabic": "الشراب",
+            "russian_male": "напиток",
+            "russian_female": "напиток",
+            "german": "getränke",
+            "finnish": "",
+            "italian": "bevanda"
+        },
+        "sleep": {
+            "estonian": "uni",
+            "english": "sleep",
+            "arabic": "النوم",
+            "russian_male": "сон",
+            "russian_female": "сон",
+            "german": "schlaf",
+            "finnish": "",
+            "italian": "dormire"
+        },
+        "diet": {
+            "estonian": "toitumine",
+            "english": "diet",
+            "arabic": "الغذاء",
+            "russian_male": "",
+            "russian_female": "",
+            "german": "",
+            "finnish": "",
+            "italian": "dieta"
+        },
+        "washing_and_clothing": {
+            "estonian": "pesemine / riietumine",
+            "english": "washing and clothing",
+            "arabic": "الملابس و النظافة",
+            "russian_male": "мытьё и одевание",
+            "russian_female": "мытьё и одевание",
+            "german": "waschen und kleidung",
+            "finnish": "",
+            "italian": "lavaggio / abbigliamento"
+        },
+        "position_and_movement": {
+            "estonian": "asend / liikumine",
+            "english": "position and movement",
+            "arabic": "الحركة والوضعية",
+            "russian_male": "положение  и движение",
+            "russian_female": "положение  и движение",
+            "german": "position / bewegung",
+            "finnish": "",
+            "italian": "posizione / movimento"
         },
         "entertainment": {
             "estonian": "ajaviide",
             "english": "entertainment",
             "arabic": "",
-            "russian male": "времяпрепровождение",
-            "russian female": "времяпрепровождение",
+            "russian_male": "времяпрепровождение",
+            "russian_female": "времяпрепровождение",
             "german": "unterhaltung",
             "finnish": "",
             "italian": "divertimento"
+        },
+        "what_kind_of_procedure_is_it?": {
+            "estonian": "mis protseduur see on?",
+            "english": "what kind of procedure is it?",
+            "arabic": "ماهي العملية التي ستقومون بها؟",
+            "russian_male": "что за процедура?",
+            "russian_female": "что за процедура?",
+            "german": "welche prozedur ist das?",
+            "finnish": "",
+            "italian": "che tipo di procedura è?"
+        },
+        "what_happens_with_my_pets?": {
+            "estonian": "mis mu loomadest saab?",
+            "english": "what happens with my pets?",
+            "arabic": "ماذا حدث لحيواناتي الاليفة؟",
+            "russian_male": "что станет с моими животными?",
+            "russian_female": "что станет с моими животными?",
+            "german": "was wird meinen haustieren passieren?",
+            "finnish": "",
+            "italian": "che succede ai miei animali?"
+        },
+        "what_happened?": {
+            "estonian": "mis juhtus?",
+            "english": "what happened?",
+            "arabic": "ماللذي حدث؟",
+            "russian_male": "что случилось со мной?",
+            "russian_female": "что случилось со мной?",
+            "german": "was ist passiert?",
+            "finnish": "",
+            "italian": "che è successo?"
+        },
+        "i_am_afraid_to_die": {
+            "estonian": "ma kardan surra",
+            "english": "i am afraid to die",
+            "arabic": "أنا خائف من الموت",
+            "russian_male": "я боюсь умирать",
+            "russian_female": "я боюсь умирать",
+            "german": "ich habe angst zu sterben",
+            "finnish": "",
+            "italian": "ho paura di morire"
+        },
+        "i_don't_want_to_die_in_pain": {
+            "estonian": "ma ei taha valudega surra",
+            "english": "i don't want to die in pain",
+            "arabic": "لا أريد ان أتالم",
+            "russian_male": "я не хочу умереть, чувствуя боль",
+            "russian_female": "я не хочу умереть, чувствуя боль",
+            "german": "ich will nicht unter schmerzen sterben",
+            "finnish": "",
+            "italian": "non voglio morire dal dolore"
+        },
+        "i_don't_want_to_be_alone": {
+            "estonian": "ma ei taha üksinda olla",
+            "english": "i don't want to be alone",
+            "arabic": "لا أريد ان اكون وحيدا",
+            "russian_male": "я не хочу быть один",
+            "russian_female": "я не хочу быть одна",
+            "german": "ich will nicht alleine sein",
+            "finnish": "",
+            "italian": "non voglio essere solo"
+        },
+        "i_don't_want_to_be_here": {
+            "estonian": "ma ei taha siin olla",
+            "english": "i don't want to be here",
+            "arabic": "لا اريد انا اكون هنا",
+            "russian_male": "я не хочу здесь быть",
+            "russian_female": "я не хочу здесь быть",
+            "german": "ich will nicht hier sein",
+            "finnish": "",
+            "italian": "non voglio essere qui da solo"
+        },
+        "untie_my_arms": {
+            "estonian": "laske mu käed lahti",
+            "english": "untie my arms",
+            "arabic": "فك لي يداي",
+            "russian_male": "развяжите мне руки!",
+            "russian_female": "развяжите мне руки!",
+            "german": "öffnen sie bitte meine arme",
+            "finnish": "",
+            "italian": "apro le braccia"
+        },
+        "where_am_i?": {
+            "estonian": "kus ma olen?",
+            "english": "where am i?",
+            "arabic": "أين انا؟",
+            "russian_male": "где я нахожусь?",
+            "russian_female": "где я нахожусь?",
+            "german": "wo bin ich?",
+            "finnish": "",
+            "italian": "dove sono?"
+        },
+        "how_long_have_i_been_here?": {
+            "estonian": "kaua ma siin olen olnud?",
+            "english": "how long have i been here?",
+            "arabic": "منذ متى وأنا هنا؟",
+            "russian_male": "как долго я уже здесь?",
+            "russian_female": "как долго я уже здесь?",
+            "german": "seit wann bin ich hier?",
+            "finnish": "",
+            "italian": "da quanto tempo sono qui?"
+        },
+        "will_i_die?": {
+            "estonian": "kas ma suren?",
+            "english": "will i die?",
+            "arabic": "هل ساموت؟",
+            "russian_male": "я умру?",
+            "russian_female": "я умру?",
+            "german": "werde ich sterben?",
+            "finnish": "",
+            "italian": "morirò?"
+        },
+        "i_feel_dizzy": {
+            "estonian": "pea käib ringi",
+            "english": "i feel dizzy",
+            "arabic": "اشعر بالدوار",
+            "russian_male": "голова кружится",
+            "russian_female": "голова кружится",
+            "german": "mir ist schwindelig",
+            "finnish": "",
+            "italian": "mi gira la testa"
+        },
+        "i_am_very_weak": {
+            "estonian": "nõrkus on suur",
+            "english": "i am very weak",
+            "arabic": "اشعر بالضعف الشديد",
+            "russian_male": "у меня нет силы",
+            "russian_female": "у меня нет силы",
+            "german": "ich bin sehr schwach",
+            "finnish": "",
+            "italian": "molto debole"
+        },
+        "i_feel_very_bad": {
+            "estonian": "mul on väga halb olla",
+            "english": "i feel very bad",
+            "arabic": "انني اشعر بالحزن",
+            "russian_male": "мне очень плохо",
+            "russian_female": "мне очень плохо",
+            "german": "ich fühle mich sehr schlecht",
+            "finnish": "",
+            "italian": "mi sento molto male"
+        },
+        "i_am_hot": {
+            "estonian": "mul on palav",
+            "english": "i am hot",
+            "arabic": "اشعر بالحر",
+            "russian_male": "мне жарко",
+            "russian_female": "мне жарко",
+            "german": "mir ist heiß",
+            "finnish": "",
+            "italian": "sento caldo"
+        },
+        "i_am_cold": {
+            "estonian": "mul on külm",
+            "english": "i am cold",
+            "arabic": "اشعر بالبرد",
+            "russian_male": "мне холодно",
+            "russian_female": "мне холодно",
+            "german": "mir ist kalt",
+            "finnish": "",
+            "italian": "ho freddo"
+        },
+        "i_don't_feel_my_arms": {
+            "estonian": "ma ei tunne oma käsi",
+            "english": "i don't feel my arms",
+            "arabic": "لا استطيع ان اشعر بيداي",
+            "russian_male": "я не чувствую свои руки",
+            "russian_female": "я не чувствую свои руки",
+            "german": "ich kann meine arme nicht fühlen",
+            "finnish": "",
+            "italian": "non sento le mie braccia"
+        },
+        "i_don't_feel_my_legs": {
+            "estonian": "ma ei tunne oma jalgu",
+            "english": "i don't feel my legs",
+            "arabic": "لا استطيع ان اشعر بقدماي",
+            "russian_male": "я не чувствую свои ноги",
+            "russian_female": "я не чувствую свои ноги",
+            "german": "ich kann meine beine nicht fühlen",
+            "finnish": "",
+            "italian": "non sento le gambe"
+        },
+        "condition": {
+            "estonian": "enesetunne",
+            "english": "condition",
+            "arabic": "حالتي",
+            "russian_male": "самочувствие",
+            "russian_female": "самочувствие",
+            "german": "zustand",
+            "finnish": "",
+            "italian": "condizione"
+        },
+        "i'm_nauseous": {
+            "estonian": "ajab iiveldama",
+            "english": "i'm nauseous",
+            "arabic": "انني متوتر",
+            "russian_male": "тошнит",
+            "russian_female": "тошнит",
+            "german": "mir ist übel",
+            "finnish": "",
+            "italian": "ho la nausea"
+        },
+        "water": {
+            "estonian": "ma soovin vett",
+            "english": "water",
+            "arabic": "الماء",
+            "russian_male": "воду",
+            "russian_female": "воду",
+            "german": "wasser",
+            "finnish": "",
+            "italian": "acqua"
+        },
+        "tea": {
+            "estonian": "ma soovin teed",
+            "english": "tea",
+            "arabic": "الشاي",
+            "russian_male": "чай",
+            "russian_female": "чай",
+            "german": "tee",
+            "finnish": "",
+            "italian": "tè"
+        },
+        "warm_drink": {
+            "estonian": "ma soovin sooja",
+            "english": "warm drink",
+            "arabic": "دافئ",
+            "russian_male": "тёплый",
+            "russian_female": "тёплый",
+            "german": "warm",
+            "finnish": "",
+            "italian": "tiepido"
+        },
+        "coffee_with_milk": {
+            "estonian": "ma soovin piimga kohvi",
+            "english": "coffee with milk",
+            "arabic": "القهوة بالحليب",
+            "russian_male": "кофе со сливками или молоком",
+            "russian_female": "кофе со сливками или молоком",
+            "german": "kaffee mit milch",
+            "finnish": "",
+            "italian": "latte macchiato"
+        },
+        "juice": {
+            "estonian": "ma soovin mahla",
+            "english": "juice",
+            "arabic": "العصير",
+            "russian_male": "сок",
+            "russian_female": "сок",
+            "german": "saft",
+            "finnish": "",
+            "italian": "succo"
+        },
+        "hot_drink": {
+            "estonian": "ma soovin kuuma",
+            "english": "hot drink",
+            "arabic": "ساخن",
+            "russian_male": "горячий",
+            "russian_female": "горячий",
+            "german": "heiß",
+            "finnish": "",
+            "italian": "caldo"
+        },
+        "chamomile_tea": {
+            "estonian": "ma soovin kummeli teed",
+            "english": "chamomile tea",
+            "arabic": "شاي البابونج",
+            "russian_male": "ромашковый чай",
+            "russian_female": "ромашковый чай",
+            "german": "kamillentee",
+            "finnish": "",
+            "italian": "camomilla"
+        },
+        "cold_drink": {
+            "estonian": "ma soovin külma",
+            "english": "cold drink",
+            "arabic": "بارد",
+            "russian_male": "холодный",
+            "russian_female": "холодный",
+            "german": "kalt",
+            "finnish": "",
+            "italian": "freddo"
+        },
+        "coffee": {
+            "estonian": "ma soovin kohvi",
+            "english": "coffee",
+            "arabic": "القهوة",
+            "russian_male": "кофе",
+            "russian_female": "кофе",
+            "german": "kaffee",
+            "finnish": "",
+            "italian": "caffè"
+        },
+        "kefir": {
+            "estonian": "ma soovin keefiri",
+            "english": "kefir",
+            "arabic": "العيران",
+            "russian_male": "кефир",
+            "russian_female": "кефир",
+            "german": "kefir",
+            "finnish": "",
+            "italian": "kefir"
+        },
+        "kakao_cocoa": {
+            "estonian": "ma soovin kakaod",
+            "english": "kakao cocoa",
+            "arabic": "كاكاو",
+            "russian_male": "какао",
+            "russian_female": "какао",
+            "german": "kakao",
+            "finnish": "",
+            "italian": "cacao"
+        },
+        "yogurt": {
+            "estonian": "ma soovin jogurtit",
+            "english": "yogurt",
+            "arabic": "اللبن",
+            "russian_male": "йогурт",
+            "russian_female": "йогурт",
+            "german": "joghurt",
+            "finnish": "",
+            "italian": "yogurt"
+        },
+        "i_want_to_watch_movie": {
+            "estonian": "soovin vaadata dvd",
+            "english": "i want to watch movie",
+            "arabic": "",
+            "russian_male": "желаю посмотреть dvd",
+            "russian_female": "желаю посмотреть dvd",
+            "german": "ich möchte einen film sehen",
+            "finnish": "",
+            "italian": "vorrei guardare un film"
         },
         "i_want_to_watch_tv": {
             "estonian": "soovin tv vaadata",
             "english": "i want to watch tv",
             "arabic": "",
-            "russian male": "желаю посмотреть телевизор",
-            "russian female": "желаю посмотреть телевизор",
+            "russian_male": "желаю посмотреть телевизор",
+            "russian_female": "желаю посмотреть телевизор",
             "german": "ich möchte fernsehen",
             "finnish": "",
             "italian": "vorrei guardare la tv"
@@ -1254,18 +524,48 @@
             "estonian": "soovin muusikat kuulata",
             "english": "i want to listen to the music",
             "arabic": "",
-            "russian male": "желаю послушать музыку",
-            "russian female": "желаю послушать музыку",
+            "russian_male": "желаю послушать музыку",
+            "russian_female": "желаю послушать музыку",
             "german": "ich möchte musik hören",
             "finnish": "",
             "italian": "vorrei ascoltare la musica"
+        },
+        "please_talk_to_me": {
+            "estonian": "palun, rääkige minuga juttu",
+            "english": "please talk to me",
+            "arabic": "",
+            "russian_male": "пожалуйста, поговорите со мной",
+            "russian_female": "пожалуйста, поговорите со мной",
+            "german": "bitte sprechen sie mit mir",
+            "finnish": "",
+            "italian": "per favore mi parli"
+        },
+        "please_put_it_louder": {
+            "estonian": "palun pange valjemaks",
+            "english": "please put it louder",
+            "arabic": "",
+            "russian_male": "пожалуйста, сделайте погромче",
+            "russian_female": "пожалуйста, сделайте погромче",
+            "german": "bitte machen sie etwas lauter",
+            "finnish": "",
+            "italian": "per favore, alzi il volume"
+        },
+        "please_put_it_a_little_bit_quiet": {
+            "estonian": "palun pange vaiksemaks",
+            "english": "please put it a little bit quiet",
+            "arabic": "",
+            "russian_male": "пожалуйста, сделайте потише",
+            "russian_female": "пожалуйста, сделайте потише",
+            "german": "bitte machen sie etwas leiser",
+            "finnish": "",
+            "italian": "per favore, abbassi il volume"
         },
         "please_put_the_tv_on": {
             "estonian": "palun pange teler käima",
             "english": "please put the tv on",
             "arabic": "",
-            "russian male": "пожалуйста, включите телевизор",
-            "russian female": "пожалуйста, включите телевизор",
+            "russian_male": "пожалуйста, включите телевизор",
+            "russian_female": "пожалуйста, включите телевизор",
             "german": "bitte schalten sie den fernseher ein",
             "finnish": "",
             "italian": "per favore, accenda la tv"
@@ -1274,398 +574,128 @@
             "estonian": "palun lülitage teler välja",
             "english": "please close the tv",
             "arabic": "",
-            "russian male": "пожалуйста, выключите телевизор",
-            "russian female": "пожалуйста, выключите телевизор",
+            "russian_male": "пожалуйста, выключите телевизор",
+            "russian_female": "пожалуйста, выключите телевизор",
             "german": "bitte schalten sie den fernseher aus",
             "finnish": "",
             "italian": "per favore, spenga la tv"
-        },
-        "do_you_have_newspapers": {
-            "estonian": "kas teil ajalehti on?",
-            "english": "do you have newspapers",
-            "arabic": "",
-            "russian male": "у вас есть газеты?",
-            "russian female": "у вас есть газеты?",
-            "german": "haben sie zeitungen?",
-            "finnish": "",
-            "italian": "ha dei giornali?"
         },
         "please_give_me_the_remote": {
             "estonian": "palun andke tv pult",
             "english": "please give me the remote",
             "arabic": "",
-            "russian male": "пожалуйста, дайте пульт",
-            "russian female": "пожалуйста, дайте пульт",
+            "russian_male": "пожалуйста, дайте пульт",
+            "russian_female": "пожалуйста, дайте пульт",
             "german": "bitte geben sie mir die fernbedienung",
             "finnish": "",
             "italian": "per favore mi dia il telecomando"
         },
-        "i_want_to_watch_movie": {
-            "estonian": "soovin vaadata dvd",
-            "english": "i want to watch movie",
+        "do_you_have_newspapers": {
+            "estonian": "kas teil ajalehti on?",
+            "english": "do you have newspapers",
             "arabic": "",
-            "russian male": "желаю посмотреть dvd",
-            "russian female": "желаю посмотреть dvd",
-            "german": "ich möchte einen film sehen",
+            "russian_male": "у вас есть газеты?",
+            "russian_female": "у вас есть газеты?",
+            "german": "haben sie zeitungen?",
             "finnish": "",
-            "italian": "vorrei guardare un film"
+            "italian": "ha dei giornali?"
         },
-        "please_put_it_a_little_bit_quiet": {
-            "estonian": "palun pange vaiksemaks",
-            "english": "please put it a little bit quiet",
-            "arabic": "",
-            "russian male": "пожалуйста, сделайте потише",
-            "russian female": "пожалуйста, сделайте потише",
-            "german": "bitte machen sie etwas leiser",
+        "i_want_to_call_for_my_work": {
+            "estonian": "tahan tööle helistadai",
+            "english": "i want to call for my work",
+            "arabic": "اريد ان اتصل بالعمل",
+            "russian_male": "хочу позвонить на работу",
+            "russian_female": "хочу позвонить на работу",
+            "german": "ich möchte auf meiner arbeit anrufen",
             "finnish": "",
-            "italian": "per favore, abbassi il volume"
+            "italian": "vorrei fare una chiamata per il mio lavoro"
         },
-        "please_put_it_louder": {
-            "estonian": "palun pange valjemaks",
-            "english": "please put it louder",
-            "arabic": "",
-            "russian male": "пожалуйста, сделайте погромче",
-            "russian female": "пожалуйста, сделайте погромче",
-            "german": "bitte machen sie etwas lauter",
+        "i_want_to_see_my_family": {
+            "estonian": "tahan näha oma peret",
+            "english": "i want to see my family",
+            "arabic": "اريد ان ارى عائلتي",
+            "russian_male": "хочу увидеть свою семью",
+            "russian_female": "хочу увидеть свою семью",
+            "german": "ich möchte meine familie sehen",
             "finnish": "",
-            "italian": "per favore, alzi il volume"
+            "italian": "vorrei vedere la mia famiglia"
         },
-        "please_talk_to_me": {
-            "estonian": "palun, rääkige minuga juttu",
-            "english": "please talk to me",
-            "arabic": "",
-            "russian male": "пожалуйста, поговорите со мной",
-            "russian female": "пожалуйста, поговорите со мной",
-            "german": "bitte sprechen sie mit mir",
+        "i_want_to_call_home": {
+            "estonian": "tahan koju helistada",
+            "english": "i want to call home",
+            "arabic": "اريد ان اتصل بالمنزل",
+            "russian_male": "хочу позвонить домой",
+            "russian_female": "хочу позвонить домой",
+            "german": "ich möchte zuhause anrufen",
             "finnish": "",
-            "italian": "per favore mi parli"
+            "italian": "vorrei chiamare a casa"
         },
-        "emotions": {
-            "estonian": "emotsioonid",
-            "english": "emotions",
-            "arabic": "المشاعر",
-            "russian male": "эмоции",
-            "russian female": "эмоции",
-            "german": "emotionen",
+        "my_pets_are_alone_at_home": {
+            "estonian": "mu lemmikloomad on üksi kodus",
+            "english": "my pets are alone at home",
+            "arabic": "حيواناتي الاليفة وحيدة بالمنزل",
+            "russian_male": "мои домашние животные остались одни дома",
+            "russian_female": "мои домашние животные остались одни дома",
+            "german": "meine haustiere sind alleine zuhause",
             "finnish": "",
-            "italian": "emozioni"
+            "italian": "i miei animali sono soli a casa"
         },
-        "i_am_happy": {
-            "estonian": "olen rõõmus",
-            "english": "i am happy",
-            "arabic": "انني سعيد",
-            "russian male": "я рад",
-            "russian female": "я рада",
-            "german": "ich bin glücklich",
+        "when_can_i_go_home?": {
+            "estonian": "millal saan koju?",
+            "english": "when can i go home?",
+            "arabic": "متى استطيع العودة الى المنزل",
+            "russian_male": "когда смогу пойти домой?",
+            "russian_female": "когда смогу пойти домой?",
+            "german": "wann darf ich nach hause gehen?",
             "finnish": "",
-            "italian": "sono felice"
+            "italian": "quando posso tornare a casa?"
         },
-        "i_am_sad": {
-            "estonian": "olen kurb",
-            "english": "i am sad",
-            "arabic": "انني حزين",
-            "russian male": "мне грустно",
-            "russian female": "мне грустно",
-            "german": "ich bin traurig",
+        "i_want_to_go_home": {
+            "estonian": "ma tahan koju minna",
+            "english": "i want to go home",
+            "arabic": "اريد العودة الى المنزل",
+            "russian_male": "я хочу пойти домой",
+            "russian_female": "я хочу пойти домой",
+            "german": "ich möchte nach hause gehen",
             "finnish": "",
-            "italian": "sono triste"
+            "italian": "vorrei andare a casa"
         },
-        "i_am_angry": {
-            "estonian": "olen vihane",
-            "english": "i am angry",
-            "arabic": "انني غاضب",
-            "russian male": "я злой",
-            "russian female": "я злой",
-            "german": "ich bin sauer",
+        "call_my_family_here": {
+            "estonian": "kutsuge mu pere siia",
+            "english": "call my family here",
+            "arabic": "اتصل بأسرتي للمجيء إلى هنا",
+            "russian_male": "позовите мою семью сюда",
+            "russian_female": "позовите мою семью сюда",
+            "german": "holen sie meine familie her",
             "finnish": "",
-            "italian": "sono arrabbiato"
+            "italian": "faccia venire la mia famiglia qui"
         },
-        "i_am_afraid": {
-            "estonian": "ma kardan",
-            "english": "i am afraid",
-            "arabic": "انني خائف",
-            "russian male": "я боюсь",
-            "russian female": "я боюсь",
-            "german": "ich habe angst",
+        "does_my_family_know?": {
+            "estonian": "kas mu pere teab",
+            "english": "does my family know?",
+            "arabic": "هل عائلتي تدري بي",
+            "russian_male": "моя семья знает?",
+            "russian_female": "моя семья знает?",
+            "german": "weiß meine familie bescheid?",
             "finnish": "",
-            "italian": "ho paura"
+            "italian": "la mia famiglia lo sa"
         },
-        "i_am_confused": {
-            "estonian": "olen segaduses",
-            "english": "i am confused",
-            "arabic": "انني مرتبك",
-            "russian male": "я уже в замешательстве",
-            "russian female": "я уже в замешательстве",
-            "german": "ich bin verwirrt",
+        "has_someone_called?": {
+            "estonian": "kas keegi on helistanud?",
+            "english": "has someone called?",
+            "arabic": "هل اتصل بي احدهم",
+            "russian_male": "кто-то звонил?",
+            "russian_female": "кто-то звонил?",
+            "german": "hat jemand für mich angerufen?",
             "finnish": "",
-            "italian": "sono confuso"
-        },
-        "i_am_surprised": {
-            "estonian": "olen üllatunud",
-            "english": "i am surprised",
-            "arabic": "انني متفاجئ",
-            "russian male": "я удивлён",
-            "russian female": "я удивлена",
-            "german": "ich bin überrascht",
-            "finnish": "",
-            "italian": "sono sorpreso"
-        },
-        "i_love_you": {
-            "estonian": "ma armastan sind",
-            "english": "i love you",
-            "arabic": "احبك",
-            "russian male": "я люблю тебя",
-            "russian female": "я люблю тебя",
-            "german": "ich liebe dich!",
-            "finnish": "",
-            "italian": "ti amo"
-        },
-        "you_are_dear_to_me": {
-            "estonian": "oled mulle kallis",
-            "english": "you are dear to me",
-            "arabic": "انت عزيز عليّ",
-            "russian male": "ты мне очень дорог",
-            "russian female": "ты мне очень дорог",
-            "german": "ich habe dich lieb!",
-            "finnish": "",
-            "italian": "tu mi sei caro"
-        },
-        "i_want_to_hug_you": {
-            "estonian": "tahan sind kallistada",
-            "english": "i want to hug you",
-            "arabic": "اريد ان اضمك",
-            "russian male": "я хочу тебя обнять",
-            "russian female": "я хочу тебя обнять",
-            "german": "ich will dich umarmen",
-            "finnish": "",
-            "italian": "vorrei abbracciarti"
-        },
-        "i_don't_want_to_see_anyone.": {
-            "estonian": "ma ei taha kedagi näha",
-            "english": "i don't want to see anyone.",
-            "arabic": "لا اريد ان اراك مجددا",
-            "russian male": "я не хочу никого видеть!",
-            "russian female": "я не хочу никого видеть!",
-            "german": "ich will dich nicht mehr sehen",
-            "finnish": "",
-            "italian": "non voglio vedere nessuno."
-        },
-        "diet": {
-            "estonian": "toitumine",
-            "english": "diet",
-            "arabic": "الغذاء",
-            "russian male": "",
-            "russian female": "",
-            "german": "",
-            "finnish": "",
-            "italian": "dieta"
-        },
-        "drink": {
-            "estonian": "jook",
-            "english": "drink",
-            "arabic": "الشراب",
-            "russian male": "напиток",
-            "russian female": "напиток",
-            "german": "getränke",
-            "finnish": "",
-            "italian": "bevanda"
-        },
-        "hot_drink": {
-            "estonian": "ma soovin kuuma",
-            "english": "hot drink",
-            "arabic": "ساخن",
-            "russian male": "горячий",
-            "russian female": "горячий",
-            "german": "heiß",
-            "finnish": "",
-            "italian": "caldo"
-        },
-        "warm_drink": {
-            "estonian": "ma soovin sooja",
-            "english": "warm drink",
-            "arabic": "دافئ",
-            "russian male": "тёплый",
-            "russian female": "тёплый",
-            "german": "warm",
-            "finnish": "",
-            "italian": "tiepido"
-        },
-        "cold_drink": {
-            "estonian": "ma soovin külma",
-            "english": "cold drink",
-            "arabic": "بارد",
-            "russian male": "холодный",
-            "russian female": "холодный",
-            "german": "kalt",
-            "finnish": "",
-            "italian": "freddo"
-        },
-        "chamomile_tea": {
-            "estonian": "ma soovin kummeli teed",
-            "english": "chamomile tea",
-            "arabic": "شاي البابونج",
-            "russian male": "ромашковый чай",
-            "russian female": "ромашковый чай",
-            "german": "kamillentee",
-            "finnish": "",
-            "italian": "camomilla"
-        },
-        "coffee": {
-            "estonian": "ma soovin kohvi",
-            "english": "coffee",
-            "arabic": "القهوة",
-            "russian male": "кофе",
-            "russian female": "кофе",
-            "german": "kaffee",
-            "finnish": "",
-            "italian": "caffè"
-        },
-        "coffee_with_milk": {
-            "estonian": "ma soovin piimga kohvi",
-            "english": "coffee with milk",
-            "arabic": "القهوة بالحليب",
-            "russian male": "кофе со сливками или молоком",
-            "russian female": "кофе со сливками или молоком",
-            "german": "kaffee mit milch",
-            "finnish": "",
-            "italian": "latte macchiato"
-        },
-        "kakao_cocoa": {
-            "estonian": "ma soovin kakaod",
-            "english": "kakao cocoa",
-            "arabic": "كاكاو",
-            "russian male": "какао",
-            "russian female": "какао",
-            "german": "kakao",
-            "finnish": "",
-            "italian": "cacao"
-        },
-        "tea": {
-            "estonian": "ma soovin teed",
-            "english": "tea",
-            "arabic": "الشاي",
-            "russian male": "чай",
-            "russian female": "чай",
-            "german": "tee",
-            "finnish": "",
-            "italian": "tè"
-        },
-        "yogurt": {
-            "estonian": "ma soovin jogurtit",
-            "english": "yogurt",
-            "arabic": "اللبن",
-            "russian male": "йогурт",
-            "russian female": "йогурт",
-            "german": "joghurt",
-            "finnish": "",
-            "italian": "yogurt"
-        },
-        "water": {
-            "estonian": "ma soovin vett",
-            "english": "water",
-            "arabic": "الماء",
-            "russian male": "воду",
-            "russian female": "воду",
-            "german": "wasser",
-            "finnish": "",
-            "italian": "acqua"
-        },
-        "juice": {
-            "estonian": "ma soovin mahla",
-            "english": "juice",
-            "arabic": "العصير",
-            "russian male": "сок",
-            "russian female": "сок",
-            "german": "saft",
-            "finnish": "",
-            "italian": "succo"
-        },
-        "kefir": {
-            "estonian": "ma soovin keefiri",
-            "english": "kefir",
-            "arabic": "العيران",
-            "russian male": "кефир",
-            "russian female": "кефир",
-            "german": "kefir",
-            "finnish": "",
-            "italian": "kefir"
-        },
-        "food": {
-            "estonian": "söök",
-            "english": "food",
-            "arabic": "الأكل",
-            "russian male": "еда",
-            "russian female": "еда",
-            "german": "essen",
-            "finnish": "",
-            "italian": "cibo"
-        },
-        "cake": {
-            "estonian": "ma soovin kooki",
-            "english": "cake",
-            "arabic": "كعكة",
-            "russian male": "пирог",
-            "russian female": "пирог",
-            "german": "kuchen",
-            "finnish": "",
-            "italian": "torta"
-        },
-        "dessert": {
-            "estonian": "ma soovin magustoitu",
-            "english": "dessert",
-            "arabic": "حلوى",
-            "russian male": "сладенькое",
-            "russian female": "сладенькое",
-            "german": "nachtisch",
-            "finnish": "",
-            "italian": "dolce"
-        },
-        "meal": {
-            "estonian": "ma soovin praadi",
-            "english": "meal",
-            "arabic": "وجبة",
-            "russian male": "что-то мясное, второе блюдо",
-            "russian female": "что-то мясное, второе блюдо",
-            "german": "mahlzeit",
-            "finnish": "",
-            "italian": "pasto"
-        },
-        "icecream": {
-            "estonian": "ma soovin jäätist",
-            "english": "icecream",
-            "arabic": "مثلجات",
-            "russian male": "мороженое",
-            "russian female": "мороженое",
-            "german": "eis",
-            "finnish": "",
-            "italian": "gelato"
-        },
-        "": {
-            "estonian": "ma soovin kohukest",
-            "english": "",
-            "arabic": "",
-            "russian male": "сырочек",
-            "russian female": "сырочек",
-            "german": "",
-            "finnish": "",
-            "italian": ""
-        },
-        "porridge": {
-            "estonian": "ma soovin putru",
-            "english": "porridge",
-            "arabic": "عصيدة",
-            "russian male": "кашу",
-            "russian female": "кашу",
-            "german": "haferbrei",
-            "finnish": "",
-            "italian": "porridge"
+            "italian": "qualcuno ha chiamato?"
         },
         "soup": {
             "estonian": "ma soovin suppi",
             "english": "soup",
             "arabic": "حساء",
-            "russian male": "суп",
-            "russian female": "суп",
+            "russian_male": "суп",
+            "russian_female": "суп",
             "german": "suppe",
             "finnish": "",
             "italian": "minestra/zuppa"
@@ -1674,8 +704,8 @@
             "estonian": "ma soovin salatit",
             "english": "salad",
             "arabic": "سلطة",
-            "russian male": "салат",
-            "russian female": "салат",
+            "russian_male": "салат",
+            "russian_female": "салат",
             "german": "salat",
             "finnish": "",
             "italian": "insalata"
@@ -1684,21 +714,1001 @@
             "estonian": "ma soovin puuvilju",
             "english": "fruit",
             "arabic": "فاكهة",
-            "russian male": "фрукты",
-            "russian female": "фрукты",
+            "russian_male": "фрукты",
+            "russian_female": "фрукты",
             "german": "obst",
             "finnish": "",
             "italian": "frutta"
+        },
+        "porridge": {
+            "estonian": "ma soovin putru",
+            "english": "porridge",
+            "arabic": "عصيدة",
+            "russian_male": "кашу",
+            "russian_female": "кашу",
+            "german": "haferbrei",
+            "finnish": "",
+            "italian": "porridge"
+        },
+        "meal": {
+            "estonian": "ma soovin praadi",
+            "english": "meal",
+            "arabic": "وجبة",
+            "russian_male": "что-то мясное, второе блюдо",
+            "russian_female": "что-то мясное, второе блюдо",
+            "german": "mahlzeit",
+            "finnish": "",
+            "italian": "pasto"
+        },
+        "dessert": {
+            "estonian": "ma soovin magustoitu",
+            "english": "dessert",
+            "arabic": "حلوى",
+            "russian_male": "сладенькое",
+            "russian_female": "сладенькое",
+            "german": "nachtisch",
+            "finnish": "",
+            "italian": "dolce"
+        },
+        "cake": {
+            "estonian": "ma soovin kooki",
+            "english": "cake",
+            "arabic": "كعكة",
+            "russian_male": "пирог",
+            "russian_female": "пирог",
+            "german": "kuchen",
+            "finnish": "",
+            "italian": "torta"
+        },
+        "snack_bar": {
+            "estonian": "ma soovin kohukest",
+            "english": "snack bar",
+            "arabic": "",
+            "russian_male": "сырочек",
+            "russian_female": "сырочек",
+            "german": "",
+            "finnish": "",
+            "italian": ""
         },
         "boiled_eggs": {
             "estonian": "ma soovin keedetud muna",
             "english": "boiled eggs",
             "arabic": "بيض مسلوق",
-            "russian male": "варёное яицо",
-            "russian female": "варёное яицо",
+            "russian_male": "варёное яицо",
+            "russian_female": "варёное яицо",
             "german": "geckochte eier",
             "finnish": "",
             "italian": "uova sode"
+        },
+        "icecream": {
+            "estonian": "ma soovin jäätist",
+            "english": "icecream",
+            "arabic": "مثلجات",
+            "russian_male": "мороженое",
+            "russian_female": "мороженое",
+            "german": "eis",
+            "finnish": "",
+            "italian": "gelato"
+        },
+        "questions": {
+            "estonian": "küsimused",
+            "english": "questions",
+            "arabic": "",
+            "russian_male": "",
+            "russian_female": "",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "pain_&_feelings": {
+            "estonian": "valu ja tunded",
+            "english": "pain & feelings",
+            "arabic": "",
+            "russian_male": "",
+            "russian_female": "",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "comfort_&_needs": {
+            "estonian": "mugavus ja vajadused",
+            "english": "comfort & needs",
+            "arabic": "",
+            "russian_male": "",
+            "russian_female": "",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "pain": {
+            "estonian": "valu",
+            "english": "pain",
+            "arabic": "",
+            "russian_male": "",
+            "russian_female": "",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "numb_pain": {
+            "estonian": "tuim valu",
+            "english": "numb pain",
+            "arabic": "الم خدر",
+            "russian_male": "тупая боль",
+            "russian_female": "тупая боль",
+            "german": "tauber schmerz",
+            "finnish": "",
+            "italian": "dolore leggero"
+        },
+        "sharp_pain": {
+            "estonian": "terav valu",
+            "english": "sharp pain",
+            "arabic": "الم حاد",
+            "russian_male": "острая, режущая боль",
+            "russian_female": "острая, режущая боль",
+            "german": "starker schmerz",
+            "finnish": "",
+            "italian": "dolore intenso"
+        },
+        "prickling_like_ants_running": {
+            "estonian": "\"sipelgad jooksevad\"",
+            "english": "prickling like ants running",
+            "arabic": "لا استطيع الحركة",
+            "russian_male": "мурашки",
+            "russian_female": "мурашки",
+            "german": "es fühlt sich taub an",
+            "finnish": "",
+            "italian": "non riesco a spostarmi/mi sento intirizzito"
+        },
+        "chest_pain": {
+            "estonian": "rinnus pigistab",
+            "english": "chest pain",
+            "arabic": "الم بالصدر",
+            "russian_male": "в грудй жмёт",
+            "russian_female": "в грудй жмёт",
+            "german": "brustschmerzen",
+            "finnish": "",
+            "italian": "dolore al petto"
+        },
+        "burning_pain": {
+            "estonian": "põletav valu",
+            "english": "burning pain",
+            "arabic": "الم حارق",
+            "russian_male": "жгучая боль",
+            "russian_female": "жгучая боль",
+            "german": "brennender schmerz",
+            "finnish": "",
+            "italian": "dolore bruciante"
+        },
+        "tingle": {
+            "estonian": "pakitseb",
+            "english": "tingle",
+            "arabic": "ارتعاش",
+            "russian_male": "покалывает",
+            "russian_female": "покалывает",
+            "german": "kribbeln",
+            "finnish": "",
+            "italian": "formicolio"
+        },
+        "it_is_painful_to_cough": {
+            "estonian": "köhida on valus",
+            "english": "it is painful to cough",
+            "arabic": "من المؤلم السعال",
+            "russian_male": "больно кашлять",
+            "russian_female": "больно кашлять",
+            "german": "est tut weh, zu husten",
+            "finnish": "",
+            "italian": "è doloroso tossire"
+        },
+        "stings": {
+            "estonian": "kipitab",
+            "english": "stings",
+            "arabic": "وخز",
+            "russian_male": "щипит",
+            "russian_female": "щипит",
+            "german": "stiche",
+            "finnish": "",
+            "italian": "stings"
+        },
+        "it_is_painful_to_breathe": {
+            "estonian": "hingata on valus",
+            "english": "it is painful to breathe",
+            "arabic": "من المؤلم التنفس",
+            "russian_male": "больно дышать",
+            "russian_female": "больно дышать",
+            "german": "es tut weh, zu atmen",
+            "finnish": "",
+            "italian": "è doloroso respirare"
+        },
+        "gas_pain": {
+            "estonian": "gaasivalu",
+            "english": "gas pain",
+            "arabic": "غازات",
+            "russian_male": "боль из-за газов",
+            "russian_female": "боль из-за газов",
+            "german": "blähungschmerzen",
+            "finnish": "",
+            "italian": "po'd'aria nello stomaco"
+        },
+        "i_want_to_hug_you": {
+            "estonian": "tahan sind kallistada",
+            "english": "i want to hug you",
+            "arabic": "اريد ان اضمك",
+            "russian_male": "я хочу тебя обнять",
+            "russian_female": "я хочу тебя обнять",
+            "german": "ich will dich umarmen",
+            "finnish": "",
+            "italian": "vorrei abbracciarti"
+        },
+        "i_am_angry": {
+            "estonian": "olen vihane",
+            "english": "i am angry",
+            "arabic": "انني غاضب",
+            "russian_male": "я злой",
+            "russian_female": "я злой",
+            "german": "ich bin sauer",
+            "finnish": "",
+            "italian": "sono arrabbiato"
+        },
+        "i_am_surprised": {
+            "estonian": "olen üllatunud",
+            "english": "i am surprised",
+            "arabic": "انني متفاجئ",
+            "russian_male": "я удивлён",
+            "russian_female": "я удивлена",
+            "german": "ich bin überrascht",
+            "finnish": "",
+            "italian": "sono sorpreso"
+        },
+        "i_am_confused": {
+            "estonian": "olen segaduses",
+            "english": "i am confused",
+            "arabic": "انني مرتبك",
+            "russian_male": "я уже в замешательстве",
+            "russian_female": "я уже в замешательстве",
+            "german": "ich bin verwirrt",
+            "finnish": "",
+            "italian": "sono confuso"
+        },
+        "i_am_happy": {
+            "estonian": "olen rõõmus",
+            "english": "i am happy",
+            "arabic": "انني سعيد",
+            "russian_male": "я рад",
+            "russian_female": "я рада",
+            "german": "ich bin glücklich",
+            "finnish": "",
+            "italian": "sono felice"
+        },
+        "i_am_sad": {
+            "estonian": "olen kurb",
+            "english": "i am sad",
+            "arabic": "انني حزين",
+            "russian_male": "мне грустно",
+            "russian_female": "мне грустно",
+            "german": "ich bin traurig",
+            "finnish": "",
+            "italian": "sono triste"
+        },
+        "you_are_dear_to_me": {
+            "estonian": "oled mulle kallis",
+            "english": "you are dear to me",
+            "arabic": "انت عزيز عليّ",
+            "russian_male": "ты мне очень дорог",
+            "russian_female": "ты мне очень дорог",
+            "german": "ich habe dich lieb!",
+            "finnish": "",
+            "italian": "tu mi sei caro"
+        },
+        "i_am_afraid": {
+            "estonian": "ma kardan",
+            "english": "i am afraid",
+            "arabic": "انني خائف",
+            "russian_male": "я боюсь",
+            "russian_female": "я боюсь",
+            "german": "ich habe angst",
+            "finnish": "",
+            "italian": "ho paura"
+        },
+        "i_don't_want_to_see_anyone.": {
+            "estonian": "ma ei taha kedagi näha",
+            "english": "i don't want to see anyone.",
+            "arabic": "لا اريد ان اراك مجددا",
+            "russian_male": "я не хочу никого видеть!",
+            "russian_female": "я не хочу никого видеть!",
+            "german": "ich will dich nicht mehr sehen",
+            "finnish": "",
+            "italian": "non voglio vedere nessuno."
+        },
+        "i_love_you": {
+            "estonian": "ma armastan sind",
+            "english": "i love you",
+            "arabic": "احبك",
+            "russian_male": "я люблю тебя",
+            "russian_female": "я люблю тебя",
+            "german": "ich liebe dich!",
+            "finnish": "",
+            "italian": "ti amo"
+        },
+        "raise_the_head": {
+            "estonian": "tõsta peatsit",
+            "english": "raise the head",
+            "arabic": "ارفع الراس",
+            "russian_male": "поднимите изголовье",
+            "russian_female": "поднимите изголовье",
+            "german": "heben sie den kopf hoch",
+            "finnish": "",
+            "italian": "alza la testa"
+        },
+        "i_want_to_get_up": {
+            "estonian": "tahan voodist tõusta",
+            "english": "i want to get up",
+            "arabic": "اريد النهوض",
+            "russian_male": "хочу подняться с кровати",
+            "russian_female": "хочу подняться с кровати",
+            "german": "ich möchte aufstehen",
+            "finnish": "",
+            "italian": "vorrei alzarmi"
+        },
+        "i_want_to_go_to_bed": {
+            "estonian": "tahan voodisse",
+            "english": "i want to go to bed",
+            "arabic": "اريد ان اذهب الى السرير",
+            "russian_male": "хочу лечь",
+            "russian_female": "хочу лечь",
+            "german": "ich möchte schlafen",
+            "finnish": "",
+            "italian": "vorreiandare a letto"
+        },
+        "i_want_to_do_exercise": {
+            "estonian": "tahan võimelda",
+            "english": "i want to do exercise",
+            "arabic": "اريد ان اتمرّن",
+            "russian_male": "хочу размяться",
+            "russian_female": "хочу размяться",
+            "german": "ich möchte übungen machen",
+            "finnish": "",
+            "italian": "vorrei fare esercizio"
+        },
+        "i_want_to_sit_on_the_chair": {
+            "estonian": "tahan toolile",
+            "english": "i want to sit on the chair",
+            "arabic": "اريد ان اجلس على كرسي",
+            "russian_male": "хочу посидет",
+            "russian_female": "хочу посидет",
+            "german": "ich möchte mich auf den stuhl setzen",
+            "finnish": "",
+            "italian": "vorrei sedermi sulla sedia"
+        },
+        "i_want_to_walk": {
+            "estonian": "tahan kõndida",
+            "english": "i want to walk",
+            "arabic": "اريد ان امشي",
+            "russian_male": "хочу походить",
+            "russian_female": "хочу походить",
+            "german": "ich möchte laufen",
+            "finnish": "",
+            "italian": "vorrei camminare"
+        },
+        "my_back_is_tired": {
+            "estonian": "mu selg on väsinud",
+            "english": "my back is tired",
+            "arabic": "ظهري متعب",
+            "russian_male": "у меня устала спина",
+            "russian_female": "у меня устала спина",
+            "german": "mein rücken tut weh",
+            "finnish": "",
+            "italian": "mi fa male la schiena"
+        },
+        "lower_the_bed_head": {
+            "estonian": "langeta peatsit",
+            "english": "lower the bed head",
+            "arabic": "اخفض التخت عند منطقة الراس",
+            "russian_male": "опустите изголовье",
+            "russian_female": "опустите изголовье",
+            "german": "den kopfteil des bettes senken",
+            "finnish": "",
+            "italian": "abbassi la testata del letto"
+        },
+        "turn_me_on_my_side": {
+            "estonian": "keera küljele",
+            "english": "turn me on my side",
+            "arabic": "اقلبني على جانبي",
+            "russian_male": "поверните на бок",
+            "russian_female": "поверните на бок",
+            "german": "drehen sie mich auf die seite",
+            "finnish": "",
+            "italian": "mi gira su un lato"
+        },
+        "my_position_is_uncomfortable": {
+            "estonian": "mu asend on ebamugav",
+            "english": "my position is uncomfortable",
+            "arabic": "وضعيتي غير مريحة",
+            "russian_male": "мне так неудобно",
+            "russian_female": "мне так неудобно",
+            "german": "meine position ist unangenehm",
+            "finnish": "",
+            "italian": "la mia posizione è scomoda"
+        },
+        "therapy": {
+            "estonian": "ravi",
+            "english": "therapy",
+            "arabic": "العلاج",
+            "russian_male": "лечение",
+            "russian_female": "лечение",
+            "german": "therapie",
+            "finnish": "",
+            "italian": "terapia"
+        },
+        "family_and_work": {
+            "estonian": "pere / töö",
+            "english": "family and work",
+            "arabic": "العائلة و العمل",
+            "russian_male": "семья и работа",
+            "russian_female": "семья и работа",
+            "german": "familie und arbeit",
+            "finnish": "",
+            "italian": "famiglia / lavoro"
+        },
+        "concerns": {
+            "estonian": "mured / kkk",
+            "english": "concerns",
+            "arabic": "مخاوف",
+            "russian_male": "переживания",
+            "russian_female": "переживания",
+            "german": "sorgen",
+            "finnish": "",
+            "italian": "preoccupazioni"
+        },
+        "thanks": {
+            "estonian": "aitäh",
+            "english": "thanks",
+            "arabic": "شكرا",
+            "russian_male": "спасибо",
+            "russian_female": "спасибо",
+            "german": "danke",
+            "finnish": "",
+            "italian": "grazie"
+        },
+        "back": {
+            "estonian": "tagasi",
+            "english": "back",
+            "arabic": "عودة",
+            "russian_male": "обратно",
+            "russian_female": "обратно",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "yes": {
+            "estonian": "jah",
+            "english": "yes",
+            "arabic": "نعم",
+            "russian_male": "да",
+            "russian_female": "да",
+            "german": "ja",
+            "finnish": "",
+            "italian": "sì"
+        },
+        "no": {
+            "estonian": "ei",
+            "english": "no",
+            "arabic": "لا",
+            "russian_male": "нет",
+            "russian_female": "нет",
+            "german": "nein",
+            "finnish": "",
+            "italian": "no"
+        },
+        "font_size": {
+            "estonian": "kirja suurus",
+            "english": "font size",
+            "arabic": "حجم الخط",
+            "russian_male": "размер шрифта",
+            "russian_female": "размер шрифта",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "about_us": {
+            "estonian": "meist",
+            "english": "about us",
+            "arabic": "حولنا",
+            "russian_male": "о нас",
+            "russian_female": "о нас",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "feedback": {
+            "estonian": "saatke meile tagasisidet",
+            "english": "feedback",
+            "arabic": "مراجعة",
+            "russian_male": "отправьте нам отзыв",
+            "russian_female": "отправьте нам отзыв",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "language": {
+            "estonian": "valige keel",
+            "english": "language",
+            "arabic": "اللغة",
+            "russian_male": "выберите язык",
+            "russian_female": "выберите язык",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "clear_all": {
+            "estonian": "kustuta kõik",
+            "english": "clear all",
+            "arabic": "مسح",
+            "russian_male": "очистить всё",
+            "russian_female": "очистить всё",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "i_speak:_english": {
+            "estonian": "mina räägin: eesti keeles",
+            "english": "i speak: english",
+            "arabic": "انا اتكلم",
+            "russian_male": "я говорю: по русски",
+            "russian_female": "я говорю: по русски",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "my_caregiver_speaks:_english": {
+            "estonian": "minu hooldaja räägib: eesti keeles",
+            "english": "my caregiver speaks: english",
+            "arabic": "الراعي يتكلم",
+            "russian_male": "мой опекун говорит: по русски",
+            "russian_female": "мой опекун говорит: по русски",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "continue": {
+            "estonian": "edasi",
+            "english": "continue",
+            "arabic": "متابعة",
+            "russian_male": "дальше",
+            "russian_female": "дальше",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "home": {
+            "estonian": "esileht",
+            "english": "home",
+            "arabic": "",
+            "russian_male": "",
+            "russian_female": "",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
+        "pain disturbs_the_sleep": {
+            "estonian": "valu segab magada",
+            "english": "pain disturbs the sleep",
+            "arabic": "الألم لايدعني انام",
+            "russian_male": "боль не даёт мне спать",
+            "russian_female": "боль не даёт мне спать",
+            "german": "ich kann nicht schlafen vor schmerzen",
+            "finnish": "",
+            "italian": "il dolore disturba il sonno"
+        },
+        "i_want_to_sleep": {
+            "estonian": "soovin magada",
+            "english": "i want to sleep",
+            "arabic": "أريد ان انام",
+            "russian_male": "хочу спать",
+            "russian_female": "хочу спать",
+            "german": "ich möchte schlafen",
+            "finnish": "",
+            "italian": "vorrei dormire"
+        },
+        "please_give_me_sleeping_pills": {
+            "estonian": "palun unerohtu",
+            "english": "please give me sleeping pills",
+            "arabic": "أريد حبوبا تساعدني على النوم",
+            "russian_male": "дайте,пожалуйста, снотворное",
+            "russian_female": "дайте,пожалуйста, снотворное",
+            "german": "bitte geben sie mir schlaftabletten",
+            "finnish": "",
+            "italian": "per favore, mi dia dei sonniferi"
+        },
+        "please_put_the_lights_on": {
+            "estonian": "palun, pange tuli põlema",
+            "english": "please put the lights on",
+            "arabic": "من فضلك اشعل الأضوية",
+            "russian_male": "пожалуйста, включите свет",
+            "russian_female": "пожалуйста, включите свет",
+            "german": "bitte schalten sie das licht ein",
+            "finnish": "",
+            "italian": "si prega di accendere le luci"
+        },
+        "please_turn_the_lights_off": {
+            "estonian": "palun, pange tuli kustu",
+            "english": "please turn the lights off",
+            "arabic": "من فضلك اطفىء الأضوية",
+            "russian_male": "пожалуйста, выключите свет",
+            "russian_female": "пожалуйста, выключите свет",
+            "german": "bitte schalten sie das licht aus",
+            "finnish": "",
+            "italian": "si prega di spegnere le luci"
+        },
+        "please_be_quiet": {
+            "estonian": "palun olge tasem!",
+            "english": "please be quiet",
+            "arabic": "من فضلك كن هادئا",
+            "russian_male": "пожалуйста, потише!",
+            "russian_female": "пожалуйста, потише!",
+            "german": "bitte seien sie still",
+            "finnish": "",
+            "italian": "per favore silenzio"
+        },
+        "what's_going_on_bubblesing_here?": {
+            "estonian": "mis siin muliseb?",
+            "english": "what's going on bubblesing here?",
+            "arabic": "مالذي يصدر صوت الفقاعات؟",
+            "russian_male": "что здесь шумит? как будто идёт дождь",
+            "russian_female": "что здесь шумит? как будто идёт дождь",
+            "german": "was ist hier los?",
+            "finnish": "",
+            "italian": "cosa sta succedendo qui?"
+        },
+        "i_can't_sleep_i_can_not_sleep": {
+            "estonian": "ma ei saa magada!",
+            "english": "i can't sleep i can not sleep",
+            "arabic": "لا أستطيع النوم",
+            "russian_male": "я не могу заснуть!",
+            "russian_female": "я не могу заснуть!",
+            "german": "ich kann nicht schlafen",
+            "finnish": "",
+            "italian": "non riesco a dormire"
+        },
+        "at_home_i_take_sleeping_pills": {
+            "estonian": "kodus võtan ka unerohtu",
+            "english": "at home i take sleeping pills",
+            "arabic": "في المنزل استخدم حبوبا منومة",
+            "russian_male": "дома принимаю тоже снотворное",
+            "russian_female": "дома принимаю тоже снотворное",
+            "german": "zuhause nehme ich schlaftabletten",
+            "finnish": "",
+            "italian": "a casa prendo dei sonniferi"
+        },
+        "what_examination_is_this?": {
+            "estonian": "mis uuring see on?",
+            "english": "what examination is this?",
+            "arabic": "اي فحص هو هذا؟",
+            "russian_male": "что это за исследование?",
+            "russian_female": "что это за исследование?",
+            "german": "welche untersuchung ist das?",
+            "finnish": "",
+            "italian": "che indagine è questa?"
+        },
+        "what_is_the_treatment_plan?": {
+            "estonian": "milline on raviplaan?",
+            "english": "what is the treatment plan?",
+            "arabic": "ماهي خطة العلاج؟",
+            "russian_male": "какой план лечения?",
+            "russian_female": "какой план лечения?",
+            "german": "wie ist der behandlungsplan?",
+            "finnish": "",
+            "italian": "qual è il piano terapeutico?"
+        },
+        "what_is_the_day_plan?": {
+            "estonian": "milline on päevaplaan?",
+            "english": "what is the day plan?",
+            "arabic": "ماهي الخطة اليوم؟",
+            "russian_male": "какой план дня?",
+            "russian_female": "какой план дня?",
+            "german": "wie ist der tagesplan?",
+            "finnish": "",
+            "italian": "qual è il piano giornaliero?"
+        },
+        "when_does_the_surgeon_come?": {
+            "estonian": "millal kirurg tuleb?",
+            "english": "when does the surgeon come?",
+            "arabic": "متى سيأتي الجرّاح؟",
+            "russian_male": "когда придёт хирург?",
+            "russian_female": "когда придёт хирург?",
+            "german": "wann kommt der chirurg?",
+            "finnish": "",
+            "italian": "quando verrà il chirurgo?"
+        },
+        "i_want_physiotherapy": {
+            "estonian": "ma soovin füsioteraapiat",
+            "english": "i want physiotherapy",
+            "arabic": "أريد معالجة فيزيائية",
+            "russian_male": "я желаю физиотерапию",
+            "russian_female": "я желаю физиотерапию",
+            "german": "ich möchte physiotherapie machen",
+            "finnish": "",
+            "italian": "vorrei la fisioterapia"
+        },
+        "end_the_treatment,_i_want_to_die": {
+            "estonian": "lõpetage ravi, tahan surra",
+            "english": "end the treatment, i want to die",
+            "arabic": "أوقفو العلاج",
+            "russian_male": "прекратите лечение! хочу умереть",
+            "russian_female": "прекратите лечение! хочу умереть",
+            "german": "beenden sie die behandlung. ich will sterben!",
+            "finnish": "",
+            "italian": "termini la cura, vorrei morire"
+        },
+        "how_did_the_operation_go?": {
+            "estonian": "kuidas operatsioon läks?-",
+            "english": "how did the operation go?",
+            "arabic": "كيف تمت العملية؟",
+            "russian_male": "как прошла операция?",
+            "russian_female": "как прошла операция?",
+            "german": "wie lief die operation?",
+            "finnish": "",
+            "italian": "com'è andata l'operazione?"
+        },
+        "how_am_i_doing?": {
+            "estonian": "kuidas mul läheb?-",
+            "english": "how am i doing?",
+            "arabic": "كيف حالي الان؟",
+            "russian_male": "как моё состояние здоровья?",
+            "russian_female": "как моё состояние здоровья?",
+            "german": "wie ist mein zustand?",
+            "finnish": "",
+            "italian": "come sto?"
+        },
+        "how_can_i_call_a_doctor_or_a_nurse?": {
+            "estonian": "kuidas ma saan kutsuda õde /arsti?-",
+            "english": "how can i call a doctor or a nurse?",
+            "arabic": "كيف استطيع مناداة الممرضة او الدكتور؟",
+            "russian_male": "как я смогу позвать сестру / врача?",
+            "russian_female": "как я смогу позвать сестру / врача?",
+            "german": "wie kann ich einen arzt / eine krankenschwester rufen?",
+            "finnish": "",
+            "italian": "come posso chiamare un medico / infermiere?"
+        },
+        "is_the_operation_done?": {
+            "estonian": "kas operatsioon on tehtud?-",
+            "english": "is the operation done?",
+            "arabic": "هل تمت العملية؟",
+            "russian_male": "операция сделана?",
+            "russian_female": "операция сделана?",
+            "german": "ist die operation vorbei?",
+            "finnish": "",
+            "italian": "l'operazione è stata eseguita?"
+        },
+        "i_want_irrigate_my_mouth_a_mouthwash": {
+            "estonian": "tahan suud niisutada",
+            "english": "i want irrigate my mouth a mouthwash",
+            "arabic": "اريد ان اغرغر فمي",
+            "russian_male": "хочу прополаскать рот",
+            "russian_female": "хочу прополаскать рот",
+            "german": "ich möchte eine mundspüllösung",
+            "finnish": "",
+            "italian": "vorrei risciaqcuare la bocca"
+        },
+        "i_want_my_clothes_on": {
+            "estonian": "tahan riideid selga",
+            "english": "i want my clothes on",
+            "arabic": "اريد ان ارتدي ملابسي",
+            "russian_male": "хочу одеться",
+            "russian_female": "хочу одеться",
+            "german": "ich möchte mich anziehen",
+            "finnish": "",
+            "italian": "vorrei vestirmi"
+        },
+        "i_want_to_brush_my_teeth": {
+            "estonian": "tahan hambaid pesta",
+            "english": "i want to brush my teeth",
+            "arabic": "اريد ان انظف اسناني",
+            "russian_male": "хочу почистить зубы",
+            "russian_female": "хочу почистить зубы",
+            "german": "ich möchte meine zähne putzen",
+            "finnish": "",
+            "italian": "vorrei lavarmi i denti"
+        },
+        "i_have_saliva_in_my_mouth,_plase_remove_it": {
+            "estonian": "suus on sülge, puhastage palun",
+            "english": "i have saliva in my mouth, plase remove it",
+            "arabic": "لدي لعاب في فمي ، يرجى إزالته",
+            "russian_male": "во рту много слюней, пожалуйста, почистите!",
+            "russian_female": "во рту много слюней, пожалуйста, почистите!",
+            "german": "ich habe speichel im mund, bitte entfernen sie ihn",
+            "finnish": "",
+            "italian": "ho la saliva in bocca, per favore me la rimuova"
+        },
+        "wash_my_face": {
+            "estonian": "peske mu nägu",
+            "english": "wash my face",
+            "arabic": "اغسل وجهي من فضلك",
+            "russian_male": "помойте мне лицо",
+            "russian_female": "помойте мне лицо",
+            "german": "bitte waschen sie mein gesicht",
+            "finnish": "",
+            "italian": "lavare la mia faccia"
+        },
+        "please_wash_me": {
+            "estonian": "palun, peske mind",
+            "english": "please wash me",
+            "arabic": "اغسلني من فضلك",
+            "russian_male": "пожалуйста, помойте меня",
+            "russian_female": "пожалуйста, помойте меня",
+            "german": "bitte waschen sie mich",
+            "finnish": "",
+            "italian": "per favore mi lavi"
+        },
+        "please brush_my_hair": {
+            "estonian": "palun, kammige mu juukseid",
+            "english": "please brush my hair",
+            "arabic": "من فضلك مشط لي شعري",
+            "russian_male": "пожалуйста, причешите меня",
+            "russian_female": "пожалуйста, причешите меня",
+            "german": "bitte kämmen sie mir die haare",
+            "finnish": "",
+            "italian": "per favore, mi pettina i capelli"
+        },
+        "i_have_something_under_my_body_that_annoys_me": {
+            "estonian": "mul on midagi külje all",
+            "english": "i have something under my body that annoys me",
+            "arabic": "هنالك شيء يزعجني في السرير",
+            "russian_male": "у меня что-то под боком",
+            "russian_female": "у меня что-то под боком",
+            "german": "es liegt etwas im bett, das mich stört",
+            "finnish": "",
+            "italian": "ho qualcosa sotto il mio corpo che mi da fastidio"
+        },
+        "why_am_i_naked?": {
+            "estonian": "miks ma paljas olen?",
+            "english": "why am i naked?",
+            "arabic": "لماذا انا عاري؟",
+            "russian_male": "почему я голый?",
+            "russian_female": "почему я голый?",
+            "german": "warum bin ich nackt?",
+            "finnish": "",
+            "italian": "perché sono nudo?"
+        },
+        "where_are_my_things?": {
+            "estonian": "kus mu asjad on?",
+            "english": "where are my things?",
+            "arabic": "اين هي اغراضي؟",
+            "russian_male": "где мои вещи?",
+            "russian_female": "где мои вещи?",
+            "german": "wo sind meine sachen?",
+            "finnish": "",
+            "italian": "dove sono le mie cose?"
+        },
+        "do_not_wash_me": {
+            "estonian": "ärge peske mind",
+            "english": "do not wash me",
+            "arabic": "لا اريد ان اغتسل",
+            "russian_male": "не мойте меня",
+            "russian_female": "не мойте меня",
+            "german": "bitte waschen sie mich nicht",
+            "finnish": "",
+            "italian": "non mi lavare"
+        },
+        "toilet": {
+            "estonian": "tualetti",
+            "english": "toilet",
+            "arabic": "دورة المياه",
+            "russian_male": "туалет",
+            "russian_female": "туалет",
+            "german": "wc",
+            "finnish": "",
+            "italian": "bagno"
+        },
+        "take_the_catheter_away": {
+            "estonian": "võtke kateeter ära",
+            "english": "take the catheter away",
+            "arabic": "اخرج القسطرة",
+            "russian_male": "вытащите катетер",
+            "russian_female": "вытащите катетер",
+            "german": "nehmen sie bitte den katheter weg",
+            "finnish": "",
+            "italian": "porta via il catetere"
+        },
+        "i_want_to_go_to_the_toilet.": {
+            "estonian": "tahan wc-sse",
+            "english": "i want to go to the toilet.",
+            "arabic": "اريد الذهاب الى دورة المياه",
+            "russian_male": "хочу в туалет",
+            "russian_female": "хочу в туалет",
+            "german": "ich muss auf die toilette",
+            "finnish": "",
+            "italian": "vorrei andare al bagno."
+        },
+        "i_want_a_bedpan": {
+            "estonian": "tahan siibrit",
+            "english": "i want a bedpan",
+            "arabic": "اريد نونية السرير",
+            "russian_male": "хочу на шибер",
+            "russian_female": "хочу на шибер",
+            "german": "ich bräuchte eine bettpfanne",
+            "finnish": "",
+            "italian": "vorrei il vaso da notte"
+        },
+        "i_want_to_go_to_the_potty_chair": {
+            "estonian": "tahan potitoolile",
+            "english": "i want to go to the potty chair",
+            "arabic": "اريد الذهاب الى كرسي الحمام",
+            "russian_male": "хочу воспользоваться туалет-стулом",
+            "russian_female": "хочу воспользоваться туалет-стулом",
+            "german": "ich muss auf das töpfchen",
+            "finnish": "",
+            "italian": "vorrei andare alla sedia da comodo"
+        },
+        "i_want_to_pee": {
+            "estonian": "tahan pissile",
+            "english": "i want to pee",
+            "arabic": "اريد ان ابول",
+            "russian_male": "хочу пописать",
+            "russian_female": "хочу пописать",
+            "german": "ich muss urinieren",
+            "finnish": "",
+            "italian": "vorrei fare la pipì"
+        },
+        "i_want_to_poop": {
+            "estonian": "tahan kakale",
+            "english": "i want to poop",
+            "arabic": "اريد ان أتغوط",
+            "russian_male": "хочу какать",
+            "russian_female": "хочу какать",
+            "german": "ich muss stuhlen",
+            "finnish": "",
+            "italian": "vorrei fare la cacca"
+        },
+        "when_can_i_go_pee_on_my_own?": {
+            "estonian": "millal saan ise pissida?",
+            "english": "when can i go pee on my own?",
+            "arabic": "متى استطيع الذهاب الى الحمام بنفسي",
+            "russian_male": "когда смогу сам писать?",
+            "russian_female": "когда смогу сам писать?",
+            "german": "wann darf ich alleine urinieren gehen",
+            "finnish": "",
+            "italian": "quando posso fare la pipì da solo?"
+        },
+        "catheter_is_irritating": {
+            "estonian": "kateeter ärritab",
+            "english": "catheter is irritating",
+            "arabic": "القسطرة مزعجة",
+            "russian_male": "катетер раздражает",
+            "russian_female": "катетер раздражает",
+            "german": "der katheter stört",
+            "finnish": "",
+            "italian": "il catetere è irritante"
+        },
+        "is_pee_coming?": {
+            "estonian": "kas pissi ikka tuleb?",
+            "english": "is pee coming?",
+            "arabic": "هل يخرج البول",
+            "russian_male": "моча идёт?",
+            "russian_female": "моча идёт?",
+            "german": "kommt urin raus?",
+            "finnish": "",
+            "italian": "la pipì sta arrivando?"
+        },
+        "i_don't_want_a_bedpan.": {
+            "estonian": "ei taha siibrit",
+            "english": "i don't want a bedpan.",
+            "arabic": "لا اريد نونية السرير",
+            "russian_male": "не хочу шибер",
+            "russian_female": "не хочу шибер",
+            "german": "ich brauche keine bettpfanne",
+            "finnish": "",
+            "italian": "non voglio il vaso da notte"
+        },
+        "food": {
+            "estonian": "söök",
+            "english": "food",
+            "arabic": "الأكل",
+            "russian_male": "еда",
+            "russian_female": "еда",
+            "german": "essen",
+            "finnish": "",
+            "italian": "cibo"
         }
     }
 }

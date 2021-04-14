@@ -18,20 +18,21 @@
             android:id="@+id/yesButton"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginRight="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
             android:layout_weight="1"
-            android:drawableTop="@drawable/round_done_24"
             android:drawableTint="#EDFFFD"
             android:fontFamily="sans-serif-black"
             android:text="Yes"
             android:textAllCaps="true"
             android:textColor="#EDFFFD"
-            android:textSize="16sp"
+            android:textSize="26sp"
             app:backgroundTint="#20D0CE"
-            app:iconPadding="0dp" />
+            app:iconPadding="0dp"
+            android:padding="20dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -44,18 +45,18 @@
             android:id="@+id/noButton"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginRight="24dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginEnd="8dp"
+
+            android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:drawableTop="@drawable/round_close_24"
             android:drawableTint="#EDFFFD"
             android:fontFamily="sans-serif-black"
             android:text="No"
             android:textAllCaps="true"
             android:textColor="#EDFFFD"
-            android:textSize="16sp"
+            android:textSize="26sp"
             app:backgroundTint="#FF5956"
             app:iconPadding="0dp" />
 

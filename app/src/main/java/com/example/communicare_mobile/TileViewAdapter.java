@@ -103,9 +103,13 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
         // with that element
         // TODO: implement translation query based on the label
         Button tile = viewHolder.getTileView();
-        tile.setText(localDataSet.get(position).getLabel());
 
+        String label = localDataSet.get(position).getLabel();
+        String drawable = localDataSet.get(position).getDrawable();
         String category = localDataSet.get(position).getViewCategory();
+        AssetManager manager = context.getActivity().getAssets();
+
+        tile.setText(label);
 
         double iconScale = 1.5;
 
@@ -113,14 +117,15 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
             iconScale = 3.0;
         } else if (category.equals("questions")) {
             iconScale = 3.0;
+        } else if (category.equals("pain_&_feelings")) {
+            iconScale = 1.5;
         } else {
             iconScale = 1.5;
         }
 
-        String drawable = localDataSet.get(position).getDrawable();
+        if (drawable.equals("none")){
 
-        AssetManager manager = context.getActivity().getAssets();
-
+        }
         InputStream open = null;
 
         try {

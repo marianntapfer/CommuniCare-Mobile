@@ -1,6 +1,6 @@
 package com.example.communicare_mobile;
 
-import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 
+import androidx.annotation.RequiresApi;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -64,7 +65,10 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     protected TileViewAdapter mAdapter;
     protected RecyclerView.LayoutManager mLayoutManager;
     protected ArrayList<TileModel> mDataset;
-    protected String language = "english";
+    // russian_female, english
+    protected String patientLang = "estonian";
+    protected String nurseLang = "russian_male";
+    protected String dataSet = "viewObject1.json";
     protected MainActivity main;
 
     @Override
@@ -73,15 +77,13 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         // Initialize dataset, this data would usually come from a local content provider or
         // remote server.
         main = (MainActivity) getActivity();
-        initDataset("home", language);
-        Context context = getContext();
-        tts = new TextToSpeech(context, this);
+        initDataset("home", patientLang, nurseLang);
+        tts = new TextToSpeech(getContext(), this);
 
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.tile_view_fragment, container, false);
         rootView.setTag(TAG);
 
@@ -93,11 +95,18 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         painBar = rootView.findViewById(R.id.painBar);
         initPainRegions(rootView);
 
-        initNavigationButtons();
-        initYesNoBar();
+        try {
+            initNavigationButtons();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        try {
+            initYesNoBar();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
-        boolean columnsLayout = (mDataset.size() % 2 == 0 && mDataset.size() > 2)
-                || mDataset.size() > 5;
+        boolean columnsLayout = (mDataset.size() % 2 == 0 && mDataset.size() > 2) || mDataset.size() > 5;
 
         if (columnsLayout) {
             setRecyclerViewLayoutManager(LayoutManagerType.GRID_LAYOUT_MANAGER);
@@ -112,28 +121,41 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         return rootView;
     }
 
-    private void initYesNoBar() {
+    private void initYesNoBar() throws JSONException {
         yesButton = main.findViewById(R.id.yesButton);
         noButton = main.findViewById(R.id.noButton);
         yesNoBar = main.findViewById(R.id.yes_no_bar);
         showYesNoBar = true;
+        yesButton.setText(getTranslation("yes", patientLang));
+        noButton.setText(getTranslation("no", patientLang));
 
         yesButton.setOnClickListener(button -> {
-            text = "yes";
+            try {
+                text = getTranslation("yes", nurseLang);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
             speakOut();
         });
         noButton.setOnClickListener(button -> {
-            text = "no";
+            try {
+                text = getTranslation("no", nurseLang);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
             speakOut();
         });
     }
 
-    private void initNavigationButtons() {
+    private void initNavigationButtons() throws JSONException {
         homeButton = main.findViewById(R.id.homeButton);
+        homeButton.setText(getTranslation("home", patientLang));
         settingsButton = main.findViewById(R.id.settingsButton);
         settingsButtonLayout = main.findViewById(R.id.settingsButtonLayout);
+//        settingsButton.setText(getTranslation("settings", patientLang));
         backButton = main.findViewById(R.id.backButton);
         backButtonLayout = main.findViewById(R.id.backButtonLayout);
+//        backButton.setText(getTranslation("back", patientLang));
 
         backButton.setOnClickListener(button -> {
             lastTile = getPreviousScreen(lastTile.getViewCategory());
@@ -159,11 +181,22 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         showYesNoBar = true;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onInit(int status) {
         if (status == TextToSpeech.SUCCESS) {
-            int result = tts.setLanguage(Locale.UK);
-            if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+            int result = 0;
+            //TODO add other languages here
+            if(nurseLang == "english"){
+                result = tts.setLanguage(Locale.UK);
+            }else if (nurseLang == "russian_female" || nurseLang == "russian_male" ){
+                Locale locale = new Locale.Builder().setLanguageTag("ru-RU").build();
+                result = tts.setLanguage(locale);
+            }
+
+            if (result == 0){
+                Log.e("TTS", "Language is not selected");
+            } else if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                 Log.e("TTS", "This language is not supported");
             } else {
                 speakOut();
@@ -181,6 +214,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     }
 
     private void speakOut() {
+
         tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
     }
 
@@ -224,9 +258,9 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
      * Generates Strings for RecyclerView's adapter. This data would usually come
      * from a local content provider or remote server.
      */
-    private void initDataset(String category, String language) {
+    private void initDataset(String category, String patientLanguage, String nurseLanguage) {
         // TODO: Replace with data from json - home screen
-        mDataset = (ArrayList<TileModel>) getDataByCategory(category, language);
+        mDataset = (ArrayList<TileModel>) getDataByCategory(category);
     }
 
     @Override
@@ -240,10 +274,9 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
             backButtonLayout.setVisibility(View.VISIBLE);
         }
         lastTile = tile;
-        text = tile.getLabel();
+        text = tile.getTtsPhrase();
         speakOut();
         changeViewToTile(tile);
-
 
     }
 
@@ -251,7 +284,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         if (tile.getViewRedirect().equals("pain")) {
             displayPainOverlay();
         } else {
-            mDataset = (ArrayList<TileModel>) getDataByCategory(tile.getViewRedirect(), language);
+            mDataset = (ArrayList<TileModel>) getDataByCategory(tile.getViewRedirect());
             setColumnLayout();
             mAdapter = new TileViewAdapter(mDataset, this, this);
             // Set CustomAdapter as the adapter for RecyclerView.
@@ -260,11 +293,10 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     }
 
 
-    private List<TileModel> getDataByCategory(String category, String language) {
+    private List<TileModel> getDataByCategory(String category) {
         mDataset = new ArrayList<>();
         try {
             JSONArray jsonDataArray = new JSONObject(LoadJsonFromAsset("viewObjects.json")).getJSONArray("elements");
-            JSONObject jsonTransObj = new JSONObject(LoadJsonFromAsset("translations.json")).getJSONObject("translations");
 
             for (int i = 0; i < jsonDataArray.length(); i++) {
                 JSONObject itemObj = jsonDataArray.getJSONObject(i);
@@ -277,10 +309,10 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
                 String drawable = itemObj.getString("drawable");
 
                 if (viewCategory.equals(category)) {
-                    String translation = jsonTransObj.getJSONObject(label).getString(language);
                     TileModel tile = new TileModel();
                     tile.setId(id);
-                    tile.setLabel(translation);
+                    tile.setLabel(getTranslation(label, patientLang));
+                    tile.setTtsPhrase(getTranslation(label, nurseLang));
                     tile.setViewCategory(viewCategory);
                     tile.setViewRedirect(viewRedirect);
                     tile.setTextToSpeech(textToSpeech);
@@ -294,6 +326,13 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         }
         return mDataset;
     }
+
+    private String getTranslation(String label, String language) throws JSONException {
+        JSONObject jsonTransObj = new JSONObject(LoadJsonFromAsset("translations.json")).getJSONObject("translations");
+        return jsonTransObj.getJSONObject(label).getString(language);
+
+    }
+
 
     private TileModel getPreviousScreen(String category) {
         try {
@@ -326,6 +365,8 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         }
         return null;
     }
+
+
 
     public String LoadJsonFromAsset(String fileName) {
         String json = null;
@@ -383,47 +424,47 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         });
 
         Button chestButton = rootView.findViewById(R.id.chestButton);
-        chestButton.setOnClickListener(button->{
+        chestButton.setOnClickListener(button -> {
             displayPainBar((Button) button);
         });
 
         Button bellyButton = rootView.findViewById(R.id.bellyButton);
-        bellyButton.setOnClickListener(button->{
+        bellyButton.setOnClickListener(button -> {
             displayPainBar((Button) button);
         });
 
         Button leftShoButton = rootView.findViewById(R.id.leftShoButton);
-        leftShoButton.setOnClickListener(button->{
+        leftShoButton.setOnClickListener(button -> {
             displayPainBar((Button) button);
         });
 
         Button leftArmButton = rootView.findViewById(R.id.leftArmButton);
-        leftArmButton.setOnClickListener(button->{
+        leftArmButton.setOnClickListener(button -> {
             displayPainBar((Button) button);
         });
 
         Button rightShoButton = rootView.findViewById(R.id.rightShoButton);
-        rightShoButton.setOnClickListener(button->{
+        rightShoButton.setOnClickListener(button -> {
             displayPainBar((Button) button);
         });
 
         Button rightThighButton = rootView.findViewById(R.id.rightThighButton);
-        rightThighButton.setOnClickListener(button->{
+        rightThighButton.setOnClickListener(button -> {
             displayPainBar((Button) button);
         });
 
         Button leftThighButton = rootView.findViewById(R.id.leftThighButton);
-        leftThighButton.setOnClickListener(button->{
+        leftThighButton.setOnClickListener(button -> {
             displayPainBar((Button) button);
         });
 
         Button leftShinButton = rootView.findViewById(R.id.leftShinButton);
-        leftShinButton.setOnClickListener(button->{
+        leftShinButton.setOnClickListener(button -> {
             displayPainBar((Button) button);
         });
 
         Button rightShinButton = rootView.findViewById(R.id.rightShinButton);
-        rightShinButton.setOnClickListener(button->{
+        rightShinButton.setOnClickListener(button -> {
             displayPainBar((Button) button);
         });
 
