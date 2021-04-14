@@ -65,10 +65,8 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     protected TileViewAdapter mAdapter;
     protected RecyclerView.LayoutManager mLayoutManager;
     protected ArrayList<TileModel> mDataset;
-    // russian_female, english
-    protected String patientLang = "estonian";
-    protected String nurseLang = "russian_male";
-    protected String dataSet = "viewObject1.json";
+    protected String patientLang = "estonian";     // russian_female, russian_male, english, estonian,
+    protected String nurseLang = "estonian";
     protected MainActivity main;
 
     @Override
@@ -152,10 +150,10 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         homeButton.setText(getTranslation("home", patientLang));
         settingsButton = main.findViewById(R.id.settingsButton);
         settingsButtonLayout = main.findViewById(R.id.settingsButtonLayout);
-//        settingsButton.setText(getTranslation("settings", patientLang));
+        settingsButton.setText(getTranslation("settings", patientLang));
         backButton = main.findViewById(R.id.backButton);
         backButtonLayout = main.findViewById(R.id.backButtonLayout);
-//        backButton.setText(getTranslation("back", patientLang));
+        backButton.setText(getTranslation("back", patientLang));
 
         backButton.setOnClickListener(button -> {
             lastTile = getPreviousScreen(lastTile.getViewCategory());
@@ -179,6 +177,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         backButtonLayout.setVisibility(View.GONE);
         settingsButtonLayout.setVisibility(View.VISIBLE);
         showYesNoBar = true;
+        painOverlay.setVisibility(View.GONE);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -186,11 +185,13 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     public void onInit(int status) {
         if (status == TextToSpeech.SUCCESS) {
             int result = 0;
-            //TODO add other languages here
             if(nurseLang == "english"){
                 result = tts.setLanguage(Locale.UK);
             }else if (nurseLang == "russian_female" || nurseLang == "russian_male" ){
                 Locale locale = new Locale.Builder().setLanguageTag("ru-RU").build();
+                result = tts.setLanguage(locale);
+            } else if ( nurseLang == "estonian"){
+                Locale locale = new Locale.Builder().setLanguageTag("et-EE").build();
                 result = tts.setLanguage(locale);
             }
 
@@ -266,7 +267,6 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     @Override
     public void onAdapterItemClickListener(TileModel tile) {
         Log.d(TAG, "RecyclerView Element " + tile + " clicked.");
-        // TODO: this needs to be the correct language label based on the language chosen from translation.
         if (showYesNoBar) {
             showYesNoBar = false;
             yesNoBar.setVisibility(View.GONE);
@@ -289,6 +289,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
             mAdapter = new TileViewAdapter(mDataset, this, this);
             // Set CustomAdapter as the adapter for RecyclerView.
             mRecyclerView.setAdapter(mAdapter);
+            painOverlay.setVisibility(View.GONE);
         }
     }
 
@@ -385,6 +386,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         return json;
     }
 
+
     private void displayPainOverlay() {
         painOverlay.setVisibility(View.VISIBLE);
     }
@@ -396,26 +398,26 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
 
     private void initPainRegions(View rootView) {
         painBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-                                               @Override
-                                               public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                                                   String painValue = String.valueOf(progress / 10);
-                                                   lastPainRegion.setText(painValue);
-                                                   painBar.setVisibility(View.GONE);
-                                                   text = lastPainRegion.getTag() + " pain level is " + painValue;
-                                                   Log.i("painOverlay", text);
-                                                   speakOut();
-                                               }
+           @Override
+           public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+               String painValue = String.valueOf(progress / 10);
+               lastPainRegion.setText(painValue);
+               painBar.setVisibility(View.GONE);
+               text = lastPainRegion.getTag() + " pain level is " + painValue;
+               Log.i("painOverlay", text);
+               speakOut();
+           }
 
-                                               @Override
-                                               public void onStartTrackingTouch(SeekBar seekBar) {
+           @Override
+           public void onStartTrackingTouch(SeekBar seekBar) {
 
-                                               }
+           }
 
-                                               @Override
-                                               public void onStopTrackingTouch(SeekBar seekBar) {
+           @Override
+           public void onStopTrackingTouch(SeekBar seekBar) {
 
-                                               }
-                                           }
+           }
+       }
 
         );
         Button headButton = rootView.findViewById(R.id.headButton);
@@ -470,4 +472,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
 
 
     }
+
+
+
 }

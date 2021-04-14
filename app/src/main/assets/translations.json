@@ -1290,6 +1290,16 @@
             "finnish": "",
             "italian": ""
         },
+        "settings": {
+            "estonian": "seaded",
+            "english": "settings",
+            "arabic": "",
+            "russian_male": "",
+            "russian_female": "",
+            "german": "",
+            "finnish": "",
+            "italian": ""
+        },
         "pain disturbs_the_sleep": {
             "estonian": "valu segab magada",
             "english": "pain disturbs the sleep",
