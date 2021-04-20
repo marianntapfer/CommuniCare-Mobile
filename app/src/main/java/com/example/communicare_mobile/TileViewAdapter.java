@@ -78,14 +78,10 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.tile_view_item, parent, false);
         DisplayMetrics displayMetrics = itemView.getContext().getResources().getDisplayMetrics();
-        int dpHeight = (int) (displayMetrics.heightPixels * 0.72);
+        int dpHeight = (int) (displayMetrics.heightPixels * 0.78);
 
         int h = parent.getHeight() == 0 ? dpHeight : parent.getHeight();
-        // margin - activity_vertical_margin
-        // rows - number of rows in different display modes
-        // h = (h - Math.round(margin * 2)) / rows;
-        int rows = getItemCount() > 5 ? getItemCount() / 2 : getItemCount();
-        h = (h - Math.round(25 * 2)) / rows;
+        h = (int) (0.3 * h);
 
         RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) itemView.getLayoutParams();
         params.height = h;
@@ -114,18 +110,9 @@ public class TileViewAdapter extends RecyclerView.Adapter<TileViewAdapter.ViewHo
         double iconScale = 1.5;
 
         if (category.equals("home")) {
-            iconScale = 3.0;
-        } else if (category.equals("questions")) {
-            iconScale = 3.0;
-        } else if (category.equals("pain_&_feelings")) {
-            iconScale = 1.5;
-        } else {
-            iconScale = 1.5;
+            iconScale = 2.5;
         }
 
-        if (drawable.equals("none")){
-
-        }
         InputStream open = null;
 
         try {

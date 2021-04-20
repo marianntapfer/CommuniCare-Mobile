@@ -3,6 +3,7 @@ package com.example.communicare_mobile;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.speech.tts.Voice;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +18,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.room.Room;
 
+import com.example.communicare_mobile.db.AppDatabase;
+import com.example.communicare_mobile.db.Settings;
 import com.example.communicare_mobile.model.TileModel;
 
 import org.json.JSONArray;
@@ -43,7 +47,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     private String text;
     private Button lastPainRegion;
     private TileModel lastTile;
-    private boolean showYesNoBar;
+    private boolean showHome;
 
     private enum LayoutManagerType {
         GRID_LAYOUT_MANAGER,
@@ -65,9 +69,11 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     protected TileViewAdapter mAdapter;
     protected RecyclerView.LayoutManager mLayoutManager;
     protected ArrayList<TileModel> mDataset;
-    protected String patientLang = "estonian";     // russian_female, russian_male, english, estonian,
-    protected String nurseLang = "estonian";
+    protected boolean gender;
+    protected String patientLang;     // russian_female, russian_male, english, estonian,
+    protected String nurseLang;
     protected MainActivity main;
+    protected AppDatabase db;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -75,6 +81,26 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         // Initialize dataset, this data would usually come from a local content provider or
         // remote server.
         main = (MainActivity) getActivity();
+        db = Room.databaseBuilder(getContext(),
+                AppDatabase.class, "main-db")
+                .allowMainThreadQueries()
+                .build();
+        Settings settings = db.settingsDao().findById(0);
+        if (settings == null) {
+            settings = createDefaultSettings();
+        }
+        gender = settings.gender;
+        patientLang = settings.textLanguage.toLowerCase();
+        nurseLang = settings.speechLanguage.toLowerCase();
+
+        if (patientLang.equals("russian")) {
+            patientLang = gender ? patientLang + "_female" : patientLang + "_male";
+        }
+
+        if (nurseLang.equals("russian")) {
+            nurseLang = gender ? nurseLang + "_female" : nurseLang + "_male";
+        }
+
         initDataset("home", patientLang, nurseLang);
         tts = new TextToSpeech(getContext(), this);
 
@@ -119,11 +145,21 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         return rootView;
     }
 
+    private Settings createDefaultSettings() {
+        Settings newSettings = new Settings();
+        newSettings.id = 0;
+        newSettings.gender = true;
+        newSettings.speechLanguage = "Estonian";
+        newSettings.textLanguage = "Estonian";
+        db.settingsDao().insertAll(newSettings);
+        return newSettings;
+    }
+
     private void initYesNoBar() throws JSONException {
         yesButton = main.findViewById(R.id.yesButton);
         noButton = main.findViewById(R.id.noButton);
         yesNoBar = main.findViewById(R.id.yes_no_bar);
-        showYesNoBar = true;
+        showHome = true;
         yesButton.setText(getTranslation("yes", patientLang));
         noButton.setText(getTranslation("no", patientLang));
 
@@ -157,7 +193,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
 
         backButton.setOnClickListener(button -> {
             lastTile = getPreviousScreen(lastTile.getViewCategory());
-            if (lastTile == null) {
+            if (lastTile == null || lastTile.getId() == 0) {
                 redirectViewHome();
             } else {
                 changeViewToTile(lastTile);
@@ -170,13 +206,12 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     }
 
     private void redirectViewHome() {
-        yesNoBar.setVisibility(View.VISIBLE);
         TileModel homeTile = new TileModel();
         homeTile.setViewRedirect("home");
         changeViewToTile(homeTile);
         backButtonLayout.setVisibility(View.GONE);
         settingsButtonLayout.setVisibility(View.VISIBLE);
-        showYesNoBar = true;
+        showHome = true;
         painOverlay.setVisibility(View.GONE);
     }
 
@@ -185,17 +220,25 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     public void onInit(int status) {
         if (status == TextToSpeech.SUCCESS) {
             int result = 0;
-            if(nurseLang == "english"){
-                result = tts.setLanguage(Locale.UK);
-            }else if (nurseLang == "russian_female" || nurseLang == "russian_male" ){
-                Locale locale = new Locale.Builder().setLanguageTag("ru-RU").build();
-                result = tts.setLanguage(locale);
-            } else if ( nurseLang == "estonian"){
-                Locale locale = new Locale.Builder().setLanguageTag("et-EE").build();
-                result = tts.setLanguage(locale);
+            switch (nurseLang) {
+                case "english":
+                    Voice maleVoice = new Voice("en-us-x-sfg#male_2-local", new Locale("en", "US"), 400, 200, false, null);
+                    Voice femaleVoice = new Voice("en-uk-x-sfg#female_2-local", new Locale("en", "UK"), 400, 200, false, null);
+                    tts.setVoice(gender ? femaleVoice : maleVoice);
+                    break;
+                case "russian": {
+                    Locale locale = new Locale.Builder().setLanguageTag("ru-RU").build();
+                    result = tts.setLanguage(locale);
+                    break;
+                }
+                case "estonian": {
+                    Locale locale = new Locale.Builder().setLanguageTag("et-EE").build();
+                    result = tts.setLanguage(locale);
+                    break;
+                }
             }
 
-            if (result == 0){
+            if (result == 0) {
                 Log.e("TTS", "Language is not selected");
             } else if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                 Log.e("TTS", "This language is not supported");
@@ -267,9 +310,8 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     @Override
     public void onAdapterItemClickListener(TileModel tile) {
         Log.d(TAG, "RecyclerView Element " + tile + " clicked.");
-        if (showYesNoBar) {
-            showYesNoBar = false;
-            yesNoBar.setVisibility(View.GONE);
+        if (showHome) {
+            showHome = false;
             settingsButtonLayout.setVisibility(View.GONE);
             backButtonLayout.setVisibility(View.VISIBLE);
         }
@@ -368,7 +410,6 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     }
 
 
-
     public String LoadJsonFromAsset(String fileName) {
         String json = null;
         try {
@@ -398,26 +439,26 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
 
     private void initPainRegions(View rootView) {
         painBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-           @Override
-           public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-               String painValue = String.valueOf(progress / 10);
-               lastPainRegion.setText(painValue);
-               painBar.setVisibility(View.GONE);
-               text = lastPainRegion.getTag() + " pain level is " + painValue;
-               Log.i("painOverlay", text);
-               speakOut();
-           }
+                                               @Override
+                                               public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                                                   String painValue = String.valueOf(progress / 10);
+                                                   lastPainRegion.setText(painValue);
+                                                   painBar.setVisibility(View.GONE);
+                                                   text = lastPainRegion.getTag() + " pain level is " + painValue;
+                                                   Log.i("painOverlay", text);
+                                                   speakOut();
+                                               }
 
-           @Override
-           public void onStartTrackingTouch(SeekBar seekBar) {
+                                               @Override
+                                               public void onStartTrackingTouch(SeekBar seekBar) {
 
-           }
+                                               }
 
-           @Override
-           public void onStopTrackingTouch(SeekBar seekBar) {
+                                               @Override
+                                               public void onStopTrackingTouch(SeekBar seekBar) {
 
-           }
-       }
+                                               }
+                                           }
 
         );
         Button headButton = rootView.findViewById(R.id.headButton);
@@ -472,7 +513,6 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
 
 
     }
-
 
 
 }

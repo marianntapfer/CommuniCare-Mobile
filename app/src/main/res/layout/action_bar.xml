@@ -55,6 +55,7 @@
             android:drawableTop="@drawable/round_settings_24"
             android:drawableTint="#125873"
             android:fontFamily="sans-serif-black"
+            android:onClick="navigateToSettings"
             android:text="Settings"
             android:textAllCaps="true"
             android:textColor="#125873"
