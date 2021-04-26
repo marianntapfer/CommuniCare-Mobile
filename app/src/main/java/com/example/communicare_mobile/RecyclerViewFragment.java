@@ -3,7 +3,6 @@ package com.example.communicare_mobile;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
-import android.speech.tts.Voice;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -70,7 +69,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     protected RecyclerView.LayoutManager mLayoutManager;
     protected ArrayList<TileModel> mDataset;
     protected boolean gender;
-    protected String patientLang;     // russian_female, russian_male, english, estonian,
+    protected String patientLang;
     protected String nurseLang;
     protected MainActivity main;
     protected AppDatabase db;
@@ -106,6 +105,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.tile_view_fragment, container, false);
@@ -155,6 +155,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         return newSettings;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void initYesNoBar() throws JSONException {
         yesButton = main.findViewById(R.id.yesButton);
         noButton = main.findViewById(R.id.noButton);
@@ -222,18 +223,23 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
             int result = 0;
             switch (nurseLang) {
                 case "english":
-                    Voice maleVoice = new Voice("en-us-x-sfg#male_2-local", new Locale("en", "US"), 400, 200, false, null);
-                    Voice femaleVoice = new Voice("en-uk-x-sfg#female_2-local", new Locale("en", "UK"), 400, 200, false, null);
-                    tts.setVoice(gender ? femaleVoice : maleVoice);
+                    tts.setLanguage(new Locale("en", "US"));
+//                    Voice maleVoice = new Voice("en-us-x-sfg#male_2-local", new Locale("en", "US"), 400, 200, false, null);
+//                    Voice femaleVoice = new Voice("en-uk-x-sfg#female_2-local", new Locale("en", "UK"), 400, 200, false, null);
+//                    tts.setVoice(gender ? femaleVoice : maleVoice);
                     break;
-                case "russian": {
+                case "russian_male": {
                     Locale locale = new Locale.Builder().setLanguageTag("ru-RU").build();
-                    result = tts.setLanguage(locale);
+                    tts.setLanguage(locale);
                     break;
-                }
-                case "estonian": {
+                }case "russian_female": {
+                    Locale locale = new Locale.Builder().setLanguageTag("ru-RU").build();
+                    System.out.println("female");
+                    tts.setLanguage(locale);
+                    break;
+                } case "estonian": {
                     Locale locale = new Locale.Builder().setLanguageTag("et-EE").build();
-                    result = tts.setLanguage(locale);
+                    tts.setLanguage(locale);
                     break;
                 }
             }
@@ -257,7 +263,13 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         super.onDestroy();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void speakOut() {
+        System.out.println("patientLang: " + patientLang + " nurseLang: " + nurseLang);
+        System.out.println("available languages " + tts.getAvailableLanguages());
+        System.out.println("TTS language " + tts.getLanguage());
+        System.out.println("get voices " + tts.getEngines());
+
 
         tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
     }
@@ -307,6 +319,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         mDataset = (ArrayList<TileModel>) getDataByCategory(category);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onAdapterItemClickListener(TileModel tile) {
         Log.d(TAG, "RecyclerView Element " + tile + " clicked.");
@@ -439,6 +452,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
 
     private void initPainRegions(View rootView) {
         painBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+                                               @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
                                                @Override
                                                public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                                                    String painValue = String.valueOf(progress / 10);
