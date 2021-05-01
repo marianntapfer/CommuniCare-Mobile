@@ -3,6 +3,7 @@ package com.example.communicare_mobile;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.speech.tts.Voice;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,7 +32,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 /**
  * Demonstrates the use of {@link RecyclerView} with a {@link LinearLayoutManager} and a
@@ -221,25 +221,61 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     public void onInit(int status) {
         if (status == TextToSpeech.SUCCESS) {
             int result = 0;
+            String[] languages = {"ru_RU", "et_EE", "en_US", "en_AU", "en_IN", "en_GB"};
             switch (nurseLang) {
                 case "english":
-                    tts.setLanguage(new Locale("en", "US"));
-//                    Voice maleVoice = new Voice("en-us-x-sfg#male_2-local", new Locale("en", "US"), 400, 200, false, null);
-//                    Voice femaleVoice = new Voice("en-uk-x-sfg#female_2-local", new Locale("en", "UK"), 400, 200, false, null);
-//                    tts.setVoice(gender ? femaleVoice : maleVoice);
+                    Voice maleVoice = null;
+                    Voice femaleVoice = null;
+                    for (Voice v : tts.getVoices()) {
+                        if (v.getLocale().toString().equals("en_US") || v.getLocale().toString().equals("en_GB")) {
+                            System.out.println("ENGLISH VOICES " + "Locale: " + v.getLocale() + " name: " + v.getName());
+                        }
+
+                        if (v.getName().equals("en-gb-x-rjs-local")) {
+                            maleVoice=v;
+                        }
+                        if (v.getName().equals("en-us-x-sfg-local")){
+                            femaleVoice=v;
+                        }
+                        if (femaleVoice != null && maleVoice != null) {
+                            tts.setVoice(gender ? femaleVoice : maleVoice);
+                        }
+                        //en-us-x-tpd-local en-gb-x-fis-local en-gb-x-gbd-localen-gb-x-gbb-local en-gb-x-gbc-local
+                    }
                     break;
                 case "russian_male": {
-                    Locale locale = new Locale.Builder().setLanguageTag("ru-RU").build();
-                    tts.setLanguage(locale);
+                    for (Voice v : tts.getVoices()) {
+                        if (v.getLocale().toString().equals("ru_RU")) {
+                            System.out.println("RUSSIAN VOICES: " + "Locale: " + v.getLocale() + " name: " + v.getName());
+                        }
+                        if (v.getName().equals("ru-ru-x-ruf-local")) {
+                            tts.setVoice(v);
+                        }
+                    }
                     break;
                 }case "russian_female": {
-                    Locale locale = new Locale.Builder().setLanguageTag("ru-RU").build();
-                    System.out.println("female");
-                    tts.setLanguage(locale);
+                    for (Voice v : tts.getVoices()) {
+                        if (v.getLocale().toString().equals("ru_RU")) {
+                            System.out.println("RUSSIAN VOICES: " + "Locale: " + v.getLocale() + " name: " + v.getName());
+                        }
+                        if (v.getName().equals("ru-ru-x-dfc#female_3-local")) {
+                            tts.setVoice(v);
+                        }
+                    }
                     break;
                 } case "estonian": {
-                    Locale locale = new Locale.Builder().setLanguageTag("et-EE").build();
-                    tts.setLanguage(locale);
+//                    Locale locale = new Locale.Builder().setLanguageTag("et-EE").build();
+//                    tts.setLanguage(locale);
+                    for (Voice v : tts.getVoices()) {
+                        if (v.getLocale().toString().equals("et_EE")) {
+                            System.out.println("ESTONIAN VOICES: " + "Locale: " + v.getLocale() + " name: " + v.getName());
+                        }
+                        if (v.getName().equals("et-EE-language")) {
+                            tts.setVoice(v);
+                        }
+                    }
+
+                    // et-EE-language
                     break;
                 }
             }
@@ -266,10 +302,14 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void speakOut() {
         System.out.println("patientLang: " + patientLang + " nurseLang: " + nurseLang);
-        System.out.println("available languages " + tts.getAvailableLanguages());
         System.out.println("TTS language " + tts.getLanguage());
-        System.out.println("get voices " + tts.getEngines());
+       // System.out.println("voices" + tts.getVoices());
 
+//        for (Voice v: tts.getVoices()) {
+//            if (v.getLocale().toString().equals("et_EE")) {
+//                System.out.println("Locale: " + v.getLocale() + " name: " + v.getName());
+//            }
+//        }
 
         tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
     }

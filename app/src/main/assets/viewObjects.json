@@ -83,8 +83,8 @@
         {
             "label": "breathing",
             "drawable": "HINGAMINE.png",
-            "viewCategory": "breathing",
-            "viewRedirect": "home",
+            "viewCategory": "comfort_&_needs",
+            "viewRedirect": "breathing",
             "textToSpeech": "TRUE",
             "id": 10
         },
@@ -291,8 +291,8 @@
         {
             "label": "condition",
             "drawable": "ENESETUNNE.png",
-            "viewCategory": "condition",
-            "viewRedirect": "home",
+            "viewCategory": "comfort_&_needs",
+            "viewRedirect": "condition",
             "textToSpeech": "TRUE",
             "id": 36
         },
