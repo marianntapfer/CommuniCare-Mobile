@@ -118,6 +118,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         painOverlay = rootView.findViewById(R.id.painOverlay);
         painBar = rootView.findViewById(R.id.painBar);
         initPainRegions(rootView);
+        painOverlay.setVisibility(View.GONE);
 
         try {
             initNavigationButtons();
@@ -212,8 +213,9 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
         changeViewToTile(homeTile);
         backButtonLayout.setVisibility(View.GONE);
         settingsButtonLayout.setVisibility(View.VISIBLE);
-        showHome = true;
         painOverlay.setVisibility(View.GONE);
+        showHome = true;
+
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -267,7 +269,7 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
 //                    Locale locale = new Locale.Builder().setLanguageTag("et-EE").build();
 //                    tts.setLanguage(locale);
                     for (Voice v : tts.getVoices()) {
-                        if (v.getLocale().toString().equals("et_EE")) {
+                        if (v.getLocale().toString().contains("et_EE")) {
                             System.out.println("ESTONIAN VOICES: " + "Locale: " + v.getLocale() + " name: " + v.getName());
                         }
                         if (v.getName().equals("et-EE-language")) {
@@ -303,6 +305,8 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     private void speakOut() {
         System.out.println("patientLang: " + patientLang + " nurseLang: " + nurseLang);
         System.out.println("TTS language " + tts.getLanguage());
+
+        System.out.println("all voices" + tts.getVoices());
        // System.out.println("voices" + tts.getVoices());
 
 //        for (Voice v: tts.getVoices()) {
@@ -444,6 +448,8 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
                 boolean textToSpeech = itemObj.getBoolean("textToSpeech");
                 String drawable = itemObj.getString("drawable");
 
+                System.out.println("viev category is "+ viewCategory);
+
                 if (viewRedirect.equals(category)) {
                     TileModel tile = new TileModel();
                     tile.setId(id);
@@ -481,13 +487,12 @@ public class RecyclerViewFragment extends Fragment implements OnAdapterItemClick
     }
 
 
-    private void displayPainOverlay() {
-        painOverlay.setVisibility(View.VISIBLE);
+    private void displayPainOverlay() { painOverlay.setVisibility(View.VISIBLE);
     }
 
     private void displayPainBar(Button painRegionButton) {
         lastPainRegion = painRegionButton;
-        painBar.setVisibility(View.VISIBLE);
+        painBar.setVisibility(View.GONE);
     }
 
     private void initPainRegions(View rootView) {
